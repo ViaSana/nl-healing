@@ -1,0 +1,49 @@
+site_map:
+- name: Home 
+  link: /
+- name: About
+  link: /about.html
+- name: Services 
+  link: /services/
+  sublinks:
+    - name: Coaching
+      link: /services/coaching.html
+    - name: Reiki 
+      link: /services/reiki.html
+    - name: Events
+      link: /services/events.html
+    - name: Retreats
+      link: /services/retreats.html
+- name: Events
+  link: /events.html
+- name: Retreats
+  link: /retreats.html
+- name: Blog
+  link: /blog.html
+- name: Contact
+  link: /contact.html
+
+header_nav:
+  left:
+    - name: Services 
+      link: /services/
+      sublinks:
+        - name: Coaching
+          link: /services/coaching.html
+        - name: Reiki 
+          link: /services/reiki.html
+        - name: Events
+          link: /services/events.html
+        - name: Retreats
+          link: /services/retreats.html
+    - name: Events
+      link: /events.html
+    - name: Retreats
+      link: /retreats.html
+  right:
+    - name: About
+      link: /about.html
+    - name: Blog
+      link: /blog.html
+    - name: Contact
+      link: /contact.html

@@ -1,0 +1,29 @@
+<nav class="flex items-center justify-between px-8 py-4 bg-neutral">
+  <!-- Left Side Navigation Links -->
+  <div class="flex space-x-4">
+    {% for item in site.data.nav.header_nav.left %}
+      <div class="relative group">
+        <a href="{{ item.link }}" class="text-sm font-semibold text-base-100 hover:text-primary">{{ item.name }}</a>
+        {% if item.sublinks %}
+          <div class="absolute hidden group-hover:block bg-neutral text-base-100">
+            {% for subitem in item.sublinks %}
+              <a href="{{ subitem.link }}" class="block px-4 py-2 hover:bg-secondary hover:text-neutral">{{ subitem.name }}</a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <!-- Center Logo -->
+  <div>
+    <img src="assets/images/logo_light-bg.png" alt="NL Healing Logo" class="h-12 mx-auto">
+  </div>
+
+  <!-- Right Side Navigation Links -->
+  <div class="flex space-x-4">
+    {% for item in site.data.nav.header_nav.right %}
+      <a href="{{ item.link }}" class="text-sm font-semibold text-base-100 hover:text-primary">{{ item.name }}</a>
+    {% endfor %}
+  </div>
+</nav>
