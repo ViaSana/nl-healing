@@ -40,11 +40,11 @@ module.exports = {
       {
         mytheme: {
           "primary": "#e2bcaf",
-          "secondary": "#eacfc4",
-          "accent": "#6d051",
-          "neutral": "#fff5f5",
-          "base-100": "#366661",
-					"info": "#05403a"
+          "secondary": "#05403a",
+          "accent": "#6d051C",
+          "neutral": "#eacfc4",
+          "base-100": "#fff5f5",
+					"info": "#366661"
         },
       },
       "light",

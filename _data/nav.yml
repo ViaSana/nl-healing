@@ -47,3 +47,17 @@ header_nav:
       link: /blog.html
     - name: Contact
       link: /contact.html
+
+footer_nav:
+- name: Services
+  link: /services/
+- name: Events
+  link: /events/
+- name: Retreat
+  link: /retreat/
+- name: About
+  link: /about/
+- name: Blog
+  link: /blog/
+- name: Contact
+  link: /contact/

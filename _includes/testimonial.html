@@ -1,0 +1,16 @@
+<!-- include tetsimonial.html -->
+<section class="relative p-8 text-center bg-center bg-cover bg-neutral" style="background-image: url('assets/images/testimonial_banner.jpg'); background-blend-mode: overlay;">
+
+  <h3 class="mb-4 text-secondary">What They're Saying</h3>
+
+  <!-- Slick Slider (http://kenwheeler.github.io/slick/) --
+  -- requires: slick-slider.js + _data/testimonials.yml -->
+  <div class="p-4 mx-auto rounded testimonial-slider-container">
+    {% for i in site.data.testimonials %}
+    <div class="text-center text-secondary">
+        <h6 class="">"{{ i.quote_html }}"</h6>
+        <span class="mt-4 text-2xl">~ {{ i.name }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>

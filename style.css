@@ -10,7 +10,7 @@
         @apply overflow-x-hidden max-w-[100vw] scroll-smooth;
     }
     body {
-        @apply font-body;
+        @apply font-body text-base-100;
     }
     section {
         @apply p-5p;

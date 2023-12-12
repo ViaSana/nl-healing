@@ -8,21 +8,71 @@ seo:
     twitter_card:
     keywords:
     hide-from-google: false
+about-copy_html: |
+    I created NL Healing with a vision to create a safe and sacred space for women to (re)connect with themselves and each other.
+    Life's transitions — embracing motherhood, navigating divorce, or experiencing menopause — often leave women feeling adrift. These moments when inner reflection and unwavering support are crucial to making it through.
+    At NL Healing, my mission is to cultivate an environment where women discover solace, connect authentically, receive both emotional and physical support, and flourish within a community liberated from societal pressures. Using movement, meditation, energy healing, and coaching, I guide women towards their true selves, reclaiming their divine feminine power.
+    Embark on your transformative journey with me at NL Healing, rediscover your essence, form profound connections, and thrive within a supportive community celebrating your authentic self.
+services:
+  - name: Coaching
+    link: services/coaching.html
+    image: /assets/images/coaching_img.jpeg
+  - name: Reiki
+    link: /services/reiki.html
+    image: assets/images/reiki_img.jpeg
+  - name: Events
+    link: /events.html
+    image: assets/images/events.png
 ---
 
-!-- Section 1: Hero Section -->
-<section class="p-10 text-center bg-cover" style="background-image: url('home_banner.jpg');">
-  <h4 class="text-lg text-gray-700">Welcome To Nance Leombruno Healing</h4>
-  <h1 class="mt-2 text-4xl font-bold text-gray-800">Journey Home To Your True Self</h1>
-  <!-- Buttons for Coaching, Reiki, Events, Retreats -->
-</section>
+<!-- Section 1: Hero Banner -->
+<div class="relative">
+    <img src="assets/images/home_banner.jpg" alt="Home Banner" class="w-full">
+    <div class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center p-4 text-center bg-overlay">
+        <h4 class="font-semibold">Welcome To Nance Leombruno Healing</h4>
+        <h1 class="font-bold">Journey Home To Your True Self</h1>
+        <div class="flex mt-4">
+            <a href="/services/coaching.html" class="mx-2 underline btn btn-ghost">Coaching</a>
+            <a href="/services/reiki.html" class="mx-2 underline btn btn-ghost">Reiki</a>
+            <a href="/events.html" class="mx-2 underline btn btn-ghost">Events</a>
+            <a href="/retreats.html" class="mx-2 underline btn btn-ghost">Retreats</a>
+        </div>
+    </div>
+  </div>
+
 
 <!-- Section 2: About -->
-<section class="flex flex-col items-center p-10">
-  <img src="about_img.jpg" alt="About Image" class="w-32 h-32 mb-4 rounded-full">
-  <h2 class="text-2xl font-semibold">I’m Nance, A Holistic Spiritual Healer</h2>
-  <p class="mt-4 text-gray-600">
-      <!-- Your about text here -->
-  </p>
-  <button class="px-4 py-2 mt-4 text-white bg-blue-500 rounded">Learn More</button>
+<section class="flex flex-wrap items-center px-4 py-8 md:flex-nowrap bg-base-100">
+  <!-- Image Column -->
+  <div class="md:w-1/2">
+    <img src="assets/images/about_img.jpg" alt="Nance" class="w-full h-auto rounded-lg shadow-xl">
+  </div>
+  
+  <!-- Text Column -->
+  <div class="mt-8 md:w-1/2 md:mt-0 md:ml-8 text-secondary">
+    <h2 class="mb-4 font-bold">I’m Nance,</h2>
+    <h3 class="mb-4">A Holistic Spiritual Healer</h3>
+    <p class="mb-6">{{ page.about-copy_html }}</p>
+    <a href="/about.html" class="px-4 py-2 btn btn-accent">Learn More</a>
+  </div>
 </section>
+
+{% include cta.html %}
+
+<!-- Section 3: Together We Rise -->
+<section class="py-8">
+  <h2 class="mb-12 text-center editable text-secondary">Together, We Rise</h2>
+  
+  <div class="flex items-center justify-center space-x-6">
+    {% for service in page.services %}
+      <a href="{{ service.link }}" class="relative flex flex-col items-center no-underline">
+        <div class="h-80 aspect-square">
+          <img src="{{ service.image }}" alt="{{ service.name }}" class="object-cover w-full h-full transition-shadow duration-300 shadow-lg hover:shadow-xl">
+        </div>
+        <span class="absolute px-3 py-1 mt-2 -bottom-4 bg-primary text-secondary">{{ service.name }}</span>
+      </a>
+    {% endfor %}
+  </div>
+</section>
+
+{% include testimonial.html %}
