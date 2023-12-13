@@ -1,0 +1,20 @@
+{
+  "favorites.resources": [
+    {
+      "filePath": "index.html",
+      "group": "Default"
+    },
+    {
+      "filePath": "about.html",
+      "group": "Default"
+    },
+    {
+      "filePath": "events.html",
+      "group": "Default"
+    },
+    {
+      "filePath": "services.html",
+      "group": "Default"
+    }
+  ]
+}

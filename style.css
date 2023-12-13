@@ -40,7 +40,15 @@
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 @layer components {
-    
+    .btn {
+        @apply font-serif text-xl capitalize;
+    }
+    .btn-ghost{
+        @apply hover:bg-primary;
+    }
+    .btn-base-100 {
+        @apply bg-base-100;
+    }
 }
 
 @layer utilities {

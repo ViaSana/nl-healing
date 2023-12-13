@@ -1,8 +1,7 @@
 ---
 layout: default
-title: Homepage
 seo:
-    title: 
+    title: Homepage
     description:
     social_image:
     twitter_card:
@@ -11,7 +10,9 @@ seo:
 about-copy_html: |
     I created NL Healing with a vision to create a safe and sacred space for women to (re)connect with themselves and each other.
     Life's transitions — embracing motherhood, navigating divorce, or experiencing menopause — often leave women feeling adrift. These moments when inner reflection and unwavering support are crucial to making it through.
+    <br><br>
     At NL Healing, my mission is to cultivate an environment where women discover solace, connect authentically, receive both emotional and physical support, and flourish within a community liberated from societal pressures. Using movement, meditation, energy healing, and coaching, I guide women towards their true selves, reclaiming their divine feminine power.
+    <br><br>
     Embark on your transformative journey with me at NL Healing, rediscover your essence, form profound connections, and thrive within a supportive community celebrating your authentic self.
 services:
   - name: Coaching
@@ -28,14 +29,13 @@ services:
 <!-- Section 1: Hero Banner -->
 <div class="relative">
     <img src="assets/images/home_banner.jpg" alt="Home Banner" class="w-full">
-    <div class="absolute top-0 bottom-0 left-0 right-0 flex flex-col items-center justify-center p-4 text-center bg-overlay">
-        <h4 class="font-semibold">Welcome To Nance Leombruno Healing</h4>
-        <h1 class="font-bold">Journey Home To Your True Self</h1>
-        <div class="flex mt-4">
-            <a href="/services/coaching.html" class="mx-2 underline btn btn-ghost">Coaching</a>
-            <a href="/services/reiki.html" class="mx-2 underline btn btn-ghost">Reiki</a>
-            <a href="/events.html" class="mx-2 underline btn btn-ghost">Events</a>
-            <a href="/retreats.html" class="mx-2 underline btn btn-ghost">Retreats</a>
+    <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-accent bg-opacity-30">
+        <h4 class="font-sans font-light">Welcome To Nance Leombruno Healing</h4>
+        <h1 class="">Journey Home To Your True Self</h1>
+        <div class="flex mt-4 font-serif">
+            {% for item in site.data.nav.header_nav.hero %}
+              <a href="{{item.link}}" class="py-2 mx-8 my-1 rounded-none rounded-t-lg border-b-base-100 p-x4 btn btn-ghost">{{item.name}}</a>
+            {% endfor %}
         </div>
     </div>
   </div>
@@ -44,15 +44,18 @@ services:
 <!-- Section 2: About -->
 <section class="flex flex-wrap items-center px-4 py-8 md:flex-nowrap bg-base-100">
   <!-- Image Column -->
-  <div class="md:w-1/2">
-    <img src="assets/images/about_img.jpg" alt="Nance" class="w-full h-auto rounded-lg shadow-xl">
+  <div class="grid md:w-1/2">
+    <img src="assets/images/about_img.jpg" alt="Nance" class="justify-self-center max-h-[70vh] aspect-portrait">
+    {% for i in (1..3) %}
+      <div class="py-6 -ml-4 border-b-4 border-accent {% cycle 'w-[50%]','w-[40%]','w-[30%]'%}"></div>
+    {% endfor %}
   </div>
   
   <!-- Text Column -->
-  <div class="mt-8 md:w-1/2 md:mt-0 md:ml-8 text-secondary">
-    <h2 class="mb-4 font-bold">I’m Nance,</h2>
-    <h3 class="mb-4">A Holistic Spiritual Healer</h3>
-    <p class="mb-6">{{ page.about-copy_html }}</p>
+  <div class="self-start pt-6 md:w-1/2 md:mt-0 md:ml-8 text-secondary">
+    <h2 class="mb-4 font-medium">I’m Nance,</h2>
+    <h4 class="mb-4">A Holistic Spiritual Healer</h4>
+    <p class="max-w-xl mb-6">{{ page.about-copy_html }}</p>
     <a href="/about.html" class="px-4 py-2 btn btn-accent">Learn More</a>
   </div>
 </section>
@@ -60,16 +63,16 @@ services:
 {% include cta.html %}
 
 <!-- Section 3: Together We Rise -->
-<section class="py-8">
-  <h2 class="mb-12 text-center editable text-secondary">Together, We Rise</h2>
+<section class="">
+  <h2 class="pb-6 text-center editable text-secondary">Together, We Rise</h2>
   
-  <div class="flex items-center justify-center space-x-6">
+  <div class="flex items-center justify-center py-6 space-x-24">
     {% for service in page.services %}
       <a href="{{ service.link }}" class="relative flex flex-col items-center no-underline">
         <div class="h-80 aspect-square">
           <img src="{{ service.image }}" alt="{{ service.name }}" class="object-cover w-full h-full transition-shadow duration-300 shadow-lg hover:shadow-xl">
         </div>
-        <span class="absolute px-3 py-1 mt-2 -bottom-4 bg-primary text-secondary">{{ service.name }}</span>
+        <h5 class="absolute px-3 py-1 mt-2 font-serif -bottom-4 bg-primary text-secondary">{{ service.name }}</h5>
       </a>
     {% endfor %}
   </div>

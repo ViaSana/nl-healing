@@ -47,8 +47,6 @@ module.exports = {
 					"info": "#366661"
         },
       },
-      "light",
-      "dark",
     ],
   },
   plugins: [

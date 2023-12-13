@@ -47,6 +47,16 @@ header_nav:
       link: /blog.html
     - name: Contact
       link: /contact.html
+  hero:
+    - name: Coaching 
+      link: /services/coaching.html
+    - name: Reiki
+      link: /services/reiki.html
+    - name: Events
+      link: /services/events.html
+    - name: Retreats
+      link: /services/retreats.html
+
 
 footer_nav:
 - name: Services
