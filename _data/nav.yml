@@ -4,7 +4,7 @@ site_map:
 - name: About
   link: /about.html
 - name: Services 
-  link: /services/
+  link: /services.html
   sublinks:
     - name: Coaching
       link: /services/coaching.html
@@ -13,9 +13,9 @@ site_map:
     - name: Events
       link: /services/events.html
     - name: Retreats
-      link: /services/retreats.html
+      link: /retreats.html
 - name: Events
-  link: /events.html
+  link: /services/events.html
 - name: Retreats
   link: /retreats.html
 - name: Blog
@@ -26,7 +26,7 @@ site_map:
 header_nav:
   left:
     - name: Services 
-      link: /services/
+      link: /services.html
       sublinks:
         - name: Coaching
           link: /services/coaching.html
@@ -35,9 +35,9 @@ header_nav:
         - name: Events
           link: /services/events.html
         - name: Retreats
-          link: /services/retreats.html
+          link: /retreats.html
     - name: Events
-      link: /events.html
+      link: /services/events.html
     - name: Retreats
       link: /retreats.html
   right:
@@ -55,19 +55,18 @@ header_nav:
     - name: Events
       link: /services/events.html
     - name: Retreats
-      link: /services/retreats.html
-
+      link: retreats.html
 
 footer_nav:
 - name: Services
-  link: /services/
+  link: /services.html
 - name: Events
-  link: /events/
+  link: /services/events.html
 - name: Retreat
-  link: /retreat/
+  link: /retreats.html
 - name: About
-  link: /about/
+  link: /about.html
 - name: Blog
-  link: /blog/
+  link: /blog.html
 - name: Contact
-  link: /contact/
+  link: /contact.html
