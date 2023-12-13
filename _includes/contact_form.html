@@ -1,26 +1,43 @@
 <!-- include contact_form -->
-<div class="relative text-center p-5p text-accent bg-primary" id="contact_form">
-    <h2 class="mb-6 capitalize editable">Join The Community</h2>
-    <h6 class="editable">Sign Up to Receive retreat & event updates</h6>
-    <form class="grid max-w-2xl pt-4 mx-auto text-left" method="post" action="#" id=""> 
+<div class="relative p-6 text-center text-accent" id="contact_form">
+    <form class="grid max-w-2xl mx-auto text-left" method="post" action="#" id=""> 
         <!--------- Name -------->
         <label for="name" class="ml-2 font-serif capitalize"> Name </label>
-        <input type="text" id="name" name="name" class="p-2 mb-2 bg-transparent border-t-2 border-secondary" />
+        <input type="text" id="name" name="name" class="p-2 mb-4 bg-transparent border-2 border-secondary" />
 
         <!------- Email -------->
         <label for="email" class="ml-2 font-serif capitalize"> Email </label>
-        <input type="email" id="email" name="email" class="p-2 mb-2 bg-transparent border-t-2 border-secondary" />
+        <input type="email" id="email" name="email" class="p-2 mb-4 bg-transparent border-2 border-secondary" />
+
+        <!------- Subject -------->
+        <label for="subject" class="mt-2 ml-2 font-serif capitalize">Topic</label>
+        <input list="topic-list" id="subject" name="subject" class="p-2 mb-4 bg-transparent border-t-2 border-b-2 border-secondary"/>
+            <datalist id="topic-list">
+                <option value="Chocolate"></option>
+                <option value="Coconut"></option>
+                <option value="Mint"></option>
+                <option value="Strawberry"></option>
+                <option value="Vanilla"></option>
+            </datalist>
+
+        <!------- Message -------->
+        <label for="message" class="mt-4 ml-2 font-serif capitalize"> Message </label>
+        <textarea type="text" id="message" name="message" class="p-2 mb-4 bg-white border-2 border-secondary"></textarea>
 
         <input type="hidden" name="inbox_key" value="contact_form">
         <input type="text" name="_gotcha" style="display: none;">
 
+        <!-------Checkbox -------->
+        <div class="flex">
+            <input type="checkbox" id="newsletter" class="p-2 mb-8" name="newsletter" value="subscribed">
+            <label for="newsletter" class="pb-8 ml-2 uppercase font-headings"> <span class="editable">Sign Up to Receive retreat & event updates </span> </label>
+        </div>
+
+
         <div class="text-center"> <input class="btn btn-accent" type="submit" value="Submit" id="submitBtn"/> </div>
+
     </form>
-    <div class="pt-4">
-        <h4 class="font-sans capitalize">Looking for something else?</h4>
-        <h6>Submit an inquiry or
-        <a href="mailto:nance.sf@gmail.com">Email: nance.sf@gmail.com</a></h6>
-    </div>
+    
     <div id="thank_you" style="display: none;">
         <div class="absolute bottom-4 left-4">
             <h3>Thanks for connecting!</h3> 
