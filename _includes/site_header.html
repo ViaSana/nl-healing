@@ -1,11 +1,11 @@
-<nav class="flex items-center justify-around px-8 py-4 font-serif bg-neutral text-secondary">
+<nav class="flex items-center justify-around px-8 py-4 font-serif text-secondary">
   <!-- Left Side Navigation Links -->
   <div class="flex space-x-32">
     {% for item in site.data.nav.header_nav.left %}
       <div class="relative group">
         <a href="{{ item.link }}" class="text-lg hover:text-primary">{{ item.name }}</a>
         {% if item.sublinks %}
-          <div class="absolute hidden group-hover:block bg-neutral">
+          <div class="absolute z-30 hidden group-hover:block bg-neutral">
             {% for subitem in item.sublinks %}
               <a href="{{ subitem.link }}" class="block px-4 py-2 hover:bg-secondary hover:text-neutral">{{ subitem.name }}</a>
             {% endfor %}
