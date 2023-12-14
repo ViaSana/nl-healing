@@ -20,9 +20,10 @@ seo:
     </div>
   </div>
   <div class="absolute flex flex-row justify-center space-x-12 -bottom-6 inset-x-10">
-    {% for service in site.data.nav.header_nav.hero %}
+    {% assign service-hero = site.data.nav | where: 'hero', 'true' %}
+    {% for s in service-hero %}
       <div class="w-[15vw] py-4 bg-primary text-secondary font-serif">
-        <h6 class="text-center">{{ service.name }}</h6>
+        <a href="{{ s.link }}"><h6 class="text-center">{{ s.name }}</h6></a>
       </div>
     {% endfor %}
   </div>
