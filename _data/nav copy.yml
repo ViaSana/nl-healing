@@ -2,7 +2,7 @@
   link: /
 - name: Services 
   link: /services
-  main_nav: true
+  header_nav: left
   sublinks:
     - name: Coaching
       link: /services/coaching
@@ -16,18 +16,18 @@
   hero: true
 - name: Events
   link: /services/events/
-  main_nav: true
+  header_nav: left
   hero: true
 - name: Retreat
   link: /retreats
-  main_nav: true
+  header_nav: left
   hero: true
 - name: About
   link: /about
-  main_nav: true
+  header_nav: right
 - name: Blog
   link: /blog/
-  main_nav: true
+  header_nav: right
 - name: Contact
   link: /contact
-  main_nav: true
+  header_nav: right

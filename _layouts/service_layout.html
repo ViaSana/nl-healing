@@ -1,0 +1,50 @@
+---
+layout: default
+---
+
+<div class="py-8 mx-scrn">
+  <!-- Service_Hero Component -->
+  <div class="flex items-center justify-center">
+    <img src="{{ page.hero_image }}" alt="{{page.seo.title}} Image" class="w-full basis-2/5">
+    <div class="p-8 basis-3/5 text-secondary">
+      <h2 class="inline-block pb-2 pr-16 border-b border-accent">{{ page.seo.title }}</h2>
+      <p class="py-4">{{ page.copy_html }}</p>
+      <a href="{{ s.link }}" class="mt-2 btn btn-secondary">Let's Do This</a>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <section class="text-accent bg-primary">
+    <div class="mx-scrn">
+      <h2 class="text-center editable">What to Expect</h2>
+      <!-- Page Content -->
+      <div class="grid grid-cols-4">
+        <!-- Approach -->
+        <h4 class="pb-2 col-span-full editable">Approach</h4>
+        <div class="col-span-3 border-t border-base-100">
+          {% for item in page.expectations %}
+            <ul>
+              <li class="p-2"><i class="mt-1 mr-2 align-top fas fa-arrow-right text-base-100"></i><span class="inline-block ml-4 w-[90%]">{{ item }}</span></li>
+            </ul>
+          {% endfor %}
+        </div>
+        <!-- Investment -->
+        <div class="flex flex-col items-center justify-center p-6 mx-4 bg-base-100">
+          <h6 class="font-serif editable">Investment</h6>
+          {% for cost in page.investment %}
+            <span>{{ cost }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {% include testimonial.html %}
+  
+    <!-- Additional Information -->
+    <div>
+      <h3 class="text-2xl font-bold">Upcoming Events</h3>
+      <!-- Events List or Cards Here -->
+    </div>
+  </div>
+</div>

@@ -41,13 +41,13 @@
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 @layer components {
     .btn {
-        @apply font-serif text-xl capitalize;
+        @apply px-8 py-2 font-serif rounded-tl-[2000rem] rounded-bl-none rounded-tr-none rounded-br-[2000rem] tracking-[.12em] text-xl capitalize;
     }
     .btn-ghost{
         @apply hover:bg-primary;
     }
     .btn-base-100 {
-        @apply bg-base-100;
+        @apply bg-base-100 text-secondary;
     }
 }
 

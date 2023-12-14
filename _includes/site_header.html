@@ -1,7 +1,8 @@
 <nav class="flex items-center justify-around px-8 py-4 font-serif text-secondary">
+  {% assign header_nav = site.data.nav | where: 'main_nav', true %}
   <!-- Left Side Navigation Links -->
   <div class="flex space-x-32">
-    {% for item in site.data.nav.header_nav.left %}
+    {% for item in header_nav limit:3 %}
       <div class="relative group">
         <a href="{{ item.link }}" class="text-lg hover:text-primary">{{ item.name }}</a>
         {% if item.sublinks %}
@@ -16,13 +17,13 @@
   </div>
 
   <!-- Center Logo -->
-  <div>
+  <div class="flex space-x-32">
     <a href="/"><img src="/assets/images/logo_light-bg.png" alt="NL Healing Logo" class="mx-auto h-36"></a>
   </div>
 
   <!-- Right Side Navigation Links -->
   <div class="flex space-x-32">
-    {% for item in site.data.nav.header_nav.right %}
+    {% for item in header_nav offset:3 limit:3 %}
       <a href="{{ item.link }}" class="text-lg hover:text-primary">{{ item.name }}</a>
     {% endfor %}
   </div>
