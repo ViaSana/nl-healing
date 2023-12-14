@@ -720,21 +720,6 @@ h6 {
   cursor: pointer;
   text-decoration-line: underline;
 }
-.range {
-  height: 1.5rem;
-  width: 100%;
-  cursor: pointer;
-  -moz-appearance: none;
-       appearance: none;
-  -webkit-appearance: none;
-  --range-shdw: var(--bc);
-  overflow: hidden;
-  background-color: transparent;
-  border-radius: var(--rounded-box, 1rem);
-}
-.range:focus {
-  outline: none;
-}
 .select {
   display: inline-flex;
   cursor: pointer;
@@ -1156,59 +1141,6 @@ h6 {
       0 0 0 4px hsl(var(--b1)) inset;
   }
 }
-.range:focus-visible::-webkit-slider-thumb {
-  --focus-shadow: 0 0 0 6px hsl(var(--b1)) inset, 0 0 0 2rem hsl(var(--range-shdw)) inset;
-}
-.range:focus-visible::-moz-range-thumb {
-  --focus-shadow: 0 0 0 6px hsl(var(--b1)) inset, 0 0 0 2rem hsl(var(--range-shdw)) inset;
-}
-.range::-webkit-slider-runnable-track {
-  height: 0.5rem;
-  width: 100%;
-  background-color: hsl(var(--bc) / 0.1);
-  border-radius: var(--rounded-box, 1rem);
-}
-.range::-moz-range-track {
-  height: 0.5rem;
-  width: 100%;
-  background-color: hsl(var(--bc) / 0.1);
-  border-radius: var(--rounded-box, 1rem);
-}
-.range::-webkit-slider-thumb {
-  position: relative;
-  height: 1.5rem;
-  width: 1.5rem;
-  border-style: none;
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--b1) / var(--tw-bg-opacity));
-  border-radius: var(--rounded-box, 1rem);
-  appearance: none;
-  -webkit-appearance: none;
-  top: 50%;
-  color: hsl(var(--range-shdw));
-  transform: translateY(-50%);
-  --filler-size: 100rem;
-  --filler-offset: 0.6rem;
-  box-shadow: 0 0 0 3px hsl(var(--range-shdw)) inset,
-      var(--focus-shadow, 0 0),
-      calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
-}
-.range::-moz-range-thumb {
-  position: relative;
-  height: 1.5rem;
-  width: 1.5rem;
-  border-style: none;
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--b1) / var(--tw-bg-opacity));
-  border-radius: var(--rounded-box, 1rem);
-  top: 50%;
-  color: hsl(var(--range-shdw));
-  --filler-size: 100rem;
-  --filler-offset: 0.5rem;
-  box-shadow: 0 0 0 3px hsl(var(--range-shdw)) inset,
-      var(--focus-shadow, 0 0),
-      calc(var(--filler-size) * -1 - var(--filler-offset)) 0 0 var(--filler-size);
-}
 @keyframes rating-pop {
   0% {
     transform: translateY(-0.125em);
@@ -1508,24 +1440,20 @@ h6 {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-}
 .-ml-24 {
   margin-left: -6rem;
 }
 .-ml-4 {
   margin-left: -1rem;
 }
-.mb-2 {
-  margin-bottom: 0.5rem;
-}
 .mb-4 {
   margin-bottom: 1rem;
 }
 .mb-6 {
   margin-bottom: 1.5rem;
+}
+.mb-8 {
+  margin-bottom: 2rem;
 }
 .ml-2 {
   margin-left: 0.5rem;
@@ -1535,27 +1463,6 @@ h6 {
 }
 .mt-4 {
   margin-top: 1rem;
-}
-.ml-8 {
-  margin-left: 2rem;
-}
-.mr-8 {
-  margin-right: 2rem;
-}
-.ml-40 {
-  margin-left: 10rem;
-}
-.mr-40 {
-  margin-right: 10rem;
-}
-.ml-48 {
-  margin-left: 12rem;
-}
-.mr-48 {
-  margin-right: 12rem;
-}
-.mb-8 {
-  margin-bottom: 2rem;
 }
 .block {
   display: block;
@@ -1593,20 +1500,14 @@ h6 {
 .h-\[30vh\] {
   height: 30vh;
 }
+.h-\[38vh\] {
+  height: 38vh;
+}
 .h-\[50vh\] {
   height: 50vh;
 }
 .h-full {
   height: 100%;
-}
-.h-\[20vh\] {
-  height: 20vh;
-}
-.h-\[40vh\] {
-  height: 40vh;
-}
-.h-\[38vh\] {
-  height: 38vh;
 }
 .max-h-44 {
   max-height: 11rem;
@@ -1631,12 +1532,6 @@ h6 {
 }
 .w-full {
   width: 100%;
-}
-.w-\[60\%\] {
-  width: 60%;
-}
-.w-\[110\%\] {
-  width: 110%;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -1711,20 +1606,17 @@ h6 {
 .border-2 {
   border-width: 2px;
 }
-.border {
-  border-width: 1px;
-}
 .border-b {
   border-bottom-width: 1px;
+}
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 .border-b-4 {
   border-bottom-width: 4px;
 }
 .border-t-2 {
   border-top-width: 2px;
-}
-.border-b-2 {
-  border-bottom-width: 2px;
 }
 .border-accent {
   --tw-border-opacity: 1;
@@ -1767,9 +1659,6 @@ h6 {
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
-.bg-opacity-40 {
-  --tw-bg-opacity: 0.4;
-}
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
@@ -1795,11 +1684,11 @@ h6 {
 .p-5p {
   padding: 5%;
 }
-.p-8 {
-  padding: 2rem;
-}
 .p-6 {
   padding: 1.5rem;
+}
+.p-8 {
+  padding: 2rem;
 }
 .px-3 {
   padding-left: 0.75rem;
@@ -1841,10 +1730,6 @@ h6 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
 .pb-2 {
   padding-bottom: 0.5rem;
 }
@@ -1854,6 +1739,12 @@ h6 {
 .pb-6 {
   padding-bottom: 1.5rem;
 }
+.pb-8 {
+  padding-bottom: 2rem;
+}
+.pl-4 {
+  padding-left: 1rem;
+}
 .pr-16 {
   padding-right: 4rem;
 }
@@ -1862,12 +1753,6 @@ h6 {
 }
 .pt-6 {
   padding-top: 1.5rem;
-}
-.pb-8 {
-  padding-bottom: 2rem;
-}
-.pl-4 {
-  padding-left: 1rem;
 }
 .text-left {
   text-align: left;
@@ -1944,72 +1829,6 @@ h6 {
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 
-.placeholder\:ml-auto::-moz-placeholder {
-  margin-left: auto;
-}
-
-.placeholder\:ml-auto::placeholder {
-  margin-left: auto;
-}
-
-.placeholder\:place-content-end::-moz-placeholder {
-  place-content: end;
-}
-
-.placeholder\:place-content-end::placeholder {
-  place-content: end;
-}
-
-.placeholder\:items-end::-moz-placeholder {
-  align-items: flex-end;
-}
-
-.placeholder\:items-end::placeholder {
-  align-items: flex-end;
-}
-
-.placeholder\:justify-end::-moz-placeholder {
-  justify-content: flex-end;
-}
-
-.placeholder\:justify-end::placeholder {
-  justify-content: flex-end;
-}
-
-.placeholder\:self-end::-moz-placeholder {
-  align-self: flex-end;
-}
-
-.placeholder\:self-end::placeholder {
-  align-self: flex-end;
-}
-
-.placeholder\:justify-self-end::-moz-placeholder {
-  justify-self: end;
-}
-
-.placeholder\:justify-self-end::placeholder {
-  justify-self: end;
-}
-
-.placeholder\:text-left::-moz-placeholder {
-  text-align: left;
-}
-
-.placeholder\:text-left::placeholder {
-  text-align: left;
-}
-
-.placeholder\:text-red-500::-moz-placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
-.placeholder\:text-red-500::placeholder {
-  --tw-text-opacity: 1;
-  color: rgb(239 68 68 / var(--tw-text-opacity));
-}
-
 .hover\:bg-secondary:hover {
   --tw-bg-opacity: 1;
   background-color: hsl(var(--s) / var(--tw-bg-opacity));
@@ -2035,28 +1854,21 @@ h6 {
   display: block;
 }
 
-@media not all and (min-width: 768px) {
-  .max-md\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-}
-
 @media (min-width: 768px) {
   .md\:mb-0 {
     margin-bottom: 0px;
   }
-  .md\:ml-8 {
-    margin-left: 2rem;
-  }
-  .md\:mt-0 {
-    margin-top: 0px;
-  }
   .md\:ml-48 {
     margin-left: 12rem;
   }
+  .md\:ml-8 {
+    margin-left: 2rem;
+  }
   .md\:mr-48 {
     margin-right: 12rem;
+  }
+  .md\:mt-0 {
+    margin-top: 0px;
   }
   .md\:w-1\/2 {
     width: 50%;
