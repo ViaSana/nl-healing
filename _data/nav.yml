@@ -1,72 +1,82 @@
 site_map:
 - name: Home 
   link: /
-- name: About
-  link: /about.html
 - name: Services 
-  link: /services.html
+  link: /services
+  header_nav: left
   sublinks:
     - name: Coaching
-      link: /services/coaching.html
+      link: /services/coaching
     - name: Reiki 
-      link: /services/reiki.html
-    - name: Events
-      link: /services/events.html
-    - name: Retreats
-      link: /retreats.html
+      link: /services/reiki
+- name: Coaching
+  link: /services/coaching
+  hero: true
+- name: Reiki 
+  link: /services/reiki
+  hero: true
 - name: Events
-  link: /services/events.html
-- name: Retreats
-  link: /retreats.html
+  link: /services/events/
+  header_nav: left
+  hero: true
+- name: Retreat
+  link: /retreats
+  header_nav: left
+  hero: true
+- name: About
+  link: /about
+  header_nav: right
 - name: Blog
-  link: /blog.html
+  link: /blog/
+  header_nav: right
 - name: Contact
-  link: /contact.html
+  link: /contact
+  header_nav: right
 
 header_nav:
   left:
     - name: Services 
-      link: /services.html
+      link: /services
       sublinks:
         - name: Coaching
-          link: /services/coaching.html
+          link: /services/coaching
         - name: Reiki 
-          link: /services/reiki.html
+          link: /services/reiki
         - name: Events
-          link: /services/events.html
+          link: /services/events
         - name: Retreats
-          link: /retreats.html
+          link: /retreats
     - name: Events
-      link: /services/events.html
+      link: /services/events
     - name: Retreats
-      link: /retreats.html
+      link: /retreats
   right:
     - name: About
-      link: /about.html
+      link: /about
     - name: Blog
-      link: /blog.html
+      link: /blog
     - name: Contact
-      link: /contact.html
+      link: /contact
   hero:
     - name: Coaching 
-      link: /services/coaching.html
+      link: /services/coaching
     - name: Reiki
-      link: /services/reiki.html
+      link: /services/reiki
     - name: Events
-      link: /services/events.html
+      link: /services/events
     - name: Retreats
-      link: retreats.html
+      link: retreats
 
 footer_nav:
 - name: Services
-  link: /services.html
+  link: /services
 - name: Events
-  link: /services/events.html
+  link: /services/events
 - name: Retreat
-  link: /retreats.html
+  link: /retreats
 - name: About
-  link: /about.html
+  link: /about
 - name: Blog
-  link: /blog.html
+  link: /blog
 - name: Contact
-  link: /contact.html
+  link: /contact
