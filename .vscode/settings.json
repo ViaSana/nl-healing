@@ -15,6 +15,10 @@
     {
       "filePath": "services.html",
       "group": "Default"
+    },
+    {
+      "filePath": "_includes/cta.html",
+      "group": "Default"
     }
   ]
 }

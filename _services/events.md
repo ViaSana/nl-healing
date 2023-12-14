@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: service_layout
 seo:
   title: Events
   description:
