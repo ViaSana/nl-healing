@@ -1648,14 +1648,11 @@ img {
 .hidden {
   display: none;
 }
-.aspect-portrait {
-  aspect-ratio: 3 / 4;
+.aspect-portrait-tall {
+  aspect-ratio: 3 / 5;
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
-}
-.aspect-portrait-tall {
-  aspect-ratio: 3 / 5;
 }
 .h-36 {
   height: 9rem;
@@ -1693,9 +1690,6 @@ img {
 .max-h-\[44vh\] {
   max-height: 44vh;
 }
-.max-h-\[70vh\] {
-  max-height: 70vh;
-}
 .w-\[110\%\] {
   width: 110%;
 }
@@ -1726,6 +1720,9 @@ img {
 .w-full {
   width: 100%;
 }
+.w-screen {
+  width: 100vw;
+}
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1737,9 +1734,6 @@ img {
 }
 .max-w-6xl {
   max-width: 72rem;
-}
-.max-w-\[80\%\] {
-  max-width: 80%;
 }
 .max-w-lg {
   max-width: 32rem;
@@ -1966,6 +1960,10 @@ img {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2181,6 +2179,12 @@ img {
   .md\:pr-8 {
     padding-right: 2rem;
   }
+  .md\:pr-4 {
+    padding-right: 1rem;
+  }
+  .md\:pl-4 {
+    padding-left: 1rem;
+  }
   .md\:text-left {
     text-align: left;
   }
@@ -2192,10 +2196,21 @@ img {
     margin-right: calc(8rem * var(--tw-space-x-reverse));
     margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));
   }
+  .lg\:space-x-28 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-x-reverse: 0;
+    margin-right: calc(7rem * var(--tw-space-x-reverse));
+    margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
+  }
   .lg\:pl-16 {
     padding-left: 4rem;
   }
   .lg\:pr-16 {
     padding-right: 4rem;
+  }
+  .lg\:pl-12 {
+    padding-left: 3rem;
+  }
+  .lg\:pr-12 {
+    padding-right: 3rem;
   }
 }
