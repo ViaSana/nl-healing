@@ -29,7 +29,6 @@ copy_html: >-
   to step back in your body, to feel and to ground yourself and come back to
   what really matters to you right now, in this moment.</p>
 btn_link:
-hero_image: /assets/images/coaching_img.jpeg
 expectations:
   - "Our coaching starts with a free consultation call (20min) to feel if we’re a match and to discuss which journey will fit your needs.\_"
   - >-
@@ -45,4 +44,3 @@ investment:
   - '12-Week Journey: $1290'
   - '60-Min Individual Session: $150'
 ---
-I was to type something here - what happens to this page?&nbsp;

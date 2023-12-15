@@ -10,7 +10,7 @@
         @apply overflow-x-hidden max-w-[100vw] scroll-smooth;
     }
     body {
-        @apply font-body text-base-100 bg-base-100;
+        @apply font-body text-secondary bg-base-100;
     }
     section {
         @apply p-5p;
@@ -19,35 +19,41 @@
         @apply font-serif;
     }
     h1 {
-        @apply text-7xl;
+        @apply text-7xl pb-4;
     }
     h2 {
-        @apply text-6xl;
+        @apply text-6xl pb-2;
     }
     h3 {
-        @apply text-5xl;
+        @apply text-5xl pb-4;
     }
     h4 {
-        @apply text-4xl;
+        @apply text-4xl pb-2;
     }
     h5 {
-        @apply text-3xl;
+        @apply text-3xl font-serif;
     }
     h6 {
-        @apply text-2xl;
+        @apply text-2xl pb-4;
+    }
+    img {
+        @apply w-full h-auto;
     }
 }
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 @layer components {
     .btn {
-        @apply px-8 py-2 font-serif rounded-tl-[2000rem] rounded-bl-none rounded-tr-none rounded-br-[2000rem] tracking-[.12em] text-xl capitalize;
+        @apply px-10 py-2 font-serif rounded-tl-[2000rem] rounded-bl-none rounded-tr-none rounded-br-[2000rem] tracking-[.12em] text-xl capitalize;
     }
     .btn-ghost{
         @apply hover:bg-primary;
     }
     .btn-base-100 {
         @apply bg-base-100 text-secondary;
+    }
+    #what-to-expect .button {
+        @apply px-12 py-4 inline-block bg-secondary text-base-100 h-20;
     }
 }
 

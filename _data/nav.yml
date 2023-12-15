@@ -15,10 +15,10 @@
   link: /services/reiki
   hero: true
 - name: Events
-  link: /services/events/
+  link: /events
   main_nav: true
   hero: true
-- name: Retreat
+- name: Retreats
   link: /retreats
   main_nav: true
   hero: true
