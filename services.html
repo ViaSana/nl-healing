@@ -9,12 +9,12 @@ seo:
   hide-from-google: false
 ---
 
-<!-- Hero Banner -->
+<!-- Service_Hero *move to include* -->
 <div class="relative mb-4 text-base-100">
-  <img src="/assets/images/services_banner.jpg" alt="Services Banner" class="object-cover w-full h-[50vh]">
-  <div class="absolute inset-0 flex flex-row items-center p-4 text-left justify-left bg-opacity-30 bg-accent">
+  <img src="/assets/images/services_banner.jpg" alt="Services Banner" class="object-cover h-[45vh]">
+  <div class="absolute inset-0 flex flex-row items-center p-4 text-left bg-opacity-50 justify-left bg-accent">
     <div class="self-center max-w-4xl p-5p">  
-      <h1 class="pb-4">Services</h1>
+      <h1>Services</h1>
       <hr class="pb-4 -ml-24 w-[48%]">
       <p class=" editable">Discover a spectrum of transformative offerings at NL Healing designed to nurture your mind, body, and soul. Our tailored coaching sessions provide personalized guidance, while Reiki sessions offer holistic energy healing. Engage in our empowering events and retreats crafted to inspire growth, connection, and inner harmony. Explore our diverse services, each dedicated to guiding you on your unique journey towards self-discovery and empowerment.</p>
     </div>
@@ -23,27 +23,33 @@ seo:
     {% assign service-hero = site.data.nav | where: 'hero', 'true' %}
     {% for s in service-hero %}
       <div class="w-[15vw] py-4 bg-primary text-secondary font-serif">
-        <a href="{{ s.link }}"><h6 class="text-center">{{ s.name }}</h6></a>
+        <a href="{{ s.link }}"><h6 class="pb-0 text-center">{{ s.name }}</h6></a>
       </div>
     {% endfor %}
   </div>
 </div>
 
 <!-- Services Loop -->
-<div class="">
+<div class="pt-8">
   {% assign service = site.services | sort: 'order' %}
   {% for s in service %}
-    <div class="grid grid-cols-5 gap-8 w-full py-24 items-center {% cycle '','bg-neutral' %}">
-      <img src="{{ s.image }}" alt="{{ s.name }}" class="col-span-2 object-cover h-full mb-4 aspect-landscape {% cycle '','order-last' %}">
-      <div class="col-span-3 p-8 text-secondary {% cycle 'md:mr-48','md:ml-48' %}">
+  <div class="py-8 {% cycle '','bg-neutral' %}">
+    <div class="grid grid-cols-5 items-center max-h-[40rem]">
+      <div class="col-span-2 {% cycle '','order-last' %} grid">
+        <img src="{{ s.image }}" alt="{{ s.name }}" class="w-[80%] {% cycle '','justify-self-end' %} ">
+      </div>
+      <div class="col-span-3 p-8 text-secondary {% cycle '','md:ml-16' %}">
         <h2 class="inline-block pb-2 pr-16 border-b border-accent">{{ s.seo.title }}</h2>
-        <p class="py-4">{{ s.description }}</p>
-        <div class="flex justify-between">
-          <a href="{{ s.link }}" class="mt-2 btn btn-secondary">Let's Do This</a>
-          <a href="{{ s.link }}" class="mt-2 font-serif">Learn More -></a>
+        <div class="w-[86%] flex-col">
+          <p class="py-4">{{ s.description }}</p>
+          <div class="flex justify-between text-xl">
+            <a href="{{ s.link }}" class="mt-2 btn btn-secondary">Let's Do This</a>
+            <a href="{{ s.link }}" class="mt-5 font-serif">Learn More <i class="mx-4 fas fa-arrow-right"></i></a>
+          </div>
         </div>
       </div>
     </div>
+  </div>
   {% endfor %}
 </div>
 

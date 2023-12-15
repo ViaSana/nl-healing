@@ -19,7 +19,7 @@
         @apply font-serif;
     }
     h1 {
-        @apply text-7xl;
+        @apply text-7xl pb-4;
     }
     h2 {
         @apply text-6xl pb-2;
@@ -35,6 +35,9 @@
     }
     h6 {
         @apply text-2xl pb-4;
+    }
+    img {
+        @apply w-full h-auto;
     }
 }
 
