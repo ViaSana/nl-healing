@@ -3,14 +3,7 @@ layout: default
 ---
 
 <!-- Service_Hero Component -->
-<div class="flex items-center justify-center py-8 mx-scrn">
-  <img src="{{ page.image }}" alt="{{page.seo.title}} Image" class="w-full basis-2/5">
-  <div class="p-8 basis-3/5 text-secondary">
-    <h2 class="inline-block pb-2 pr-16 border-b border-accent">{{ page.seo.title }}</h2>
-    <p class="py-4">{{ page.copy_html }}</p>
-    <a href="{{ s.link }}" class="mt-2 btn btn-secondary">Let's Do This</a>
-  </div>
-</div>
+{% include service_hero.html %}
 
 <!-- What to Expect -->
 <section class="text-accent bg-primary">
