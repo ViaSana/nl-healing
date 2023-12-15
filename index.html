@@ -27,15 +27,15 @@ services:
 ---
 
 <!-- Section 1: Hero Banner -->
-<div class="relative">
-    <img src="assets/images/home_banner.jpg" alt="Home Banner" class="w-full">
+<div class="relative text-base-100">
+    <img src="assets/images/home_banner.jpg" alt="Home Banner" class="object-cover object-top w-full h-[85vh]">
     <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-accent bg-opacity-30">
-        <h4 class="font-sans font-light">Welcome To Nance Leombruno Healing</h4>
-        <h1 class="">Journey Home To Your True Self</h1>
+        <h4 class="font-sans font-extralight">Welcome To Nance Leombruno Healing</h4>
+        <h1 class="max-w-3xl leading-snug">Journey Home To Your True Self</h1>
         <div class="flex mt-4 font-serif">
             {% assign hero = site.data.nav | where: 'hero', 'true' %}
             {% for item in hero %}
-              <a href="{{item.link}}" class="py-2 mx-8 my-1 rounded-none rounded-t-lg border-b-base-100 p-x4 btn btn-ghost">{{item.name}}</a>
+              <a href="{{item.link}}" class="py-2 mx-8 my-1 uppercase rounded-none rounded-t-lg border-b-base-100 p-x4 btn btn-ghost">{{item.name}}</a>
             {% endfor %}
         </div>
     </div>
@@ -44,36 +44,39 @@ services:
 
 <!-- Section 2: About -->
 <section class="flex flex-wrap items-center px-4 py-8 md:flex-nowrap">
+  
   <!-- Image Column -->
   <div class="grid md:w-1/2">
     <img src="assets/images/about_img.jpg" alt="Nance" class="justify-self-center max-h-[70vh] aspect-portrait">
+    <!-- Line Element Below Photo -->
     {% for i in (1..3) %}
       <div class="py-6 -ml-4 border-b-4 border-accent {% cycle 'w-[50%]','w-[40%]','w-[30%]'%}"></div>
     {% endfor %}
   </div>
   
   <!-- Text Column -->
-  <div class="self-start pt-6 md:w-1/2 md:mt-0 md:ml-8 text-secondary">
-    <h2 class="mb-4 font-medium">I’m Nance,</h2>
-    <h4 class="mb-4">A Holistic Spiritual Healer</h4>
+  <div class="self-start pt-6 md:w-1/2 md:mt-0 text-secondary">
+    <h2 class="font-medium">I’m Nance,</h2>
+    <h4 class="mb-2">A Holistic Spiritual Healer</h4>
     <p class="max-w-xl mb-6">{{ page.about-copy_html }}</p>
-    <a href="/about.html" class="px-4 py-2 btn btn-accent">Learn More</a>
+    <a href="/about.html" class="btn btn-accent">Learn More</a>
   </div>
 </section>
 
 {% include cta.html %}
 
 <!-- Section 3: Together We Rise -->
-<section class="">
+<section>
   <h2 class="pb-6 text-center editable text-secondary">Together, We Rise</h2>
-  
   <div class="container flex items-center justify-between py-6 mx-auto">
     {% for service in page.services %}
       <a href="{{ service.link }}" class="relative flex flex-col items-center no-underline">
         <div class="h-80 aspect-square">
           <img src="{{ service.image }}" alt="{{ service.name }}" class="object-cover w-full h-full transition-shadow duration-300 shadow-lg hover:shadow-2xl">
         </div>
-        <h5 class="absolute px-3 py-1 mt-2 font-serif -bottom-4 bg-primary text-secondary">{{ service.name }}</h5>
+        <div class="absolute text-center shadow-md bg-primary inset-x-12 -bottom-4">
+          <h5 class="py-1">{{ service.name }}</h5>
+        </div>
       </a>
     {% endfor %}
   </div>

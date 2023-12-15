@@ -37,12 +37,12 @@ layout: default
 {% include testimonial.html %}
 
 <!-- Upcoming Events -->
-<div class="flex flex-col justify-center p-8 text-secondary">  
+<div class="flex flex-col justify-center py-8 text-secondary mx-scrn">  
   <h2 class="text-center">Upcoming Events</h2>
-  <div class="grid grid-cols-1 gap-16 p-8 px-20 md:grid-cols-3 justify-items-center">
+  <div class="grid grid-cols-1 gap-16 p-8 md:grid-cols-3 justify-items-center">
     {% assign event = site.events %}
     {% for i in event %}
-    <div class="">
+    <div>
       <img src="{{i.image}}" alt="{{i.title}} Image" class="object-contain shadow bg-primary max-h-[44vh]">
       <div class="w-full text-center">
         <h6 class="inline-block px-4 py-1 pt-3 border-b border-secondary">{{i.title}}</h6>
