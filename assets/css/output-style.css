@@ -1486,6 +1486,18 @@ img {
   --tw-text-opacity: 1;
   color: hsl(var(--s) / var(--tw-text-opacity));
 }
+#what-to-expect .button {
+  display: inline-block;
+  height: 5rem;
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--s) / var(--tw-bg-opacity));
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  --tw-text-opacity: 1;
+  color: hsl(var(--b1) / var(--tw-text-opacity));
+}
 .invisible {
   visibility: hidden;
 }
@@ -1539,6 +1551,10 @@ img {
 .col-span-full {
   grid-column: 1 / -1;
 }
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
 .mx-2 {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -1563,23 +1579,14 @@ img {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-.my-12 {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-}
-.my-2 {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
 .-ml-24 {
   margin-left: -6rem;
 }
 .-ml-4 {
   margin-left: -1rem;
+}
+.-ml-\[5\%\] {
+  margin-left: -5%;
 }
 .mb-2 {
   margin-bottom: 0.5rem;
@@ -1599,6 +1606,9 @@ img {
 .ml-4 {
   margin-left: 1rem;
 }
+.ml-8 {
+  margin-left: 2rem;
+}
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -1616,9 +1626,6 @@ img {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.ml-8 {
-  margin-left: 2rem;
 }
 .block {
   display: block;
@@ -1641,17 +1648,14 @@ img {
 .hidden {
   display: none;
 }
-.aspect-landscape {
-  aspect-ratio: 2 / 1 ;
-}
 .aspect-portrait {
   aspect-ratio: 3 / 4;
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
-.aspect-\[3\/2\] {
-  aspect-ratio: 3/2;
+.aspect-portrait-tall {
+  aspect-ratio: 3 / 5;
 }
 .h-36 {
   height: 9rem;
@@ -1671,8 +1675,8 @@ img {
 .h-\[50vh\] {
   height: 50vh;
 }
-.h-\[80vh\] {
-  height: 80vh;
+.h-\[70vh\] {
+  height: 70vh;
 }
 .h-\[85vh\] {
   height: 85vh;
@@ -1680,20 +1684,11 @@ img {
 .h-full {
   height: 100%;
 }
-.h-\[90\%\] {
-  height: 90%;
-}
-.h-\[80\%\] {
-  height: 80%;
-}
-.h-\[75\%\] {
-  height: 75%;
-}
-.h-\[70\%\] {
-  height: 70%;
-}
 .max-h-44 {
   max-height: 11rem;
+}
+.max-h-\[40rem\] {
+  max-height: 40rem;
 }
 .max-h-\[44vh\] {
   max-height: 44vh;
@@ -1701,8 +1696,8 @@ img {
 .max-h-\[70vh\] {
   max-height: 70vh;
 }
-.max-h-\[40rem\] {
-  max-height: 40rem;
+.w-\[110\%\] {
+  width: 110%;
 }
 .w-\[15vw\] {
   width: 15vw;
@@ -1719,6 +1714,9 @@ img {
 .w-\[50\%\] {
   width: 50%;
 }
+.w-\[80\%\] {
+  width: 80%;
+}
 .w-\[86\%\] {
   width: 86%;
 }
@@ -1727,12 +1725,6 @@ img {
 }
 .w-full {
   width: 100%;
-}
-.w-auto {
-  width: auto;
-}
-.w-\[80\%\] {
-  width: 80%;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -1746,14 +1738,17 @@ img {
 .max-w-6xl {
   max-width: 72rem;
 }
+.max-w-\[80\%\] {
+  max-width: 80%;
+}
 .max-w-lg {
   max-width: 32rem;
 }
 .max-w-xl {
   max-width: 36rem;
 }
-.max-w-\[80\%\] {
-  max-width: 80%;
+.flex-1 {
+  flex: 1 1 0%;
 }
 .shrink-0 {
   flex-shrink: 0;
@@ -1764,15 +1759,11 @@ img {
 .basis-3\/5 {
   flex-basis: 60%;
 }
-.scale-y-50 {
-  --tw-scale-y: .5;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
 }
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
@@ -1801,20 +1792,14 @@ img {
 .justify-around {
   justify-content: space-around;
 }
-.justify-items-end {
-  justify-items: end;
-}
 .justify-items-center {
   justify-items: center;
 }
-.gap-10 {
-  gap: 2.5rem;
+.gap-12 {
+  gap: 3rem;
 }
 .gap-16 {
   gap: 4rem;
-}
-.gap-8 {
-  gap: 2rem;
 }
 .space-x-12 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
@@ -1953,10 +1938,6 @@ img {
 .p-8 {
   padding: 2rem;
 }
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
-}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -1973,10 +1954,6 @@ img {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-.py-24 {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-}
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -1988,14 +1965,6 @@ img {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.py-16 {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-}
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -2017,6 +1986,9 @@ img {
 }
 .pr-16 {
   padding-right: 4rem;
+}
+.pr-5 {
+  padding-right: 1.25rem;
 }
 .pt-3 {
   padding-top: 0.75rem;
@@ -2048,6 +2020,10 @@ img {
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
+}
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 .text-lg {
   font-size: 1.125rem;

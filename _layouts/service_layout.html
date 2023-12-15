@@ -6,22 +6,23 @@ layout: default
 {% include service_hero.html %}
 
 <!-- What to Expect -->
-<section class="text-accent bg-primary">
+<section class="text-accent bg-primary" id="what-to-expect">
+  
   <div class="mx-scrn">
     <h2 class="text-center editable">What to Expect</h2>
     <!-- Page Content -->
-    <div class="grid grid-cols-4">
+    <div class="grid grid-cols-3">
       <!-- Approach -->
-      <h4 class="pb-2 col-span-full editable">Approach</h4>
-      <div class="col-span-3 border-t border-base-100">
+      <h4 class="col-span-full editable">Approach</h4>
+      <div class="col-span-2 border-t border-base-100">
         {% for item in page.expectations %}
-          <ul>
-            <li class="p-2"><i class="mt-1 mr-2 align-top fas fa-arrow-right text-base-100"></i><span class="inline-block ml-4 w-[90%]">{{ item }}</span></li>
+          <ul class="pt-4">
+            <li class=""><i class="mt-1 mr-2 align-top fas fa-arrow-right text-base-100"></i><span class="inline-block ml-4 w-[90%]">{{ item }}</span></li>
           </ul>
         {% endfor %}
       </div>
       <!-- Investment -->
-      <div class="flex flex-col items-center justify-center p-6 mx-4 bg-base-100">
+      <div class="flex flex-col items-center justify-center p-6 mx-12 bg-base-100">
         <h6 class="font-serif editable">Investment</h6>
         {% for cost in page.investment %}
           <span>{{ cost }}</span>
@@ -29,8 +30,9 @@ layout: default
       </div>
     </div>
   </div>
-  <div class="py-4 text-center">
-    <h5 class="capitalize rounded-none btn btn-secondary editable">Schedule My Free Consultation Call</h5>
+  <!-- Big Button -->
+  <div class="flex items-center justify-center w-full pt-8">
+    <a class="font-serif text-3xl capitalize rounded-none button editable">Schedule My Free Consultation Call</a>
   </div>
 </section>
 
@@ -45,7 +47,7 @@ layout: default
     <div>
       <img src="{{i.image}}" alt="{{i.title}} Image" class="object-contain shadow bg-primary max-h-[44vh]">
       <div class="w-full text-center">
-        <h6 class="inline-block px-4 py-1 pt-3 border-b border-secondary">{{i.title}}</h6>
+        <h6 class="inline-block px-4 py-1 pt-3 font-serif border-b border-secondary">{{i.title}}</h6>
       </div>
     </div>
     {% endfor %}

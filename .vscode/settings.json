@@ -31,6 +31,14 @@
     {
       "filePath": "_includes/site_footer.html",
       "group": "Default"
+    },
+    {
+      "filePath": "assets/images",
+      "group": "Default"
+    },
+    {
+      "filePath": "retreats.html",
+      "group": "Default"
     }
   ]
 }

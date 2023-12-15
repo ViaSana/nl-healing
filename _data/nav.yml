@@ -15,7 +15,7 @@
   link: /services/reiki
   hero: true
 - name: Events
-  link: events
+  link: /events
   main_nav: true
   hero: true
 - name: Retreats

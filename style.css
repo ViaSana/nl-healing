@@ -52,6 +52,9 @@
     .btn-base-100 {
         @apply bg-base-100 text-secondary;
     }
+    #what-to-expect .button {
+        @apply px-12 py-4 inline-block bg-secondary text-base-100 h-20;
+    }
 }
 
 @layer utilities {

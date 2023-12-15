@@ -42,26 +42,7 @@ services:
   </div>
 
 
-<!-- Section 2: About -->
-<section class="flex flex-wrap items-center px-4 py-8 md:flex-nowrap">
-  
-  <!-- Image Column -->
-  <div class="grid md:w-1/2">
-    <img src="assets/images/about_img.jpg" alt="Nance" class="justify-self-center max-w-[80%]">
-    <!-- Line Element Below Photo -->
-    {% for i in (1..3) %}
-      <div class="py-6 -ml-4 border-b-4 border-accent {% cycle 'w-[50%]','w-[40%]','w-[30%]'%}"></div>
-    {% endfor %}
-  </div>
-  
-  <!-- Text Column -->
-  <div class="self-start pt-6 ml-8 md:w-1/2 md:mt-0 text-secondary">
-    <h2 class="font-medium">I’m Nance,</h2>
-    <h4 class="mb-2">A Holistic Spiritual Healer</h4>
-    <p class="max-w-xl mb-6">{{ page.about-copy_html }}</p>
-    <a href="/about.html" class="btn btn-accent">Learn More</a>
-  </div>
-</section>
+{% include about-nance.html case="home-pg" %}
 
 {% include cta.html %}
 
