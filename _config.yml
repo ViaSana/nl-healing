@@ -2,3 +2,6 @@ collections:
   services:
     output: true
     permalink: /services/:slug
+  events:
+    output: true
+    permalink: /services/:slug
