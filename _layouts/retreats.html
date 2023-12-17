@@ -1,0 +1,39 @@
+---
+layout: default
+---
+<!-- update the button in the cta -->
+{% include cta.html %}
+
+{% comment %}
+{% assign content_lines = page.content %}
+
+{% for line in content_lines %}
+  {% if line contains '#### ' and first_heading == "" %}
+    {% assign first_heading = line | remove: '#### ' | strip %}
+    {% assign found_first_heading = true %}
+  {% elsif found_first_heading and not found_paragraph %}
+    {% if line != "" and not line contains '#### ' %}
+      {% assign following_paragraph = line | strip_newlines %}
+      {% assign found_paragraph = true %}
+    {% endif %}
+  {% elsif found_paragraph and line contains '#### ' %}
+    {% assign second_heading = line | remove: '#### ' | strip %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+<!-- 
+<h4>{{ first_heading }}</h4>
+<p>{{ following_paragraph }}</p>
+<h4>{{ second_heading }}</h4> -->
+{% endcomment %}
+
+<h4>{{ first_heading }}</h4>
+<div class="flex flex-wrap items-center justify-center">
+  <div class="flex-1 pr-5">
+    <p>{{ following_paragraph }}</p>
+  </div>
+  <div class="flex-1">
+    <img src="/assets/images/retreat_1.jpg" alt="Retreat Image" style="max-width: 100%; height: auto;">
+  </div>
+</div>
+<h4>{{ second_heading }}</h4>

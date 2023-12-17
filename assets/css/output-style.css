@@ -763,6 +763,14 @@ img {
   cursor: pointer;
   text-decoration-line: underline;
 }
+.mask {
+  -webkit-mask-size: contain;
+          mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
 .select {
   display: inline-flex;
   cursor: pointer;
@@ -1551,6 +1559,9 @@ img {
 .col-span-full {
   grid-column: 1 / -1;
 }
+.m-32 {
+  margin: 8rem;
+}
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -1654,6 +1665,9 @@ img {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.aspect-\[3\/4\] {
+  aspect-ratio: 3/4;
+}
 .h-36 {
   height: 9rem;
 }
@@ -1674,9 +1688,6 @@ img {
 }
 .h-\[70vh\] {
   height: 70vh;
-}
-.h-\[85vh\] {
-  height: 85vh;
 }
 .h-full {
   height: 100%;
@@ -1719,9 +1730,6 @@ img {
 }
 .w-full {
   width: 100%;
-}
-.w-screen {
-  width: 100vw;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -1913,10 +1921,6 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.object-top {
-  -o-object-position: top;
-     object-position: top;
-}
 .p-2 {
   padding: 0.5rem;
 }
@@ -1935,10 +1939,6 @@ img {
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-.px-8 {
-  padding-left: 2rem;
-  padding-right: 2rem;
 }
 .py-1 {
   padding-top: 0.25rem;
@@ -1959,10 +1959,6 @@ img {
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
-}
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 .pb-0 {
   padding-bottom: 0px;
@@ -2094,10 +2090,27 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .mx-scrn {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1536px;
-}
+        /* Max width is 1536px */
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1536px;
+    }
+/* Main Page Mask */
+/*     
+    .hero-banner img {
+        mask-image: url(#banner-mask);
+        -webkit-mask-image: url(#banner-mask);
+        @apply object-cover object-top h-[85vh];
+        height: 100%;
+        width: 100%;
+    } 
+
+    .hero-banner img {
+        mask-image: url('data:image/svg+xml;utf8,<svg fill="none" height="959" viewBox="0 0 1440 959" width="1440" xmlns="http://www.w3.org/2000/svg"><g fill="#6d051c"><path d="m-32 0h1468v793h-1468z"/><path d="m720 959 722.27-166.5h-1444.5352z"/></g></svg>');
+        -webkit-mask-image: url('data:image/svg+xml;utf8,<svg fill="none" height="959" viewBox="0 0 1440 959" width="1440" xmlns="http://www.w3.org/2000/svg"><g fill="#6d051c"><path d="m-32 0h1468v793h-1468z"/><path d="m720 959 722.27-166.5h-1444.5352z"/></g></svg>');
+        @apply object-cover object-top h-[85vh];
+    }
+*/
 
 /* ----------- Default Styles --------- */
 
@@ -2173,17 +2186,11 @@ img {
     margin-right: calc(4rem * var(--tw-space-x-reverse));
     margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
-  .md\:pl-8 {
-    padding-left: 2rem;
-  }
-  .md\:pr-8 {
-    padding-right: 2rem;
+  .md\:pl-4 {
+    padding-left: 1rem;
   }
   .md\:pr-4 {
     padding-right: 1rem;
-  }
-  .md\:pl-4 {
-    padding-left: 1rem;
   }
   .md\:text-left {
     text-align: left;
@@ -2191,21 +2198,10 @@ img {
 }
 
 @media (min-width: 1024px) {
-  .lg\:space-x-32 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-x-reverse: 0;
-    margin-right: calc(8rem * var(--tw-space-x-reverse));
-    margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));
-  }
   .lg\:space-x-28 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(7rem * var(--tw-space-x-reverse));
     margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-  .lg\:pl-16 {
-    padding-left: 4rem;
-  }
-  .lg\:pr-16 {
-    padding-right: 4rem;
   }
   .lg\:pl-12 {
     padding-left: 3rem;
