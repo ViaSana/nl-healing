@@ -19,22 +19,22 @@
         @apply font-serif;
     }
     h1 {
-        @apply text-7xl pb-4;
+        @apply pb-4 text-7xl;
     }
     h2 {
-        @apply text-6xl pb-2;
+        @apply pb-2 text-6xl;
     }
     h3 {
-        @apply text-5xl pb-4;
+        @apply pb-4 text-5xl;
     }
     h4 {
-        @apply text-4xl pb-2;
+        @apply pb-2 text-4xl;
     }
     h5 {
-        @apply text-3xl font-serif;
+        @apply font-serif text-3xl;
     }
     h6 {
-        @apply text-2xl pb-4;
+        @apply pb-4 text-2xl;
     }
     img {
         @apply w-full h-auto;
@@ -53,16 +53,37 @@
         @apply bg-base-100 text-secondary;
     }
     #what-to-expect .button {
-        @apply px-12 py-4 inline-block bg-secondary text-base-100 h-20;
+        @apply inline-block h-20 px-12 py-4 bg-secondary text-base-100;
     }
 }
 
 @layer utilities {
     .mx-scrn {
+        /* Max width is 1536px */
         @apply mx-auto max-w-screen-2xl;
     }
 
     .bg-image {
         @apply bg-center bg-no-repeat bg-slate-300;
     }
+
+    /* Main Page Mask */
+    .hero-banner {
+        position: relative;
+    }
+/*     
+    .hero-banner img {
+        mask-image: url(#banner-mask);
+        -webkit-mask-image: url(#banner-mask);
+        @apply object-cover object-top h-[85vh];
+        height: 100%;
+        width: 100%;
+    } 
+
+    .hero-banner img {
+        mask-image: url('data:image/svg+xml;utf8,<svg fill="none" height="959" viewBox="0 0 1440 959" width="1440" xmlns="http://www.w3.org/2000/svg"><g fill="#6d051c"><path d="m-32 0h1468v793h-1468z"/><path d="m720 959 722.27-166.5h-1444.5352z"/></g></svg>');
+        -webkit-mask-image: url('data:image/svg+xml;utf8,<svg fill="none" height="959" viewBox="0 0 1440 959" width="1440" xmlns="http://www.w3.org/2000/svg"><g fill="#6d051c"><path d="m-32 0h1468v793h-1468z"/><path d="m720 959 722.27-166.5h-1444.5352z"/></g></svg>');
+        @apply object-cover object-top h-[85vh];
+    }
+*/    
 }

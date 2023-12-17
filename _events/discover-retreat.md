@@ -1,5 +1,5 @@
 ---
-layout: retreats
+layout: 
 category: retreat
 date: 2023-11-29
 title: "Discover the Path Back Home to Your True Self"
