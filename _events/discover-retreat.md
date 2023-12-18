@@ -4,7 +4,7 @@ category: retreat
 date: 2023-11-29
 title: "Discover the Path Back Home to Your True Self"
 slug: "discover-the-path"
-image: /assets/images/event_1.jpg
+image: /assets/images/retreat_1.jpg
 other_images:
 - /assets/images/retreat_14.PNG
 - /assets/images/retreat_2.jpg
