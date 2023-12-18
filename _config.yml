@@ -4,4 +4,4 @@ collections:
     permalink: /services/:slug
   events:
     output: true
-    permalink: /services/:slug
+    permalink: /events/:slug
