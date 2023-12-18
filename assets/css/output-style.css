@@ -1150,6 +1150,19 @@ img {
   outline: 2px solid currentColor;
   outline-offset: 2px;
 }
+:where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):not(summary):not(.active).focus,
+  :where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):not(summary):not(.active):focus,
+  :where(.menu li:not(.menu-title):not(.disabled) > *:not(ul):not(details):not(.menu-title)):is(summary):not(.active):focus-visible,
+  :where(.menu li:not(.menu-title):not(.disabled) > details > summary:not(.menu-title)):not(summary):not(.active).focus,
+  :where(.menu li:not(.menu-title):not(.disabled) > details > summary:not(.menu-title)):not(summary):not(.active):focus,
+  :where(.menu li:not(.menu-title):not(.disabled) > details > summary:not(.menu-title)):is(summary):not(.active):focus-visible {
+  cursor: pointer;
+  background-color: hsl(var(--bc) / 0.1);
+  --tw-text-opacity: 1;
+  color: hsl(var(--bc) / var(--tw-text-opacity));
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
 .mockup-phone .display {
   overflow: hidden;
   border-radius: 40px;
@@ -1659,14 +1672,11 @@ img {
 .hidden {
   display: none;
 }
-.aspect-portrait-tall {
-  aspect-ratio: 3 / 5;
+.aspect-\[3\/4\] {
+  aspect-ratio: 3/4;
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
-}
-.aspect-\[3\/4\] {
-  aspect-ratio: 3/4;
 }
 .h-36 {
   height: 9rem;
