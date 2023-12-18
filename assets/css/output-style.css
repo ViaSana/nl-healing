@@ -1685,6 +1685,15 @@ img {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.aspect-\[1\/2\] {
+  aspect-ratio: 1/2;
+}
+.aspect-\[2\/3\] {
+  aspect-ratio: 2/3;
+}
+.aspect-\[3\/2\] {
+  aspect-ratio: 3/2;
+}
 .h-36 {
   height: 9rem;
 }
@@ -1753,6 +1762,12 @@ img {
 }
 .w-full {
   width: 100%;
+}
+.w-2\/5 {
+  width: 40%;
+}
+.w-3\/5 {
+  width: 60%;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -1937,6 +1952,14 @@ img {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.object-left {
+  -o-object-position: left;
+     object-position: left;
 }
 .p-2 {
   padding: 0.5rem;
