@@ -1,5 +1,5 @@
 ---
-layout: 
+layout: retreats
 category: retreat
 date: 2023-11-29
 title: "Discover the Path Back Home to Your True Self"
@@ -30,16 +30,16 @@ buttons:
   link:
 - text: Pay Deposit
   link:
+main_heading: |
+  If you are ready to discover the path back home to your true self, to remember and own the full messy and glorious truth of who you are, then this retreat is for you…
+closing_heading: |
+  Give yourself the gift of reconnecting with your internal compass to find clarity in all areas of your life.
+image_url: /assets/images/retreat_1.jpg
 ---
-
-#### If you are ready to discover the path back home to your true self, to remember and own the full messy and glorious truth of who you are, then this retreat is for you…
-
 Join us for a transformative three-night escape at Spirit Camp in Mendocino, where we'll embark on a profound journey to rediscover your authentic self. Immerse yourself in a serene setting enveloped by majestic redwoods, offering a perfect blend of nature's embrace and modern comforts.
-
+<br><br>
 In today's fast-paced world, it's easy to feel disconnected from our true selves. Many women lack the empowering support of a community, and that's where our retreat shines. We're reviving the age-old tradition of women coming together, rediscovering the power of community and self-acceptance.
-
+<br><br>
 Our retreat will be held over three nights surrounded by the redwoods, immersed in nature but with the conveniences of Wi-Fi, cozy sheets, linen bedding, and an eye for detail in every single space. This retreat will create a sanctuary where you can unplug, rejuvenate, and embrace your vulnerabilities in a safe and supportive environment.
-
+<br><br>
 Join us in exploring ancient Yoga philosophy that unveils your inner Peace, Joy, Wisdom, and Love—the essence of your True Self. Together, we'll navigate the transformative path toward rediscovering and embracing the beautiful, authentic you.
-
-#### Give yourself the gift of reconnecting with your internal compass to find clarity in all areas of your life. 

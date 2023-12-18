@@ -39,6 +39,14 @@
     {
       "filePath": "retreats.html",
       "group": "Default"
+    },
+    {
+      "filePath": "contact.html",
+      "group": "Default"
+    },
+    {
+      "filePath": "_layouts/retreats.html",
+      "group": "Default"
     }
   ]
 }

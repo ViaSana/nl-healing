@@ -4,36 +4,62 @@ layout: default
 <!-- update the button in the cta -->
 {% include cta.html %}
 
-{% comment %}
-{% assign content_lines = page.content %}
-
-{% for line in content_lines %}
-  {% if line contains '#### ' and first_heading == "" %}
-    {% assign first_heading = line | remove: '#### ' | strip %}
-    {% assign found_first_heading = true %}
-  {% elsif found_first_heading and not found_paragraph %}
-    {% if line != "" and not line contains '#### ' %}
-      {% assign following_paragraph = line | strip_newlines %}
-      {% assign found_paragraph = true %}
-    {% endif %}
-  {% elsif found_paragraph and line contains '#### ' %}
-    {% assign second_heading = line | remove: '#### ' | strip %}
-    {% break %}
-  {% endif %}
-{% endfor %}
-<!-- 
-<h4>{{ first_heading }}</h4>
-<p>{{ following_paragraph }}</p>
-<h4>{{ second_heading }}</h4> -->
-{% endcomment %}
-
-<h4>{{ first_heading }}</h4>
-<div class="flex flex-wrap items-center justify-center">
-  <div class="flex-1 pr-5">
-    <p>{{ following_paragraph }}</p>
+<section class="pt-6 text-center mx-scrn">
+  <h4 class="px-10 pb-4">{{ page.main_heading }}</h4>
+  <div class="flex flex-wrap items-center justify-center px-4">
+    <div class="w-full px-4 text-left md:w-3/5">
+      {{ page.content }}
+    </div>
+    <div class="w-full py-4 md:w-2/5">
+      <img src="/assets/images/retreat_1.jpg" alt="Retreat Image" class="aspect-[4/5]">
+    </div>
   </div>
-  <div class="flex-1">
-    <img src="/assets/images/retreat_1.jpg" alt="Retreat Image" style="max-width: 100%; height: auto;">
+  <h4 class="py-4">{{ page.closing_heading }}</h4>
+  <a href="#" class="btn btn-accent" role="button">Sign Me Up</a>
+</section>
+
+<section class="mx-scrn">
+  <div class="flex h-[45vh]">
+    <img src="/assets/images/retreat_2.jpg" class="mx-16 aspect-square md:w-1/2">
+    <div class="md:w-1/2">
+      <h3>What's Included</h3>
+      <hr class="border-b-4 border-primary w-[65%] text-primary">
+      {% for item in page.whats_included %}
+      <ul class="pt-4">
+        <li class=""><i class="mr-2 text-2xl align-top fas fa-arrow-right"></i><span class="mt-1 inline-block ml-4 w-[90%]">{{ item }}</span></li>
+      </ul>
+      {% endfor %}
+    </div>
   </div>
+</section>
+
+<!-- Temp Placeholder for Gallery Function -->
+<div class="bg-neutral">
+  <img src="/assets/images/gallery_placeholder.png" class="shadow-none mx-scrn">
 </div>
-<h4>{{ second_heading }}</h4>
+
+<section class="text-center">
+  <h2>Pricing</h2>
+  <hr class="border-b-4 border-primary w-[45%] text-primary mx-auto">
+  <div>
+    <p class="py-3">
+      {{ page.pricing.early_bird }}
+      <br>
+      {{ page.pricing.reg_price}}
+    </p>
+    <p class="py-3">
+      {{ page.pricing.deposit }}
+    </p>
+    <p class="py-3">
+      {{ page.pricing.not_included }}
+    </p>
+    <p class="py-3">
+      {{ page.inquiries }}
+    </p>
+  </div>
+  <div class="flex justify-center py-6 mx-auto">
+    <a class="mx-4 btn btn-accent" role="button" href="#">Sign Me Up</a>
+    <a class="mx-4 btn btn-accent" role="button" href="#">Pay Deposit</a>
+  </div>
+
+</section>
