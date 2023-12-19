@@ -11,34 +11,6 @@ collections_config:
     disable_add: false
     disable_add_folder: false
     disable_file_actions: false
-  posts:
-    path: collections/_posts
-    output: true
-    icon: notes
-    create:
-      path: >-
-        [relative_base_path]/{date|year}-{date|month}-{date|day}-{title|slugify}.[ext]
-    disable_add: false
-    disable_add_folder: false
-    disable_file_actions: false
-collection_groups:
-  - heading: Blogging
-    collections:
-      - posts
-      - drafts
-_inputs:
-  categories:
-    type: multiselect
-    options:
-      allow_create: true
-      empty_type: array
-    cascade: true
-  tags:
-    type: multiselect
-    options:
-      allow_create: true
-      empty_type: array
-    cascade: true
 _select_data:
   data_config:
     site-settings:

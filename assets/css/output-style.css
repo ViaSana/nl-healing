@@ -1676,6 +1676,12 @@ img {
 .hidden {
   display: none;
 }
+.aspect-\[3\/2\] {
+  aspect-ratio: 3/2;
+}
+.aspect-\[3\/4\] {
+  aspect-ratio: 3/4;
+}
 .aspect-\[4\/5\] {
   aspect-ratio: 4/5;
 }
@@ -1684,15 +1690,6 @@ img {
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
-}
-.aspect-\[1\/2\] {
-  aspect-ratio: 1/2;
-}
-.aspect-\[2\/3\] {
-  aspect-ratio: 2/3;
-}
-.aspect-\[3\/2\] {
-  aspect-ratio: 3/2;
 }
 .h-36 {
   height: 9rem;
@@ -1712,9 +1709,6 @@ img {
 .h-\[50vh\] {
   height: 50vh;
 }
-.h-\[70vh\] {
-  height: 70vh;
-}
 .h-full {
   height: 100%;
 }
@@ -1726,6 +1720,12 @@ img {
 }
 .max-h-\[44vh\] {
   max-height: 44vh;
+}
+.w-2\/5 {
+  width: 40%;
+}
+.w-3\/5 {
+  width: 60%;
 }
 .w-\[110\%\] {
   width: 110%;
@@ -1763,12 +1763,6 @@ img {
 .w-full {
   width: 100%;
 }
-.w-2\/5 {
-  width: 40%;
-}
-.w-3\/5 {
-  width: 60%;
-}
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -1789,12 +1783,6 @@ img {
 }
 .shrink-0 {
   flex-shrink: 0;
-}
-.basis-2\/5 {
-  flex-basis: 40%;
-}
-.basis-3\/5 {
-  flex-basis: 60%;
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -1952,14 +1940,6 @@ img {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
-}
-.object-fill {
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-.object-left {
-  -o-object-position: left;
-     object-position: left;
 }
 .p-2 {
   padding: 0.5rem;
