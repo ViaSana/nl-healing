@@ -4,8 +4,8 @@ category: retreat
 date: 2023-11-29
 title: "Discover the Path Back Home to Your True Self"
 slug: "discover-the-path"
-main_image: /assets/images/event_1.jpg
-images:
+image: /assets/images/retreat_1.jpg
+other_images:
 - /assets/images/retreat_14.PNG
 - /assets/images/retreat_2.jpg
 - /assets/images/retreat_7.PNG
@@ -34,7 +34,6 @@ main_heading: |
   If you are ready to discover the path back home to your true self, to remember and own the full messy and glorious truth of who you are, then this retreat is for you…
 closing_heading: |
   Give yourself the gift of reconnecting with your internal compass to find clarity in all areas of your life.
-image_url: /assets/images/retreat_1.jpg
 ---
 Join us for a transformative three-night escape at Spirit Camp in Mendocino, where we'll embark on a profound journey to rediscover your authentic self. Immerse yourself in a serene setting enveloped by majestic redwoods, offering a perfect blend of nature's embrace and modern comforts.
 <br><br>

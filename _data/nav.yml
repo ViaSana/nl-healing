@@ -26,8 +26,11 @@
   link: /about
   main_nav: true
 - name: Blog
-  link: /blog/
+  link: /blog
   main_nav: true
+  sublinks:
+    - name: RealBlog
+      link: /blog_2
 - name: Contact
   link: /contact
   main_nav: true
