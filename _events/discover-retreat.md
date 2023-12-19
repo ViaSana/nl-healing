@@ -5,10 +5,21 @@ date: 2023-11-29
 title: "Discover the Path Back Home to Your True Self"
 slug: "discover-the-path"
 image: /assets/images/retreat_1.jpg
-other_images:
-- /assets/images/retreat_14.PNG
+gallery_images:
+- /assets/images/retreat_1.jpg
 - /assets/images/retreat_2.jpg
-- /assets/images/retreat_7.PNG
+- /assets/images/retreat_3.jpeg
+- /assets/images/retreat_4.png
+- /assets/images/retreat_5.png
+- /assets/images/retreat_6.png
+- /assets/images/retreat_7.png
+- /assets/images/retreat_8.png
+- /assets/images/retreat_9.png
+- /assets/images/retreat_10.png
+- /assets/images/retreat_11.png
+- /assets/images/retreat_12.png
+- /assets/images/retreat_13.png
+- /assets/images/retreat_14.png
 pricing:
   early_bird: "Early Bird Price: $1850 per person (Available until January 1, 2024)"
   reg_price: "Regular Price: $1995 per person"

@@ -24,6 +24,7 @@
   },
   "dependencies": {
     "playground-elements": "^0.17.1",
+    "slick-carousel": "^1.8.1",
     "static-browser-server": "^1.0.5"
   }
 }
