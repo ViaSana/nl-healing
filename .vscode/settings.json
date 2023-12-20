@@ -1,6 +1,14 @@
 {
   "favorites.resources": [
     {
+      "filePath": "assets/images",
+      "group": "Default"
+    },
+    {
+      "filePath": "_includes",
+      "group": "Default"
+    },
+    {
       "filePath": "index.html",
       "group": "Default"
     },
@@ -33,10 +41,6 @@
       "group": "Default"
     },
     {
-      "filePath": "assets/images",
-      "group": "Default"
-    },
-    {
       "filePath": "retreats.html",
       "group": "Default"
     },
@@ -53,16 +57,13 @@
       "group": "Default"
     },
     {
-      "filePath": "_includes",
+      "filePath": "style.css",
       "group": "Default"
     },
     {
       "filePath": "main.js",
       "group": "Default"
-    },
-    {
-      "filePath": "style.css",
-      "group": "Default"
     }
-  ]
+  ],
+  "favorites.sortOrder": "MANUAL"
 }
