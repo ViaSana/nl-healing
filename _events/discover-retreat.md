@@ -1,7 +1,7 @@
 ---
 layout: retreats
 category: retreat
-date: 2023-11-29 00:00:00
+date: 2023-11-29 00:00:00 -0800
 title: Coming Home To Yourself Retreat
 slug: retreat
 image: /assets/images/retreat_1.jpg
@@ -40,7 +40,7 @@ whats_included:
   - Rise Together Circle
 buttons:
   - text: Sign Me Up
-    link:
+    link: /contact.html
   - text: Pay Deposit
     link:
 main_heading: >
