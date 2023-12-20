@@ -16,7 +16,7 @@
         @apply p-5p;
     }
     h1, h2, h3, h4, header a  {
-        @apply font-serif;
+        @apply font-serif capitalize;
     }
     h1 {
         @apply pb-4 text-7xl;
@@ -39,12 +39,26 @@
     img {
         @apply w-full h-auto;
     }
+    .blog-content h2, h3, h4, h5 {
+        @apply font-serif text-secondary;
+    }
+
+    .blog-content p {
+        @apply font-sans text-base text-secondary;
+    }
+
+    .blog-content blockquote {
+        @apply border-0;
+    }
+    .blog-content blockquote p {
+        @apply font-serif text-4xl not-italic font-normal; 
+    }
 }
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 @layer components {
     .btn {
-        @apply px-10 py-2 font-serif rounded-tl-[2000rem] rounded-bl-none rounded-tr-none rounded-br-[2000rem] tracking-[.12em] text-xl capitalize;
+        @apply px-6 py-2 font-serif rounded-tl-[2000rem] rounded-bl-none rounded-tr-none rounded-br-[2000rem] tracking-[.12em] text-lg capitalize;
     }
     .btn-ghost{
         @apply hover:bg-primary;
@@ -54,6 +68,9 @@
     }
     #what-to-expect .button {
         @apply inline-block h-20 px-12 py-4 bg-secondary text-base-100;
+    }
+    .tag {
+        @apply p-1 text-xs text-secondary capitalize font-sans;
     }
 }
 

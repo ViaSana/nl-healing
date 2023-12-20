@@ -7,7 +7,7 @@ seo:
   twitter_card:
   keywords:
   hide-from-google: false
-image: /assets/images/events.png
+image: /assets/images/events_banner.png
 slug: events
 order: 3
 description: |
