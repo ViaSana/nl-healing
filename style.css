@@ -72,9 +72,14 @@
     .tag {
         @apply p-1 font-sans text-xs capitalize text-secondary;
     }
-
+    #line-box{
+        @apply relative;
+    }
     .deco-lines {
-        @apply absolute right-0 border-b-4 border-accent;
+        @apply absolute right-0 border-b-4;
+    }
+    .ovlay_header-content {
+        @apply absolute inset-0 flex flex-row items-center p-4 text-left bg-accent;
     }
 }
 
