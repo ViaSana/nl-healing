@@ -36,29 +36,25 @@ services:
         image: /assets/images/events_banner.png
 ---
 <!-- Section 1: Hero Banner -->
-<div class="relative text-base-100">
-    <div>
-      <img src="/assets/images/home_banner.svg" alt="Home Banner" />
-    </div>
-    <div class="absolute inset-0 flex flex-col items-center justify-center pb-4 text-center items-top">
-        <h5 class="font-sans font-extralight editable text-base-100">
-            Welcome To Nance Leombruno Healing
-        </h5>
-        <h1 class="max-w-3xl leading-snug editable">
-            Journey Home To Your True Self
-        </h1>
-        <div class="flex font-serif">
+<div class="relative mb-8 text-base-100">
+
+    <img src="/assets/images/home_banner.svg" alt="Home Banner" class="">
+    
+    <div class="absolute inset-0 flex flex-col items-center justify-center pb-4 text-center">
+        <h5 class="font-sans font-extralight editable text-base-100 max-md:text-xl">Welcome To Nance Leombruno Healing</h5>
+        <h1 class="max-w-3xl leading-snug editable max-md:text-5xl">Journey Home To Your True Self</h1>
+
+        <!-- Mobile Hidden Nav -->
+        <div class="flex font-serif max-md:hidden">
             {% assign hero = site.data.nav | where: 'hero', 'true' %}
             {% for item in hero %}
-              <a href="{{item.link}}" class="py-2 mx-8 my-1 uppercase rounded-none rounded-t-lg border-b-base-100 p-x4 btn btn-ghost">{{item.name}}</a>
+                <a href="{{item.link}}" class="py-2 mx-8 my-1 uppercase rounded-none rounded-t-lg border-b-base-100 p-x4 btn btn-ghost">{{item.name}}</a>
             {% endfor %}
         </div>
     </div>
-  </div>
+</div>
 
-<section> 
 {% include about-nance.html case="home-pg" %}
-</section>
 
 {% include cta.html %}
 
