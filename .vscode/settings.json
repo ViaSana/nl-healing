@@ -47,6 +47,10 @@
     {
       "filePath": "_layouts/retreats.html",
       "group": "Default"
+    },
+    {
+      "filePath": "blog.html",
+      "group": "Default"
     }
   ]
 }
