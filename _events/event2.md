@@ -4,7 +4,6 @@ slug: "pause-collective"
 title: The Pause Collective
 image: /assets/images/event_1.jpg
 date: 2024-01-07 13:00:00 -0800
-time: 
 location: |
   Tiburon, CA
 cost: $75
