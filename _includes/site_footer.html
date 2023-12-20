@@ -32,10 +32,10 @@
 
 <footer class="py-2 font-serif bg-secondary text-base-100">
   <div class="mx-scrn">
-    <nav class="flex justify-center my-4">
+    <nav class="flex flex-wrap justify-center my-4">
       {% assign footer-links = site.data.nav | where: 'main_nav', true %}
       {% for item in footer-links %}
-        <a href="{{ item.link }}" class="mx-4 text-lg">{{ item.name }}</a>
+        <a href="{{ item.link }}" class="m-2 text-lg md:mx-4">{{ item.name }}</a>
       {% endfor %}
     </nav>
 

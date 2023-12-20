@@ -2,8 +2,8 @@
 <section class="flex flex-wrap items-center pt-4 md:flex-nowrap mx-scrn">
   
   <!-- Image Column -->
-  <div class="relative grid mx-4 md:w-1/2">
-    <img src="assets/images/about_img.jpg" alt="Nance" class="justify-self-center aspect-portrait" />
+  <div class="relative grid self-start mx-4 md:w-1/2">
+    <img src="assets/images/about_img.jpg" alt="Nance" class="justify-self-start aspect-portrait" />
     <!-- Line Element Below Photo -->
     <div id="line-box" class="h-28">
       {% for i in (1..3) %}
@@ -15,11 +15,11 @@
   <!-- Text Column -->
   {% if include.case == "home-pg" %}
   <!-- home -->
-  <div class="self-start md:ml-8 p-5p md:w-1/2 md:mt-0 text-secondary">
+  <div class="self-start pt-0 md:ml-8 p-5p md:w-1/2 md:mt-0 text-secondary">
     <h2 class="font-medium editable">I’m Nance,</h2>
     <h5 class="mb-2 editable">A Holistic Spiritual Healer</h5>
     <p class="max-w-xl mb-6">{{ page.about-copy_html }}</p>
-    <a href="/about" class="btn btn-accent editable">Learn More</a>
+    <a href="/about" class="mt-4 btn btn-accent editable">Learn More</a>
   </div>
   {% else %}
   <!-- not home -->
