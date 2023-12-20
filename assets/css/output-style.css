@@ -2470,6 +2470,9 @@ img {
 .top-\[50\%\] {
   top: 50%;
 }
+.-bottom-12 {
+  bottom: -3rem;
+}
 .z-20 {
   z-index: 20;
 }
