@@ -22,31 +22,34 @@
         @apply pb-4 text-7xl;
     }
     h2 {
-        @apply pb-2 text-6xl;
+        @apply pb-2 text-5xl;
     }
     h3 {
-        @apply pb-4 text-5xl;
+        @apply pb-4 text-4xl;
     }
     h4 {
-        @apply pb-2 text-4xl;
+        @apply pb-2 text-3xl;
     }
     h5 {
-        @apply font-serif text-3xl;
+        @apply font-serif text-2xl;
     }
     h6 {
         @apply pb-4 text-2xl;
     }
+    p {
+        @apply text-base;
+    }
+
     img {
         @apply w-full h-auto;
     }
+    
     .blog-content h2, h3, h4, h5 {
         @apply font-serif text-secondary;
     }
-
     .blog-content p {
         @apply font-sans text-base text-secondary;
     }
-
     .blog-content blockquote {
         @apply border-0;
     }
@@ -71,16 +74,15 @@
         @apply inline-block h-20 px-12 py-4 bg-secondary text-base-100;
     }
     .btn-circle {
-        @apply scale-150 rounded-full bg-neutral hover:bg-primary;
-
+        @apply rounded-full bg-neutral hover:bg-primary;
     }
 
     /* Mobile Menu */
     .mobile-menu {
-        @apply absolute hidden w-screen h-screen text-center top-full bg-neutral;
+        @apply absolute left-0 hidden w-screen h-screen text-center top-full bg-neutral;
     }
     .mobile-menu a {
-        @apply no-underline py-[1vh] block text-accent;
+        @apply block py-2 my-4 no-underline btn btn-accent btn-wide;
     }
 
     /* Blog Tags */
@@ -106,10 +108,6 @@
     .mx-scrn {
         /* Max width is 1536px */
         @apply mx-auto max-w-screen-2xl;
-    }
-
-    .bg-image {
-        @apply bg-center bg-no-repeat bg-slate-300;
     }
 
     /* Gallery Slider */

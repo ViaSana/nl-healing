@@ -3,7 +3,7 @@
 {% assign header_nav = site.data.nav | where: 'main_nav', true %}
 
 <header class="mx-scrn">
-  <nav class="flex flex-wrap items-center justify-center p-6">    
+  <nav class="flex flex-wrap items-center justify-center">    
     <!-- Hidden on Mobile -->
     <div class="flex items-center justify-center max-md:hidden">
       <!-- Simplified Logo and Title inclusion -->
@@ -36,11 +36,12 @@
 
     <!-- Mobile Menu w/ main.js  -->
     <div class="relative flex w-full md:hidden">
+      <!-- Logo -->
       <div>
-        <a href="/"><img class="max-h-32" src="/assets/images/logo_light-bg.png"></img></a>
+        <a href="/"><img class="px-4 max-h-32" src="/assets/images/logo_light-bg.png"></img></a>
       </div>
       <div class="flex items-center justify-end w-full">
-          <div class="mr-2 space-y-2">
+          <div class="mr-4 space-y-2">
               <!-- Hamburger -->
               <label class="btn btn-circle swap swap-rotate">
                   <!-- this hidden checkbox controls the state --><input type="checkbox" />
@@ -52,20 +53,15 @@
                   <svg class="fill-accent swap-on hamburger-button" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
               </label>
           </div>
-    </div>
-    <div class="z-40 mt-4 shadow-lg mobile-menu -left-4">
-        <nav class="text-center">
-          {% for item in header_nav %}
-            <a href="{{ item.link }}" class="py-6 mx-4 text-lg">{{ item.name }}</a>
-          {% endfor %}
-        </nav> 
-    </div>
-      
+      <div class="z-40 shadow-lg mobile-menu">
+          <nav class="flex flex-col items-center text-center">
+            {% for item in header_nav %}
+              <a href="{{ item.link }}" class="py-6 mx-4 text-lg">{{ item.name }}</a>
+            {% endfor %}
+          </nav> 
+      </div>
     </div>
 
-    <div class="w-full bg-blue-300 lg:flex-grow lg:flex lg:items-center">
-      <!-- Streamlined Navigation Links -->
     </div>
   </nav>
-  <!-- Additional Header Content with improved layout for responsiveness -->
 </header>
