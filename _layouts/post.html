@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<!-------Header Banner -------------------->
+<section> 
+{% include blog_hero.html %}
+</section>
+
+<!-------------------Post content   ----------------->
+
+<section> 
+    <div class="p-5p prose max-w-screen-md mx-auto blog-content">
+
+        {{content}}
+
+    </div>
+
+    {% include social-share.html %}
+</section>
+
+{% include social-share.html %}

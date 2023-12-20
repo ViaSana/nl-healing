@@ -1,4 +1,5 @@
 ---
+layout: post
 layout: default
 slug: My First Post
 ---

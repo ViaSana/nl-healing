@@ -1,19 +1,39 @@
 ---
 layout: default
 seo:
-  title: Blog
+  title: Blog_2
   description:
   social_image:
   twitter_card:
   keywords:
   hide-from-google: false
 ---
-<div class="relative text-base-100">
-  <img src="/assets/images/blog_banner.jpg" alt="Services Banner" class="object-cover h-[38vh]">
-  <div class="absolute inset-0 flex flex-row items-center justify-center p-4 text-left bg-opacity-60 bg-accent">
-    <div class="self-center">
-      <h1> Blog Coming Soon </h1>
-      <hr>
+
+<!--------Header Banner --------> 
+<div class="relative mb-4 text-base-100">
+  <img src="/assets/images/blog_banner.jpg" alt="Blog Banner" class="object-cover h-[50vh]">
+  <div class="absolute inset-0 flex flex-row items-center p-4 text-left justify-left bg-opacity-30 bg-accent">
+    <div class="self-center max-w-4xl p-5p">  
+      <h1>Blog</h1>
+      <hr class="pb-4 -ml-24 w-[48%]">
+      <p class="editable"> Welcome to the NL Healing blog, a vibrant space where we delve into the realms of self-discovery, holistic wellness, and empowerment. Here, we explore diverse topics from nurturing self-care practices to navigating life's transitions with resilience and grace. Join us on this insightful journey as we share empowering stories, wellness tips, and guidance aimed at nurturing your mind, body, and spirit. Let's embark together on a path of self-discovery and empowerment.</p>
     </div>
   </div>
 </div>
+
+
+<!--------Blog Loop --------> 
+<section>
+  <div class="max-w-screen-xl mx-auto md:columns-3 pb-8">
+
+    {% for post in site.posts limit:12 %}
+
+      {% include post-loop.html %}
+      
+    {% endfor %}
+
+  </div>
+
+  <a href="/blog-archive.html" class="btn editable"> All Posts </a>
+
+</section> 
