@@ -2436,10 +2436,6 @@ img {
   left: 2.5rem;
   right: 2.5rem;
 }
-.inset-x-12 {
-  left: 3rem;
-  right: 3rem;
-}
 .inset-x-4 {
   left: 1rem;
   right: 1rem;
@@ -2492,11 +2488,11 @@ img {
 .col-span-full {
   grid-column: 1 / -1;
 }
-.m-32 {
-  margin: 8rem;
-}
 .m-2 {
   margin: 0.5rem;
+}
+.m-32 {
+  margin: 8rem;
 }
 .mx-10p {
   margin-left: 10%;
@@ -2525,10 +2521,6 @@ img {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
-}
-.mx-1 {
-  margin-left: 0.25rem;
-  margin-right: 0.25rem;
 }
 .-mb-1 {
   margin-bottom: -0.25rem;
@@ -2626,17 +2618,14 @@ img {
 .h-36 {
   height: 9rem;
 }
-.h-80 {
-  height: 20rem;
+.h-60 {
+  height: 15rem;
 }
 .h-\[50vh\] {
   height: 50vh;
 }
 .h-full {
   height: 100%;
-}
-.h-60 {
-  height: 15rem;
 }
 .max-h-24 {
   max-height: 6rem;
@@ -2732,9 +2721,6 @@ img {
 .flex-wrap {
   flex-wrap: wrap;
 }
-.items-start {
-  align-items: flex-start;
-}
 .items-center {
   align-items: center;
 }
@@ -2780,9 +2766,6 @@ img {
 }
 .justify-self-end {
   justify-self: end;
-}
-.justify-self-center {
-  justify-self: center;
 }
 .rounded-none {
   border-radius: 0px;
@@ -2960,6 +2943,9 @@ img {
 .pr-16 {
   padding-right: 4rem;
 }
+.pt-0 {
+  padding-top: 0px;
+}
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -2974,9 +2960,6 @@ img {
 }
 .pt-8 {
   padding-top: 2rem;
-}
-.pt-0 {
-  padding-top: 0px;
 }
 .text-left {
   text-align: left;
@@ -3157,9 +3140,6 @@ img {
   .max-md\:hidden {
     display: none;
   }
-  .max-md\:flex-col {
-    flex-direction: column;
-  }
   .max-md\:pb-4 {
     padding-bottom: 1rem;
   }
@@ -3243,6 +3223,9 @@ img {
   .md\:mb-0 {
     margin-bottom: 0px;
   }
+  .md\:mb-6 {
+    margin-bottom: 1.5rem;
+  }
   .md\:ml-4 {
     margin-left: 1rem;
   }
@@ -3257,9 +3240,6 @@ img {
   }
   .md\:mt-0 {
     margin-top: 0px;
-  }
-  .md\:mb-6 {
-    margin-bottom: 1.5rem;
   }
   .md\:inline-block {
     display: inline-block;
@@ -3288,6 +3268,9 @@ img {
   .md\:w-2\/5 {
     width: 40%;
   }
+  .md\:w-80 {
+    width: 20rem;
+  }
   .md\:w-\[45\%\] {
     width: 45%;
   }
@@ -3299,9 +3282,6 @@ img {
   }
   .md\:w-\[90\%\] {
     width: 90%;
-  }
-  .md\:w-80 {
-    width: 20rem;
   }
   .md\:max-w-xs {
     max-width: 20rem;
@@ -3321,9 +3301,6 @@ img {
   }
   .md\:flex-row {
     flex-direction: row;
-  }
-  .md\:flex-col {
-    flex-direction: column;
   }
   .md\:flex-nowrap {
     flex-wrap: nowrap;
