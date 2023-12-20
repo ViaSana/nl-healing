@@ -2495,6 +2495,9 @@ img {
 .m-32 {
   margin: 8rem;
 }
+.m-2 {
+  margin: 0.5rem;
+}
 .mx-10p {
   margin-left: 10%;
   margin-right: 10%;
@@ -2522,6 +2525,10 @@ img {
 .my-4 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+.mx-1 {
+  margin-left: 0.25rem;
+  margin-right: 0.25rem;
 }
 .-mb-1 {
   margin-bottom: -0.25rem;
@@ -3141,6 +3148,9 @@ img {
   .max-md\:hidden {
     display: none;
   }
+  .max-md\:flex-col {
+    flex-direction: column;
+  }
   .max-md\:pb-4 {
     padding-bottom: 1rem;
   }
@@ -3216,6 +3226,10 @@ img {
   .md\:mx-24 {
     margin-left: 6rem;
     margin-right: 6rem;
+  }
+  .md\:mx-4 {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .md\:mb-0 {
     margin-bottom: 0px;
