@@ -2193,6 +2193,9 @@ img {
 .mt-8 {
   margin-top: 2rem;
 }
+.mr-3 {
+  margin-right: 0.75rem;
+}
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -2231,6 +2234,9 @@ img {
 }
 .aspect-square {
   aspect-ratio: 1 / 1;
+}
+.aspect-portrait-tall {
+  aspect-ratio: 3 / 5;
 }
 .h-28 {
   height: 7rem;
@@ -2579,6 +2585,14 @@ img {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2767,6 +2781,16 @@ img {
   .max-sm\:min-h-\[65vh\] {
     min-height: 65vh;
   }
+  .max-sm\:flex-col {
+    flex-direction: column;
+  }
+  .max-sm\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .max-sm\:text-center {
+    text-align: center;
+  }
   .max-sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -2774,6 +2798,14 @@ img {
 }
 
 @media (min-width: 640px) {
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -2781,6 +2813,14 @@ img {
 }
 
 @media (min-width: 768px) {
+  .md\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .md\:mx-12 {
+    margin-left: 3rem;
+    margin-right: 3rem;
+  }
   .md\:mb-0 {
     margin-bottom: 0px;
   }
@@ -2795,6 +2835,9 @@ img {
   }
   .md\:mt-0 {
     margin-top: 0px;
+  }
+  .md\:mr-4 {
+    margin-right: 1rem;
   }
   .md\:max-h-\[45vh\] {
     max-height: 45vh;
@@ -2819,6 +2862,12 @@ img {
   }
   .md\:w-\[66\%\] {
     width: 66%;
+  }
+  .md\:w-\[65\%\] {
+    width: 65%;
+  }
+  .md\:w-\[45\%\] {
+    width: 45%;
   }
   .md\:max-w-xs {
     max-width: 20rem;
@@ -2848,6 +2897,18 @@ img {
     -o-object-fit: cover;
        object-fit: cover;
   }
+  .md\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
   .md\:pl-4 {
     padding-left: 1rem;
   }
@@ -2860,6 +2921,9 @@ img {
 }
 
 @media (min-width: 1024px) {
+  .lg\:w-2\/5 {
+    width: 40%;
+  }
   .lg\:space-x-28 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(7rem * var(--tw-space-x-reverse));

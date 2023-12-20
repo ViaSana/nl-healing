@@ -4,39 +4,55 @@ layout: default
 <!-- update the button in the cta -->
 {% include cta.html %}
 
-<section class="py-6 text-center mx-scrn">
-  <h4 class="px-10 pb-4">{{ page.main_heading }}</h4>
-  <div class="flex flex-wrap items-center justify-center px-4">
-    <div class="w-full px-4 text-left md:w-3/5">
+<!-- Retreat Content -->
+<section class="py-6 text-center mx-scrn max-sm:px-2">
+  
+  <!-- Heading -->
+  <h4 class="pb-4 sm:px-10">{{ page.main_heading }}</h4>
+
+  <!-- Description -->
+  <div class="flex flex-wrap items-center justify-center sm:px-4">
+    <div class="w-full px-1 text-left md:px-6 md:mr-4 lg:w-2/5">
       {{ page.content }}
     </div>
+    <!-- Image -->
     <div class="w-full py-4 md:w-2/5">
-      <img src="{{ page.image }}" alt="Retreat Image" class="aspect-[4/5]">
+      <img src="{{ page.image }}" alt="Retreat Image" class="aspect-portrait">
     </div>
   </div>
-  <h4 class="px-10 py-4">{{ page.closing_heading }}</h4>
-  <a href="#" class="btn btn-accent" role="button">Sign Me Up</a>
+
+  <!-- Second Heading -->
+  <h4 class="p-4 sm:px-10">{{ page.closing_heading }}</h4>
+  
+  <!-- CTA Button -->
+  <a href="#" class="mt-2 btn btn-accent" role="button">Sign Me Up</a>
 </section>
 
-<section class="mx-scrn">
-  <div class="flex">
-    <img src="/assets/images/retreat_2.jpg" class="mx-16 aspect-square md:w-1/2">
-    <div class="md:w-1/2">
-      <h3>What's Included</h3>
-      <hr class="border-b-4 border-primary w-[65%] text-primary">
+<!-- What's Included -->
+<section class="pt-4 mx-scrn">
+  <div class="flex max-sm:flex-col">
+    
+    <img src="/assets/images/retreat_2.jpg" class="mb-4 aspect-square md:w-1/2">
+    
+    <!-- FrontMatter Content -->
+    <div class="md:w-1/2 md:ml-8">
+      <h3 class="max-sm:text-center">What's Included</h3>
+      <hr class="border-b-4 border-primary md:w-[65%] text-primary">
       {% for item in page.whats_included %}
       <ul class="pt-4">
-        <li class=""><i class="mr-2 text-2xl align-top fas fa-arrow-right"></i><span class="mt-1 inline-block ml-4 w-[90%]">{{ item }}</span></li>
+        <li class=""><i class="mr-3 text-2xl align-top fas fa-arrow-right"></i><span class="inline-block mt-1 ml-4">{{ item }}</span></li>
       </ul>
       {% endfor %}
     </div>
+    
   </div>
 </section>
 
+<!-- Gallery Section -->
 {% assign retreat_gallery = page.gallery_images %}
 <section class="bg-primary">
   <h3 class="pb-8 -mt-1 text-center">Gallery</h3>
-  <!-- Retreat Gallery -->
+  <!-- Top Gallery -->
   <div class="mb-8 mx-10p">
     <div class="retreat-gallery">
       {% for pic in retreat_gallery %}
@@ -59,9 +75,9 @@ layout: default
 <!-- Pricing Section -->
 <section class="text-center">
   <h2>Pricing</h2>
-  <hr class="border-b-4 border-primary w-[45%] text-primary mx-auto">
+  <hr class="border-b-4 border-primary md:w-[45%] text-primary mx-auto">
   <div>
-    <p class="py-3">
+    <p class="py-3 pt-4">
       {{ page.pricing.early_bird }}
       <br>
       {{ page.pricing.reg_price}}
@@ -72,11 +88,11 @@ layout: default
     <p class="py-3">
       {{ page.pricing.not_included }}
     </p>
-    <p class="py-3">
+    <p class="pt-3 pb-2">
       {{ page.inquiries }}
     </p>
   </div>
-  <div class="flex justify-center py-6 mx-auto">
+  <div class="flex justify-center py-4 mx-auto">
     <a class="mx-4 btn btn-accent" role="button" href="#">Sign Me Up</a>
     <a class="mx-4 btn btn-accent" role="button" href="https://account.venmo.com/u/nanceleombruno">Pay Deposit</a>
   </div>
