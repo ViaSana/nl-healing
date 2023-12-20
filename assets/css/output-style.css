@@ -2723,6 +2723,9 @@ img {
 .w-\[50vh\] {
   width: 50vh;
 }
+.w-\[60\%\] {
+  width: 60%;
+}
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -3020,6 +3023,9 @@ img {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pt-1 {
+  padding-top: 0.25rem;
 }
 .text-left {
   text-align: left;
