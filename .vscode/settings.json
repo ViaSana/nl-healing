@@ -51,6 +51,18 @@
     {
       "filePath": "blog.html",
       "group": "Default"
+    },
+    {
+      "filePath": "_includes",
+      "group": "Default"
+    },
+    {
+      "filePath": "main.js",
+      "group": "Default"
+    },
+    {
+      "filePath": "style.css",
+      "group": "Default"
     }
   ]
 }

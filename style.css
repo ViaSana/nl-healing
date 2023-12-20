@@ -70,7 +70,11 @@
         @apply inline-block h-20 px-12 py-4 bg-secondary text-base-100;
     }
     .tag {
-        @apply p-1 text-xs text-secondary capitalize font-sans;
+        @apply p-1 font-sans text-xs capitalize text-secondary;
+    }
+
+    .deco-lines {
+        @apply absolute right-0 border-b-4 border-accent;
     }
 }
 
