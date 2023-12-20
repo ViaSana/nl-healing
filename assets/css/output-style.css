@@ -2488,6 +2488,12 @@ img {
 .-bottom-12 {
   bottom: -3rem;
 }
+.top-12 {
+  top: 3rem;
+}
+.top-20 {
+  top: 5rem;
+}
 .z-20 {
   z-index: 20;
 }
