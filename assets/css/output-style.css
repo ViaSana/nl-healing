@@ -2732,6 +2732,9 @@ img {
 .flex-wrap {
   flex-wrap: wrap;
 }
+.items-start {
+  align-items: flex-start;
+}
 .items-center {
   align-items: center;
 }
@@ -2771,6 +2774,9 @@ img {
 }
 .self-center {
   align-self: center;
+}
+.justify-self-start {
+  justify-self: start;
 }
 .justify-self-end {
   justify-self: end;
@@ -2968,6 +2974,9 @@ img {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pt-0 {
+  padding-top: 0px;
 }
 .text-left {
   text-align: left;
