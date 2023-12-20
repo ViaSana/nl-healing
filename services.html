@@ -1,14 +1,13 @@
 ---
 layout: default
 seo:
-  title: Services
+  title: 'Offerings '
   description:
   social_image:
   twitter_card:
   keywords:
   hide-from-google: false
 ---
-
 {% include overlay_header.html case="services" %}
 
 <!-- Services Loop w/ Alternating Cycle-->
@@ -21,7 +20,7 @@ seo:
       
       <!-- 2 Span Image -->
       <div class="md:col-span-2 {% cycle '','md:order-last' %} grid">
-        <img src="{{ s.image }}" alt="{{ s.name }}" class="lg:w-[90%] {% cycle '','justify-self-end' %} object-cover aspect-[4/3]">
+        <img src="{{ s.image }}" alt="{{ s.name }}" class="lg:w-[90%] {% cycle '','justify-self-end' %} object-cover aspect-[4/3]" />
       </div>
 
       <!-- 3 Span Description -->
