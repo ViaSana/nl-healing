@@ -2163,6 +2163,18 @@ img {
   right: 0px;
   border-bottom-width: 4px;
 }
+/* Page Header Overlay for Services, Events, Blog, and Contact */
+.ovlay_header-content {
+  position: absolute;
+  inset: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--a) / var(--tw-bg-opacity));
+  padding: 1rem;
+  text-align: left;
+}
 .invisible {
   visibility: hidden;
 }
@@ -2394,9 +2406,6 @@ img {
 }
 .max-h-\[50vh\] {
   max-height: 50vh;
-}
-.min-h-\[30vh\] {
-  min-height: 30vh;
 }
 .min-h-\[50vh\] {
   min-height: 50vh;
@@ -2841,18 +2850,6 @@ img {
         margin-right: auto;
         max-width: 1536px;
     }
-/* Page Header Overlay for Services, Events, Blog, and Contact */
-.ovlay_header-content {
-  position: absolute;
-  inset: 0px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--a) / var(--tw-bg-opacity));
-  padding: 1rem;
-  text-align: left;
-}
 /* Gallery Slider */
 
 /* ----------- Default Styles --------- */

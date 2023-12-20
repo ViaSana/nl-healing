@@ -95,6 +95,11 @@
     .deco-lines {
         @apply absolute right-0 border-b-4;
     }
+
+    /* Page Header Overlay for Services, Events, Blog, and Contact */
+    .ovlay_header-content {
+        @apply absolute inset-0 flex flex-row items-center p-4 text-left bg-accent;
+    }
 }
 
 @layer utilities {
@@ -105,11 +110,6 @@
 
     .bg-image {
         @apply bg-center bg-no-repeat bg-slate-300;
-    }
-
-    /* Page Header Overlay for Services, Events, Blog, and Contact */
-    .ovlay_header-content {
-        @apply absolute inset-0 flex flex-row items-center p-4 text-left bg-accent;
     }
 
     /* Gallery Slider */
