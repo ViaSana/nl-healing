@@ -88,19 +88,7 @@
     .hero-banner {
         position: relative;
     }
-/*     
-    .hero-banner img {
-        mask-image: url(#banner-mask);
-        -webkit-mask-image: url(#banner-mask);
-        @apply object-cover object-top h-[85vh];
-        height: 100%;
-        width: 100%;
-    } 
-
-    .hero-banner img {
-        mask-image: url('data:image/svg+xml;utf8,<svg fill="none" height="959" viewBox="0 0 1440 959" width="1440" xmlns="http://www.w3.org/2000/svg"><g fill="#6d051c"><path d="m-32 0h1468v793h-1468z"/><path d="m720 959 722.27-166.5h-1444.5352z"/></g></svg>');
-        -webkit-mask-image: url('data:image/svg+xml;utf8,<svg fill="none" height="959" viewBox="0 0 1440 959" width="1440" xmlns="http://www.w3.org/2000/svg"><g fill="#6d051c"><path d="m-32 0h1468v793h-1468z"/><path d="m720 959 722.27-166.5h-1444.5352z"/></g></svg>');
-        @apply object-cover object-top h-[85vh];
+    .slick-track {
+        height: 50vh;
     }
-*/    
 }

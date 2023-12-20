@@ -4,7 +4,7 @@ layout: default
 <!-- update the button in the cta -->
 {% include cta.html %}
 
-<section class="pt-6 text-center mx-scrn">
+<section class="py-6 text-center mx-scrn">
   <h4 class="px-10 pb-4">{{ page.main_heading }}</h4>
   <div class="flex flex-wrap items-center justify-center px-4">
     <div class="w-full px-4 text-left md:w-3/5">
@@ -14,12 +14,12 @@ layout: default
       <img src="{{ page.image }}" alt="Retreat Image" class="aspect-[4/5]">
     </div>
   </div>
-  <h4 class="py-4">{{ page.closing_heading }}</h4>
+  <h4 class="px-10 py-4">{{ page.closing_heading }}</h4>
   <a href="#" class="btn btn-accent" role="button">Sign Me Up</a>
 </section>
 
 <section class="mx-scrn">
-  <div class="flex h-[45vh]">
+  <div class="flex">
     <img src="/assets/images/retreat_2.jpg" class="mx-16 aspect-square md:w-1/2">
     <div class="md:w-1/2">
       <h3>What's Included</h3>
@@ -33,11 +33,30 @@ layout: default
   </div>
 </section>
 
-<!-- Temp Placeholder for Gallery Function -->
-<div class="bg-neutral">
-  <img src="/assets/images/gallery_placeholder.png" class="shadow-none mx-scrn">
-</div>
+{% assign retreat_gallery = page.gallery_images %}
+<section class="bg-primary">
+  <h3 class="pb-8 -mt-1 text-center">Gallery</h3>
+  <!-- Retreat Gallery -->
+  <div class="mb-8 mx-10p">
+    <div class="retreat-gallery">
+      {% for pic in retreat_gallery %}
+        <div class="bg-contain bg-no-repeat h-[50vh] bg-center" style="background-image: url({{pic}});"></div>
+      {% endfor %}
+    </div>
+  </div>
+  
+  <!-- Gallery Nav -->
+  <div class="w-full slider-nav">
+    {% for pic in retreat_gallery %}
+      <img src="{{pic}}" class="object-cover mx-4 aspect-square">
+    {% endfor %}
+  </div>
+  <div class="pt-8 -mb-1 text-center">
+    <a role="button" class="btn btn-accent" href="#">Sign Me Up</a>
+  </div>
+</section>
 
+<!-- Pricing Section -->
 <section class="text-center">
   <h2>Pricing</h2>
   <hr class="border-b-4 border-primary w-[45%] text-primary mx-auto">
@@ -59,7 +78,6 @@ layout: default
   </div>
   <div class="flex justify-center py-6 mx-auto">
     <a class="mx-4 btn btn-accent" role="button" href="#">Sign Me Up</a>
-    <a class="mx-4 btn btn-accent" role="button" href="#">Pay Deposit</a>
+    <a class="mx-4 btn btn-accent" role="button" href="https://account.venmo.com/u/nanceleombruno">Pay Deposit</a>
   </div>
-
 </section>

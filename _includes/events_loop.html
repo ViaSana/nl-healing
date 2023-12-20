@@ -4,7 +4,7 @@
     {% assign event = site.events %}
     {% for i in event %}
     <div class="grid">
-      <img src="{{i.image}}" alt="{{i.title}} Image" class="object-contain shadow bg-primary max-h-[44vh]">
+      <img src="{{i.image}}" alt="{{i.title}} Image" class="object-contain max-h-[44vh]">
       <div class="w-full pt-6 text-center">
         <p class="font-light">{{ i.date | date: "%B %e, %Y" }}</p>
         <h6 class="py-2">{{i.title}}</h6>

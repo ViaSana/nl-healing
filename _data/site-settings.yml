@@ -10,7 +10,5 @@ social:
   instagram_username:
   facebook_url:
   twitter_username:
-svgs:
-  down: fa-solid fa-chevron-down
-  ig: fa-brands fa-instagram
-  right: fa-solid fa-arrow-right-long
+payment_links:
+  venmo: https://account.venmo.com/u/nanceleombruno
