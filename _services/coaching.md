@@ -42,5 +42,5 @@ investment:
   - '6-Week Journey: $780'
   - '8-Week Journey: $950'
   - '12-Week Journey: $1290'
-  - '60-Min Individual Session: $150'
+  - 'Single Session: $150'
 ---
