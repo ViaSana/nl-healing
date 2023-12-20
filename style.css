@@ -61,6 +61,7 @@
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 @layer components {
+    /* Buttons */
     .btn {
         @apply px-6 py-2 font-serif rounded-tl-[2000rem] rounded-bl-none rounded-tr-none rounded-br-[2000rem] tracking-[.12em] text-lg capitalize;
     }
@@ -73,17 +74,30 @@
     #what-to-expect .button {
         @apply inline-block h-20 px-12 py-4 bg-secondary text-base-100;
     }
+    .btn-circle {
+        @apply scale-150 rounded-full bg-neutral hover:bg-primary;
+
+    }
+
+    /* Mobile Menu */
+    .mobile-menu {
+        @apply absolute hidden w-screen h-screen text-center top-full bg-neutral;
+    }
+    .mobile-menu a {
+        @apply no-underline py-[1vh] block text-accent;
+    }
+
+    /* Blog Tags */
     .tag {
         @apply p-1 font-sans text-xs capitalize text-secondary;
     }
+
+    /* Line Decoration - works w/ main.js */
     #line-box{
         @apply relative;
     }
     .deco-lines {
         @apply absolute right-0 border-b-4;
-    }
-    .ovlay_header-content {
-        @apply absolute inset-0 flex flex-row items-center p-4 text-left bg-accent;
     }
 }
 
@@ -97,11 +111,13 @@
         @apply bg-center bg-no-repeat bg-slate-300;
     }
 
-    /* Main Page Mask */
-    .hero-banner {
-        position: relative;
+    /* Page Header Overlay for Services, Events, Blog, and Contact */
+    .ovlay_header-content {
+        @apply absolute inset-0 flex flex-row items-center p-4 text-left bg-accent;
     }
+
+    /* Gallery Slider */
     .slick-track {
-        height: 50vh;
+        height: 60vh;
     }
 }
