@@ -36,7 +36,7 @@ layout: default
     
     <!-- FrontMatter Content -->
     <div class="md:w-1/2 md:ml-8">
-      <h3 class="max-sm:text-center">What's Included</h3>
+      <h3 class="max-sm:text-center editable">What's Included</h3>
       <hr class="border-b-4 border-primary md:w-[65%] text-primary">
       {% for item in page.whats_included %}
       <ul class="pt-4">
@@ -51,7 +51,7 @@ layout: default
 <!-- Gallery Section -->
 {% assign retreat_gallery = page.gallery_images %}
 <section class="bg-primary">
-  <h3 class="pb-8 -mt-1 text-center">Gallery</h3>
+  <h3 class="pb-8 -mt-1 text-center editable">Gallery</h3>
   <!-- Top Gallery -->
   <div class="mb-8 mx-10p">
     <div class="retreat-gallery">
@@ -68,13 +68,13 @@ layout: default
     {% endfor %}
   </div>
   <div class="pt-8 -mb-1 text-center">
-    <a role="button" class="btn btn-accent" href="#">Sign Me Up</a>
+    <a role="button" class="btn btn-accent editable" href="#">Sign Me Up</a>
   </div>
 </section>
 
 <!-- Pricing Section -->
 <section class="text-center">
-  <h2>Pricing</h2>
+  <h2 class="editable">Pricing</h2>
   <hr class="border-b-4 border-primary md:w-[45%] text-primary mx-auto">
   <div>
     <p class="py-3 pt-4">
@@ -93,7 +93,7 @@ layout: default
     </p>
   </div>
   <div class="flex justify-center py-4 mx-auto">
-    <a class="mx-4 btn btn-accent" role="button" href="#">Sign Me Up</a>
-    <a class="mx-4 btn btn-accent" role="button" href="https://account.venmo.com/u/nanceleombruno">Pay Deposit</a>
+    <a class="mx-4 btn btn-accent editable" role="button" href="#">Sign Me Up</a>
+    <a class="mx-4 btn btn-accent editable" role="button" href="https://account.venmo.com/u/nanceleombruno">Pay Deposit</a>
   </div>
 </section>

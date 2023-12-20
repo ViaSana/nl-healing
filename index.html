@@ -32,8 +32,8 @@ services:
       <img src="/assets/images/home_banner.svg" alt="Home Banner" class="">
     </div>
     <div class="absolute inset-0 flex flex-col items-center justify-center pb-4 text-center items-top">
-        <h4 class="font-sans font-extralight">Welcome To Nance Leombruno Healing</h4>
-        <h1 class="max-w-3xl leading-snug">Journey Home To Your True Self</h1>
+        <h4 class="font-sans font-extralight editable">Welcome To Nance Leombruno Healing</h4>
+        <h1 class="max-w-3xl leading-snug editable">Journey Home To Your True Self</h1>
         <div class="flex font-serif">
             {% assign hero = site.data.nav | where: 'hero', 'true' %}
             {% for item in hero %}
@@ -88,7 +88,5 @@ services:
     {% endfor %}
   </div>
 </section>
-
-
 
 {% include testimonial.html %}
