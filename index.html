@@ -32,7 +32,7 @@ services:
       <img src="/assets/images/home_banner.svg" alt="Home Banner" class="">
     </div>
     <div class="absolute inset-0 flex flex-col items-center justify-center pb-4 text-center items-top">
-        <h4 class="font-sans font-extralight editable">Welcome To Nance Leombruno Healing</h4>
+        <h5 class="font-sans font-extralight editable text-base-100">Welcome To Nance Leombruno Healing</h5>
         <h1 class="max-w-3xl leading-snug editable">Journey Home To Your True Self</h1>
         <div class="flex font-serif">
             {% assign hero = site.data.nav | where: 'hero', 'true' %}
@@ -43,8 +43,9 @@ services:
     </div>
   </div>
 
-
+<section> 
 {% include about-nance.html case="home-pg" %}
+</section>
 
 {% include cta.html %}
 
@@ -68,9 +69,10 @@ services:
   </div>
 </section>
 
-<!-- Copy  -->
+<!-- Copy  Morgan commented out because it was a duplicate -->
 <!-- Section 3: Together We Rise -->
-<section>
+
+<!---------- <section>
   <h2 class="pb-6 text-center editable text-secondary">Together, We Rise</h2>
 
   <!-- Make Container Responsive-->
@@ -87,6 +89,6 @@ services:
       </a>
     {% endfor %}
   </div>
-</section>
+</section> ------> 
 
 {% include testimonial.html %}
