@@ -1,11 +1,11 @@
 ---
-slug: "pause-collective"
+layout: event_layout
+slug: "the-pause-collective"
 title: The Pause Collective
 image: /assets/images/event_1.jpg
 date: January 7, 2024
 time: "1pm - 4pm"
 location: Tiburon, CA
-location_details:
 cost: $75 
 summary: |
   Do you like to start the 
@@ -16,7 +16,6 @@ summary: |
   During the workshop we connect through meditation, journaling, yoga and group connection where we will take a look at how we show up in our bodies and the world around us.
   I will collaborate with Jill Boeri, she is the founder of
   The Pause Collective, Jill is an amazing and loving human being and a therapist working with young women, I hold so much love for Jill.
-  
   Please bring your yoga mat and wear comfy (yoga) clothes and layers.
 details: "To reserve your spot please contact, hello@thepausecollective.co"
 ---

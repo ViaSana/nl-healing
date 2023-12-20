@@ -1,4 +1,5 @@
 ---
+layout: event_layout
 slug: "holiday-yin-yoga"
 title: Pre-Holiday Yin Yoga Class
 image: /assets/images/event_2.jpg

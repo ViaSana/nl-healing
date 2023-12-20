@@ -1,9 +1,24 @@
+{% if include.case == "event" %}
+<div class="flex items-center justify-center max-lg:flex-col mx-scrn">
+  <img src="{{ page.image }}" alt="{{page.title}} Image" class="object-cover lg:w-2/5 md:aspect-[3/2]">
+  
+  <div class="p-8 lg:w-3/5 text-secondary">
+    <h6>{{page.date | date: "%B %e, %Y" }}</h6>
+    <h2 class="inline-block pb-6 pr-16 border-b border-primary">{{ page.title }}</h2>
+    <p class="py-4">{{ page.summary }}</p>
+    <h5>Investment: {{ page.cost }}</h5>
+    <a href="#" class="mt-4 btn btn-secondary">Sign Me Up</a>
+  </div>
+</div>
+
+{% else %}
 <div class="flex items-center justify-center max-lg:flex-col mx-scrn">
   <img src="{{ page.image }}" alt="{{page.seo.title}} Image" class="object-cover lg:w-2/5 md:aspect-[3/2]">
   
   <div class="p-8 lg:w-3/5 text-secondary">
     <h2 class="inline-block pb-6 pr-16 border-b border-primary">{{ page.seo.title }}</h2>
     <p class="py-4">{{ page.copy_html }}</p>
-    <a href="{{ s.link }}" class="mt-8 btn btn-secondary">Let's Do This</a>
+    <a href="#" class="mt-8 btn btn-secondary">Let's Do This</a>
   </div>
 </div>
+{% endif %}
