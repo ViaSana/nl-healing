@@ -8,14 +8,6 @@ seo:
   keywords:
   hide-from-google: false
 ---
-<div class="relative mb-4 text-base-100">
-  <img src="/assets/images/contact_banner.jpg" alt="Services Banner" class="object-cover h-[38vh]">
-  <div class="absolute inset-0 flex flex-row items-center justify-center p-4 text-left bg-opacity-50 bg-accent">
-    <div class="self-center text-base-100">
-      <h1>Get In Touch</h1>
-      <hr>
-    </div>
-  </div>
-</div>
+{% include overlay_header.html case="contact" %}
 
 {% include contact_form.html %}
