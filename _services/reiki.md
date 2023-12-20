@@ -10,23 +10,43 @@ seo:
 slug: reiki
 order: 2
 image: /assets/images/reiki_img.jpeg
-description: |
-  Reiki is a healing art technique from Japan where one's hands are used to channel life-force energy for healing. Reiki helps with reducing stress and anxiety and by helping people become more energetically balanced, physically, emotionally, mentally and spiritually.
+description: >
+  Reiki is a healing art technique from Japan where one's hands are used to
+  channel life-force energy for healing. Reiki helps with reducing stress and
+  anxiety and by helping people become more energetically balanced, physically,
+  emotionally, mentally and spiritually.
 copy_html: >-
-  Reiki was developed in the early 1900s in Japan by a man named Mikao Usui. The term Reiki comes from the Japanese words “rei” meaning “universal” and “ki” which refers to the vital life force energy that flows through all living beings and things.
-  <br><br>
-  Reiki practitioners channel the universal life force energy and use their hands to let the Reiki flow where it needs to go in your body. The Reiki is always there and always flowing but needs consent to be received, step into a Reiki session with an open mind and open heart to feel the benefits of a Reiki treatment. Reiki is all about bringing balance and harmony, so it can assist with a myriad of symptoms from anxiety, stress, overwhelm, physical pain, migraines and overcoming fears. More than anything Reiki brings people a deep feeling of peace and a renewed sense of trust for their path. Reiki brings awareness how important it is to tune in with yourself and with your needs to find your way back home to yourself.
-btn_link:
+  Reiki was developed in the early 1900s in Japan by a man named Mikao Usui. The
+  term Reiki comes from the Japanese words “rei” meaning “universal” and “ki”
+  which refers to the vital life force energy that flows through all living
+  beings and things. <br /><br /> Reiki practitioners channel the universal life
+  force energy and use their hands to let the Reiki flow where it needs to go in
+  your body. The Reiki is always there and always flowing but needs consent to
+  be received, step into a Reiki session with an open mind and open heart to
+  feel the benefits of a Reiki treatment. Reiki is all about bringing balance
+  and harmony, so it can assist with a myriad of symptoms from anxiety, stress,
+  overwhelm, physical pain, migraines and overcoming fears. More than anything
+  Reiki brings people a deep feeling of peace and a renewed sense of trust for
+  their path. Reiki brings awareness how important it is to tune in with
+  yourself and with your needs to find your way back home to yourself.
+btn_link: /contact.html
 expectations:
-  - "We start with  a free consultation call (15min) and from there we make an appointment for our first session."
+  - "We start with\_ a free consultation call (15min) and from there we make an appointment for our first session."
   - Sessions are 90 min, including meditation/visualization and Reiki treatment.
   - Sessions take place at Evergreen Wellness Studio in San Rafael, CA.
-  - Wear comfortable clothes for your Reiki treatment. You lie on a treatment table with your clothes on and my hands are floating above your body to channel the Reiki energy. When I feel a blockage I ask the person receiving Reiki permission if I can place my hands on that certain area.
-  - After the treatment I leave you for 5 min in Savasana (resting pose) to feel the energy flow through your body and to give the person receiving the Reiki a final rest before we close our session.
+  - >-
+    Wear comfortable clothes for your Reiki treatment. You lie on a treatment
+    table with your clothes on and my hands are floating above your body to
+    channel the Reiki energy. When I feel a blockage I ask the person receiving
+    Reiki permission if I can place my hands on that certain area.
+  - >-
+    After the treatment I leave you for 5 min in Savasana (resting pose) to feel
+    the energy flow through your body and to give the person receiving the Reiki
+    a final rest before we close our session.
 investment:
-  - '4-Week Journey: $590'
-  - '6-Week Journey: $780'
-  - '8-Week Journey: $950'
-  - '12-Week Journey: $1290'
-  - '60-Min Individual Session: $150'
+  - 'Single Session: $195'
+  - '2-Session Package: $380'
+  - '3-Session Package: $555'
+  - '4-Session Package: $720'
+  - '5-Session Package: $875'
 ---
