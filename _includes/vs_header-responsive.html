@@ -1,0 +1,40 @@
+<!-- Merged by Chat-GPT -->
+<!-- Optimized Site Header -->
+{% assign header_nav = site.data.nav | where: 'main_nav', true %}
+
+<header>
+  <!-- Using Tailwind CSS for responsive design -->
+  <nav class="flex flex-wrap items-center justify-between p-6">
+    <div class="flex items-center mr-6">
+      <!-- Simplified Logo and Title inclusion -->
+      <div class="flex lg:pr-12 md:pr-4 lg:space-x-28 md:space-x-16">
+        {% for item in header_nav limit:3 %}
+          <div class="relative group">
+            <a href="{{ item.link }}" class="text-lg hover:text-primary">{{ item.name }}</a>
+            {% if item.sublinks %}
+              <div class="absolute z-30 hidden group-hover:block bg-neutral">
+                {% for subitem in item.sublinks %}
+                  <a href="{{ subitem.link }}" class="block px-4 py-2 hover:bg-secondary hover:text-neutral">{{ subitem.name }}</a>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="lg:hidden">
+      <!-- Refined Mobile menu button implementation -->
+      <div class="shrink-0">
+        <a href="/"><img src="/assets/images/logo_light-bg.png" alt="NL Healing Logo" class="mx-auto h-36"></a>
+      </div>
+    </div>
+    <div class="w-full lg:flex-grow lg:flex lg:items-center">
+      <!-- Streamlined Navigation Links -->
+      {% for item in header_nav offset:3 limit:3 %}
+        <a href="{{ item.link }}" class="text-lg hover:text-primary">{{ item.name }}</a>
+      {% endfor %}
+    </div>
+  </nav>
+  <!-- Additional Header Content with improved layout for responsiveness -->
+</header>

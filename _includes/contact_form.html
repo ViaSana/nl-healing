@@ -2,15 +2,15 @@
 <div class="relative p-6 text-center text-accent" id="contact_form">
     <form class="grid max-w-2xl mx-auto text-left" method="post" action="#" id=""> 
         <!--------- Name -------->
-        <label for="name" class="ml-2 font-serif capitalize"> Name </label>
+        <label for="name" class="ml-2 font-serif capitalize editable"> Name </label>
         <input type="text" id="name" name="name" class="p-2 mb-4 bg-transparent border-2 border-secondary" />
 
         <!------- Email -------->
-        <label for="email" class="ml-2 font-serif capitalize"> Email </label>
+        <label for="email" class="ml-2 font-serif capitalize editable"> Email </label>
         <input type="email" id="email" name="email" class="p-2 mb-4 bg-transparent border-2 border-secondary" />
 
         <!------- Subject -------->
-        <label for="subject" class="mt-2 ml-2 font-serif capitalize">Topic</label>
+        <label for="subject" class="mt-2 ml-2 font-serif capitalize editable">Topic</label>
         <input list="topic-list" id="subject" name="subject" placeholder="double click to select subject" class="p-2 pl-4 mb-4 bg-transparent border-2 border-secondary"/>
             <datalist class="font-serif" id="topic-list">
                 <option value="Coaching"></option>
@@ -21,7 +21,7 @@
             </datalist>
 
         <!------- Message -------->
-        <label for="message" class="mt-4 ml-2 font-serif capitalize"> Message </label>
+        <label for="message" class="mt-4 ml-2 font-serif capitalize editable"> Message </label>
         <textarea type="text" id="message" name="message" class="p-2 mb-4 bg-white border-2 border-secondary"></textarea>
 
         <input type="hidden" name="inbox_key" value="contact_form">
@@ -30,7 +30,7 @@
         <!-------Checkbox -------->
         <div class="flex">
             <input type="checkbox" id="newsletter" class="p-2 mb-8" name="newsletter" value="subscribed">
-            <label for="newsletter" class="pb-8 ml-2 font-serif capitalize"> <span class="editable">Sign Up to Receive retreat & event updates </span> </label>
+            <label for="newsletter" class="pb-8 ml-2 font-serif capitalize"><span class="editable">Sign Up to Receive retreat & event updates </span> </label>
         </div>
 
 

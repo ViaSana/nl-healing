@@ -1,4 +1,5 @@
 <header class="flex flex-row justify-center mx-scrn">
+
   <nav class="flex items-center justify-around py-4 font-serif text-secondary">
 
     {% assign header_nav = site.data.nav | where: 'main_nav', true %}
@@ -29,5 +30,6 @@
         <a href="{{ item.link }}" class="text-lg hover:text-primary">{{ item.name }}</a>
       {% endfor %}
     </div>
+
   </nav>
 </header>
