@@ -9,25 +9,7 @@ seo:
   hide-from-google: false
 ---
 
-<!-- Service_Hero *move to include* -->
-<div class="relative mb-4 text-base-100">
-  <img src="/assets/images/services_banner.jpg" alt="Services Banner" class="object-cover h-[45vh]">
-  <div class="absolute inset-0 flex flex-row items-center p-4 text-left bg-opacity-50 justify-left bg-accent">
-    <div class="self-center max-w-4xl p-5p">  
-      <h1>Services</h1>
-      <hr class="pb-4 -ml-24 w-[48%]">
-      <p class=" editable">Discover a spectrum of transformative offerings at NL Healing designed to nurture your mind, body, and soul. Our tailored coaching sessions provide personalized guidance, while Reiki sessions offer holistic energy healing. Engage in our empowering events and retreats crafted to inspire growth, connection, and inner harmony. Explore our diverse services, each dedicated to guiding you on your unique journey towards self-discovery and empowerment.</p>
-    </div>
-  </div>
-  <div class="absolute flex flex-row justify-center space-x-12 -bottom-6 inset-x-10">
-    {% assign service-hero = site.data.nav | where: 'hero', 'true' %}
-    {% for s in service-hero %}
-      <div class="w-[15vw] py-4 bg-primary text-secondary font-serif">
-        <a href="{{ s.link }}"><h6 class="pb-0 text-center">{{ s.name }}</h6></a>
-      </div>
-    {% endfor %}
-  </div>
-</div>
+{% include overlay_header.html case="services" %}
 
 <!-- Services Loop -->
 <div class="pt-8">
