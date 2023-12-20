@@ -1,5 +1,5 @@
 ---
-slug: holiday-yin-yoga
+slug: "holiday-yin-yoga"
 title: Pre-Holiday Yin Yoga Class
 image: /assets/images/event_2.jpg
 date: 2023-12-16 16:00:00 -0800
