@@ -2473,26 +2473,17 @@ img {
 .left-4 {
   left: 1rem;
 }
-.top-10 {
-  top: 2.5rem;
+.top-12 {
+  top: 3rem;
 }
-.top-16 {
-  top: 4rem;
+.top-20 {
+  top: 5rem;
 }
 .top-4 {
   top: 1rem;
 }
 .top-\[50\%\] {
   top: 50%;
-}
-.-bottom-12 {
-  bottom: -3rem;
-}
-.top-12 {
-  top: 3rem;
-}
-.top-20 {
-  top: 5rem;
 }
 .z-20 {
   z-index: 20;
@@ -2518,8 +2509,8 @@ img {
 .m-32 {
   margin: 8rem;
 }
-.m-4 {
-  margin: 1rem;
+.m-12 {
+  margin: 3rem;
 }
 .mx-10p {
   margin-left: 10%;
@@ -2600,6 +2591,9 @@ img {
 .mt-8 {
   margin-top: 2rem;
 }
+.ml-10 {
+  margin-left: 2.5rem;
+}
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -2639,6 +2633,9 @@ img {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.h-10 {
+  height: 2.5rem;
+}
 .h-28 {
   height: 7rem;
 }
@@ -2654,8 +2651,11 @@ img {
 .h-full {
   height: 100%;
 }
-.h-10 {
-  height: 2.5rem;
+.h-\[30vh\] {
+  height: 30vh;
+}
+.h-\[60vh\] {
+  height: 60vh;
 }
 .max-h-24 {
   max-height: 6rem;
@@ -2675,18 +2675,6 @@ img {
 .min-h-\[50vh\] {
   min-height: 50vh;
 }
-.min-h-\[20vh\] {
-  min-height: 20vh;
-}
-.min-h-\[40vh\] {
-  min-height: 40vh;
-}
-.min-h-\[90vh\] {
-  min-height: 90vh;
-}
-.min-h-\[80vh\] {
-  min-height: 80vh;
-}
 .w-2\/5 {
   width: 40%;
 }
@@ -2702,6 +2690,12 @@ img {
 .w-\[42\%\] {
   width: 42%;
 }
+.w-\[50vh\] {
+  width: 50vh;
+}
+.w-\[60\%\] {
+  width: 60%;
+}
 .w-\[70\%\] {
   width: 70%;
 }
@@ -2713,18 +2707,6 @@ img {
 }
 .w-full {
   width: 100%;
-}
-.w-\[30vh\] {
-  width: 30vh;
-}
-.w-\[40vh\] {
-  width: 40vh;
-}
-.w-\[50vh\] {
-  width: 50vh;
-}
-.w-\[60\%\] {
-  width: 60%;
 }
 .max-w-2xl {
   max-width: 42rem;
@@ -2777,9 +2759,6 @@ img {
 }
 .flex-wrap {
   flex-wrap: wrap;
-}
-.place-items-center {
-  place-items: center;
 }
 .items-center {
   align-items: center;
@@ -3009,6 +2988,9 @@ img {
 .pt-0 {
   padding-top: 0px;
 }
+.pt-1 {
+  padding-top: 0.25rem;
+}
 .pt-2 {
   padding-top: 0.5rem;
 }
@@ -3024,9 +3006,6 @@ img {
 .pt-8 {
   padding-top: 2rem;
 }
-.pt-1 {
-  padding-top: 0.25rem;
-}
 .text-left {
   text-align: left;
 }
@@ -3038,9 +3017,6 @@ img {
 }
 .align-top {
   vertical-align: top;
-}
-.align-middle {
-  vertical-align: middle;
 }
 .font-sans {
   font-family: Poppins, sans-serif;
@@ -3404,9 +3380,6 @@ img {
   }
   .md\:pt-8 {
     padding-top: 2rem;
-  }
-  .md\:pt-0 {
-    padding-top: 0px;
   }
   .md\:text-left {
     text-align: left;
