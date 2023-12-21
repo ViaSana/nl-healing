@@ -25,10 +25,6 @@
       "group": "Default"
     },
     {
-      "filePath": "_includes/cta.html",
-      "group": "Default"
-    },
-    {
       "filePath": "_layouts/service_layout.html",
       "group": "Default"
     },
