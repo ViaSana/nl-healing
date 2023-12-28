@@ -1,7 +1,7 @@
 ---
 layout: retreats
 category: retreat
-date: 2023-11-29 00:00:00 -0800
+date: 2024-04-24 00:00:00 -0800
 title: Coming Home To Yourself Retreat
 slug: retreat
 image: /assets/images/retreat_1.jpg

@@ -9,20 +9,12 @@ seo:
   hide-from-google: false
 ---
 
-{% include overlay_header.html case="blog" %}
-
-<!--------Blog Loop --------> 
-<section>
-  <div class="max-w-screen-xl pb-8 mx-auto md:columns-3">
-
-    {% for post in site.posts limit:12 %}
-
-      {% include post-loop.html %}
-      
-    {% endfor %}
-
+<div class="relative text-base-100">
+  <img src="/assets/images/blog_banner.jpg" alt="Blog Banner" class="object-cover max-sm:min-h-[65vh] max-h-[55vh]">
+  <div class="ovlay_header-content bg-opacity-40">
+    <div class="self-center max-w-4xl mx-auto p-5p" id="line-box">  
+        <h1 class=""> Blog Coming Soon </h1>
+        <hr>
+    </div>
   </div>
-
-  <a href="/blog-archive.html" class="btn editable btn-secondary"> All Posts </a>
-
-</section> 
+</div>
