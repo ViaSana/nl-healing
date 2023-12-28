@@ -1,9 +1,9 @@
 ---
 layout: event_layout
-slug: "holiday-yin-yoga"
-title: Pre-Holiday Yin Yoga Class
-image: /assets/images/event_2.jpg
-date: 2023-12-16 16:00:00 -0800
+slug: Yin Yoga
+title: Yin Yoga
+image: /assets/uploads/eb29f8be-d100-459d-803e-a9017db6ddb1.jpeg
+date: 2024-01-28 16:30:00 -0800
 location: |
   Evergreen Wellness Studio, 1414 4th Street in San-Rafael, Suite 201 
 location_details: >
