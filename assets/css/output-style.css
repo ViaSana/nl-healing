@@ -3158,6 +3158,11 @@ img {
   color: hsl(var(--s) / var(--tw-text-opacity));
 }
 
+.hover\:text-accent:hover {
+  --tw-text-opacity: 1;
+  color: hsl(var(--a) / var(--tw-text-opacity));
+}
+
 .hover\:shadow-2xl:hover {
   --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);

@@ -24,7 +24,7 @@
     <nav class="flex flex-wrap justify-center my-4">
       {% assign footer-links = site.data.nav | where: 'main_nav', true %}
       {% for item in footer-links limit:5 %}
-        <a href="{{ item.link }}" class="m-2 text-lg md:mx-4">{{ item.name }}</a>
+        <a href="{{ item.link }}" class="m-2 text-lg md:mx-4 hover:text-primary">{{ item.name }}</a>
       {% endfor %}
     </nav>
 
@@ -41,7 +41,7 @@
       <!-- Right Aligned Contact -->
       <div class="flex justify-end text-center md:text-left md:w-1/3">
         <div class="md:mr-2">
-          <a href="/contact.html"><h6>Contact</h6></a>
+          <a href="/contact.html" class="hover:text-primary"><h6 class="pb-0">Contact</h6></a>
           <hr class="md:w-[66%]" />
           <div class="pt-4">
             <!-- IG Logo -->
@@ -54,7 +54,10 @@
             </a>      
             <span class="text-lg editable">nancesf@gmail.com</span>
           </div>
-          <a href="{{site.data.site-settings.payment_links.venmo }}"><img src="/assets/images/icons/logo-venmo-svgrepo-com.svg" class="h-10 my-4"></a>
+          <!-- Venmo Link -->
+          <div class="grid justify-end">
+            <a href="{{site.data.site-settings.payment_links.venmo }}"><img src="/assets/images/icons/logo-venmo-svgrepo-com.svg" class="h-10 my-4"></a>
+          </div>
         </div>
       </div>
     </div>
