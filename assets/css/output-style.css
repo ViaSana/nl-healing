@@ -2786,6 +2786,9 @@ img {
 .justify-self-end {
   justify-self: end;
 }
+.justify-self-center {
+  justify-self: center;
+}
 .rounded-none {
   border-radius: 0px;
 }
@@ -2908,10 +2911,6 @@ img {
 .\!py-6 {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
-}
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -3348,13 +3347,13 @@ img {
     margin-right: calc(4rem * var(--tw-space-x-reverse));
     margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
-  .md\:py-8 {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
   .md\:pl-4 {
     padding-left: 1rem;
@@ -3406,6 +3405,9 @@ img {
     --tw-space-x-reverse: 0;
     margin-right: calc(7rem * var(--tw-space-x-reverse));
     margin-left: calc(7rem * calc(1 - var(--tw-space-x-reverse)));
+  }
+  .lg\:justify-self-end {
+    justify-self: end;
   }
   .lg\:pl-12 {
     padding-left: 3rem;

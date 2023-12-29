@@ -59,6 +59,10 @@
     {
       "filePath": "main.js",
       "group": "Default"
+    },
+    {
+      "filePath": "offerings.html",
+      "group": "Default"
     }
   ],
   "favorites.sortOrder": "MANUAL"
