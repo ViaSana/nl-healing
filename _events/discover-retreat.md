@@ -1,10 +1,10 @@
 ---
 layout: retreats
 category: retreat
-date: 2024-04-24 00:00:00 -0800
+date: 2024-04-19 00:00:00 -0700
 title: Coming Home To Yourself Retreat
 slug: retreat
-image: /assets/images/retreat_1.jpg
+image: /assets/uploads/96b24341-b8c1-406e-b472-e51aee71a0a1.jpeg
 gallery_images:
   - /assets/images/retreat_1.jpg
   - /assets/images/retreat_2.jpg
