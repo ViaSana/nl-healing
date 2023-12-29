@@ -2,7 +2,7 @@
 layout: event_layout
 slug: Yin Yoga
 title: Yin Yoga
-image: /assets/uploads/eb29f8be-d100-459d-803e-a9017db6ddb1.jpeg
+image: /assets/uploads/7a073458-8bd5-49a5-a50d-d655eab95e1d.jpeg
 date: 2024-01-28 16:30:00 -0800
 location: |
   Evergreen Wellness Studio, 1414 4th Street in San-Rafael, Suite 201 
