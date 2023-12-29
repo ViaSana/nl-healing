@@ -10,16 +10,7 @@ location_details: >
   Located between Cafe del Soul and Burns Florist, take stairs up to the
   Evergreen Studio, street parking is available.
 cost: $30
-summary: >
-  Each event is created to inspire people to “pause” to slow down and turn their
-  attention inward and to come back to what truly matters to them. Each month I
-  collaborate with other female healers each with their own unique gift so we
-  can explore different tools for finding the way back to our hearts and back to
-  each other.
-
-  All the events are for women only. The Yin Yoga classes are for women and men.
-  Each event is priced differently, please check the specific event you like to
-  attend for the correct price.
+summary: ' Yin Yoga is a slow-paced, introspective style of yoga that emphasizes holding poses for an extended period of time, usually between three to five minutes. This practice allows for a deep stretch and targets the connective tissues, such as ligaments, joints, and fascia, helping to improve flexibility and overall mobility. With roots in ancient Chinese Taoist philosophy, Yin Yoga aims to balance the body''s energy channels and promote relaxation, mindfulness, and inner harmony.'
 details: >-
   Wear comfortable clothes and dress in layers, all yoga props are available at
   the studio.
