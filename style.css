@@ -39,7 +39,7 @@
     p {
         @apply text-base;
     }
-
+    /* Image Responsive Default */
     img {
         @apply w-full h-auto;
     }
@@ -108,10 +108,5 @@
     .mx-scrn {
         /* Max width is 1536px */
         @apply mx-auto max-w-screen-2xl;
-    }
-
-    /* Gallery Slider */
-    .slick-track {
-        height: 60vh;
     }
 }
