@@ -5,7 +5,7 @@ seo:
   description:
   social_image:
   twitter_card:
-  keywords:
+  keywords: Women’s circle, connection, yoga, meditation, reiki, reterats
   hide-from-google: false
 image: /assets/uploads/2076e6b7-7713-4a27-a93f-c0761867832e.jpeg
 slug:
