@@ -2,12 +2,12 @@
 layout: service_layout
 seo:
   title: Events
-  description:
+  description: ' In today’s world it’s easy to loose yourself in all the business and noise. Cultural norms, pressures and expectations  are just a few things that can create disconnection from your true essence, your center and your feelings. Stress, anxiety, low self esteem, burn-out and depression can be the results of this disconnect. With the events I offer I want to create a space  where you can slow down, where you can reconnect with your true-self, a space where you can transform and heal.'
   social_image:
   twitter_card:
   keywords: Women’s circle, connection, yoga, meditation, reiki, reterats
   hide-from-google: false
-image: /assets/uploads/2076e6b7-7713-4a27-a93f-c0761867832e.jpeg
+image: /assets/uploads/80a04fe7-751d-4acc-9566-85c1a4cef4f4.jpeg
 slug:
 url: /events
 order: 3
