@@ -2951,6 +2951,10 @@ img {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2995,6 +2999,9 @@ img {
 }
 .pt-12 {
   padding-top: 3rem;
+}
+.pb-12 {
+  padding-bottom: 3rem;
 }
 .text-left {
   text-align: left;
@@ -3272,6 +3279,9 @@ img {
   }
   .md\:mt-0 {
     margin-top: 0px;
+  }
+  .md\:ml-10 {
+    margin-left: 2.5rem;
   }
   .md\:inline-block {
     display: inline-block;
