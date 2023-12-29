@@ -2121,18 +2121,6 @@ img {
   --tw-text-opacity: 1;
   color: hsl(var(--s) / var(--tw-text-opacity));
 }
-#what-to-expect .button {
-  display: inline-block;
-  height: 5rem;
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--s) / var(--tw-bg-opacity));
-  padding-left: 3rem;
-  padding-right: 3rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  --tw-text-opacity: 1;
-  color: hsl(var(--b1) / var(--tw-text-opacity));
-}
 .btn-circle {
   border-radius: 9999px;
   --tw-bg-opacity: 1;
@@ -2583,6 +2571,9 @@ img {
 .mt-4 {
   margin-top: 1rem;
 }
+.mt-5 {
+  margin-top: 1.25rem;
+}
 .mt-8 {
   margin-top: 2rem;
 }
@@ -2615,6 +2606,9 @@ img {
 }
 .aspect-\[3\/2\] {
   aspect-ratio: 3/2;
+}
+.aspect-\[4\/3\] {
+  aspect-ratio: 4/3;
 }
 .aspect-portrait {
   aspect-ratio: 3 / 4;
@@ -2687,6 +2681,9 @@ img {
 }
 .w-\[80\%\] {
   width: 80%;
+}
+.w-\[86\%\] {
+  width: 86%;
 }
 .w-full {
   width: 100%;
@@ -2912,6 +2909,10 @@ img {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
 }
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -3014,10 +3015,6 @@ img {
   font-size: 1.5rem;
   line-height: 2rem;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-}
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -3025,6 +3022,10 @@ img {
 .text-sm {
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 .text-xs {
   font-size: 0.75rem;
@@ -3196,12 +3197,18 @@ img {
   .max-sm\:min-h-\[65vh\] {
     min-height: 65vh;
   }
+  .max-sm\:flex-col {
+    flex-direction: column;
+  }
   .max-sm\:px-2 {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
   .max-sm\:text-center {
     text-align: center;
+  }
+  .max-sm\:text-right {
+    text-align: right;
   }
   .max-sm\:text-5xl {
     font-size: 3rem;
@@ -3227,6 +3234,15 @@ img {
   .md\:inset-x-12 {
     left: 3rem;
     right: 3rem;
+  }
+  .md\:order-last {
+    order: 9999;
+  }
+  .md\:col-span-2 {
+    grid-column: span 2 / span 2;
+  }
+  .md\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
   .md\:mx-24 {
     margin-left: 6rem;
@@ -3256,6 +3272,9 @@ img {
   }
   .md\:mt-0 {
     margin-top: 0px;
+  }
+  .md\:inline-block {
+    display: inline-block;
   }
   .md\:hidden {
     display: none;
@@ -3309,22 +3328,45 @@ img {
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
   .md\:flex-row {
     flex-direction: row;
   }
   .md\:flex-nowrap {
     flex-wrap: nowrap;
   }
+  .md\:items-start {
+    align-items: flex-start;
+  }
+  .md\:justify-end {
+    justify-content: flex-end;
+  }
   .md\:space-x-16 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(4rem * var(--tw-space-x-reverse));
     margin-left: calc(4rem * calc(1 - var(--tw-space-x-reverse)));
   }
+  .md\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .md\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
   .md\:pl-4 {
     padding-left: 1rem;
   }
+  .md\:pr-16 {
+    padding-right: 4rem;
+  }
   .md\:pr-4 {
     padding-right: 1rem;
+  }
+  .md\:pt-8 {
+    padding-top: 2rem;
   }
   .md\:text-left {
     text-align: left;
@@ -3339,6 +3381,9 @@ img {
     margin-left: 3rem;
     margin-right: 3rem;
   }
+  .lg\:ml-16 {
+    margin-left: 4rem;
+  }
   .lg\:mt-0 {
     margin-top: 0px;
   }
@@ -3350,6 +3395,9 @@ img {
   }
   .lg\:w-3\/5 {
     width: 60%;
+  }
+  .lg\:w-\[90\%\] {
+    width: 90%;
   }
   .lg\:max-w-sm {
     max-width: 24rem;

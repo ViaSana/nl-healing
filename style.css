@@ -70,9 +70,6 @@
     .btn-base-100 {
         @apply bg-base-100 text-secondary;
     }
-    #what-to-expect .button {
-        @apply inline-block h-20 px-12 py-4 bg-secondary text-base-100;
-    }
     .btn-circle {
         @apply rounded-full bg-neutral hover:bg-primary;
     }
