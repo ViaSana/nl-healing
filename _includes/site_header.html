@@ -1,35 +1,67 @@
-<header class="flex flex-row justify-center mx-scrn">
+<!-- Merged by Chat-GPT -->
+<!-- Optimized Site Header -->
+{% assign header_nav = site.data.nav | where: 'main_nav', true %}
 
-  <nav class="flex items-center justify-around py-4 font-serif text-secondary">
+<header class="mx-scrn">
+  <nav class="flex flex-wrap items-center justify-center">    
+    <!-- Hidden on Mobile -->
+    <div class="flex items-center justify-center max-md:hidden">
+      <!-- Simplified Logo and Title inclusion -->
+      <div class="flex lg:pr-12 md:pr-4 lg:space-x-28 md:space-x-16">
+        {% for item in header_nav limit:3 %}
+          <div class="relative group">
+            <a href="{{ item.link }}" class="text-lg hover:text-primary">{{ item.name }}</a>
+            {% if item.sublinks %}
+              <div class="absolute z-30 hidden group-hover:block bg-neutral">
+                {% for subitem in item.sublinks %}
+                  <a href="{{ subitem.link }}" class="block px-4 py-2 hover:bg-secondary hover:text-neutral">{{ subitem.name }}</a>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
 
-    {% assign header_nav = site.data.nav | where: 'main_nav', true %}
-    <!-- Left Side Navigation Links -->
-    <div class="flex lg:pr-12 md:pr-4 lg:space-x-28 md:space-x-16">
-      {% for item in header_nav limit:3 %}
-        <div class="relative group">
+      <div class="shrink-0">
+        <a href="/"><img src="/assets/images/logo_light-bg.png" alt="NL Healing Logo" class="mx-auto h-36"></a>
+      </div>
+
+      <div class="flex lg:pl-12 md:pl-4 lg:space-x-28 md:space-x-16">
+        {% for item in header_nav offset:3 limit:3 %}
           <a href="{{ item.link }}" class="text-lg hover:text-primary">{{ item.name }}</a>
-          {% if item.sublinks %}
-            <div class="absolute z-30 hidden group-hover:block bg-neutral">
-              {% for subitem in item.sublinks %}
-                <a href="{{ subitem.link }}" class="block px-4 py-2 hover:bg-secondary hover:text-neutral">{{ subitem.name }}</a>
-              {% endfor %}
-            </div>
-          {% endif %}
-        </div>
-      {% endfor %}
+        {% endfor %}
+      </div>
+
     </div>
 
-    <!-- Center Logo -->
-    <div class="shrink-0">
-      <a href="/"><img src="/assets/images/logo_light-bg.png" alt="NL Healing Logo" class="mx-auto h-36"></a>
+    <!-- Mobile Menu w/ main.js  -->
+    <div class="relative flex w-full md:hidden">
+      <!-- Logo -->
+      <div>
+        <a href="/"><img class="px-4 max-h-32" src="/assets/images/logo_light-bg.png"></img></a>
+      </div>
+      <div class="flex items-center justify-end w-full">
+          <div class="mr-4 space-y-2">
+              <!-- Hamburger -->
+              <label class="btn btn-circle swap swap-rotate">
+                  <!-- this hidden checkbox controls the state --><input type="checkbox" />
+              
+                  <!-- hamburger icon -->
+                  <svg class="fill-accent swap-off hamburger-button" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+                  
+                  <!-- close icon -->
+                  <svg class="fill-accent swap-on hamburger-button" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+              </label>
+          </div>
+      <div class="z-40 shadow-lg mobile-menu">
+          <nav class="flex flex-col items-center pt-2 text-center">
+            {% for item in header_nav %}
+              <a href="{{ item.link }}" class="py-6 mx-4 text-lg">{{ item.name }}</a>
+            {% endfor %}
+          </nav> 
+      </div>
     </div>
 
-    <!-- Right Side Navigation Links -->
-    <div class="flex lg:pl-12 md:pl-4 lg:space-x-28 md:space-x-16">
-      {% for item in header_nav offset:3 limit:3 %}
-        <a href="{{ item.link }}" class="text-lg hover:text-primary">{{ item.name }}</a>
-      {% endfor %}
     </div>
-
   </nav>
 </header>
