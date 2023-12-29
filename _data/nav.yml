@@ -1,18 +1,18 @@
 - name: Home
   link: /
 - name: Offerings
-  link: /services
+  link: /offerings
   main_nav: true
   sublinks:
     - name: Coaching
-      link: /services/coaching
+      link: /offerings/coaching
     - name: Reiki
-      link: /services/reiki
+      link: /offerings/reiki
 - name: Coaching
-  link: /services/coaching
+  link: /offerings/coaching
   hero: true
 - name: Reiki
-  link: /services/reiki
+  link: /offerings/reiki
   hero: true
 - name: Events
   link: /events

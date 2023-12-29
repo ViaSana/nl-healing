@@ -3,7 +3,7 @@ future: true
 collections:
   services:
     output: true
-    permalink: /services/:slug
+    permalink: /offerings/:slug
   events:
     output: true
     permalink: /events/:slug
