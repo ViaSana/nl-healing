@@ -15,7 +15,7 @@ seo:
 <!-- Services Loop w/ Alternating Cycle-->
 <div class="md:pt-8">
   {% assign service = site.services | sort: 'order' %}
-  {% for s in service %}
+  {% for s in service limit:2 %}
   <div class="md:py-8 {% cycle '','bg-neutral' %}">
     <!-- 5 Col Grid -->
     <div class="grid items-center md:grid-cols-5">
