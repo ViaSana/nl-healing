@@ -8,8 +8,6 @@ seo:
   keywords: Women’s circle, connection, yoga, meditation, reiki, reterats
   hide-from-google: false
 image: /assets/uploads/80a04fe7-751d-4acc-9566-85c1a4cef4f4.jpeg
-slug:
-url: /events
 order: 3
 description: >
   Join me for empowering events where women's circles become a nurturing space
