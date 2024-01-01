@@ -2,7 +2,7 @@
 layout: event_layout
 slug: Honoring Grief Workshop
 title: Honoring Grief Workshop
-image: /assets/uploads/f4bb4985-ecb4-41c4-b667-1b642d9f3bf0.jpeg
+image: /assets/uploads/a8965c45-59ab-4500-b416-487816a21277.jpeg
 date: 2024-01-21 09:00:00 -0800
 location: Located @Still, 562 San Anselmo Avenue, San Anselmo
 location_details: Located @Still, 562 San Anselmo Avenue, San Anselmo
