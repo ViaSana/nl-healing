@@ -1,7 +1,7 @@
 ---
 layout: event_layout
 slug: Yin Yoga
-title: Yin Yoga
+title: Yin Yoga.  Sunday January 28, 4.30pm till 6pm.
 image: /assets/uploads/7a073458-8bd5-49a5-a50d-d655eab95e1d.jpeg
 date: 2024-01-27 16:30:00 -0800
 location: |
@@ -15,3 +15,4 @@ details: >-
   Wear comfortable clothes and dress in layers, all yoga props are available at
   the studio.
 ---
+Sssss
