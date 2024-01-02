@@ -20,9 +20,8 @@ gallery_images:
   - /assets/images/retreat_12.png
   - /assets/images/retreat_13.png
   - /assets/images/retreat_14.png
-  - ''
 whats_included:
-  - Vinyasa Yoga
+  - Vinyasa/Power Yoga
   - Yin Yoga
   - Meditation
   - Sound Bath
@@ -30,4 +29,6 @@ whats_included:
   - Astrology
   - Aroma Therapy
   - Rise Together Circle
+  - All (vegetarian)meals, breakfast, lunch and dinner, coffee and tea.
+  - 'Three night stay '
 ---
