@@ -9,14 +9,15 @@ seo:
   keywords:
   hide-from-google: false
 ---
-
 <section class="p-5p archive" x-data="{ search: '', posts: [...document.querySelectorAll('.post')] }" x-on:input="filterPosts">
     <div class="max-w-screen-lg p-2 mx-auto mb-8 text-center center">
         <h2 class="pb-4 editable"> Explore the blog </h2>
-        <div class="editable"> <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quaerat necessitatibus? Praesentium fugit ex neque magni, possimus, iste itaque voluptatem id doloremque voluptas consequatur dolor cumque! Dolores possimus laboriosam adipisci.</p> </div>
+        <div class="editable">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, quaerat necessitatibus? Praesentium fugit ex neque magni, possimus, iste itaque voluptatem id doloremque voluptas consequatur dolor cumque! Dolores possimus laboriosam adipisci.</p>
+        </div>
 
         <div class="relative inline-block my-4 filter"> 
-            <input type="text" x-model="search" placeholder="Search..." class="p-4">
+            <input type="text" x-model="search" placeholder="Search..." class="p-4" />
         </div>
     </div>
 

@@ -39,18 +39,17 @@
     p {
         @apply text-base;
     }
-
+    /* Image Responsive Default */
     img {
         @apply w-full h-auto;
     }
+    
     .blog-content h2, h3, h4, h5 {
         @apply font-serif text-secondary;
     }
-
     .blog-content p {
         @apply font-sans text-base text-secondary;
     }
-
     .blog-content blockquote {
         @apply border-0;
     }
@@ -61,6 +60,7 @@
 
 /* ----------- ADDITIONAL COMPONENTS  --------- */
 @layer components {
+    /* Buttons */
     .btn {
         @apply px-6 py-2 font-serif rounded-tl-[2000rem] rounded-bl-none rounded-tr-none rounded-br-[2000rem] tracking-[.12em] text-lg capitalize;
     }
@@ -70,18 +70,32 @@
     .btn-base-100 {
         @apply bg-base-100 text-secondary;
     }
-    #what-to-expect .button {
-        @apply inline-block h-20 px-12 py-4 bg-secondary text-base-100;
+    .btn-circle {
+        @apply rounded-full bg-neutral hover:bg-primary;
     }
+
+    /* Mobile Menu */
+    .mobile-menu {
+        @apply absolute left-0 hidden w-screen h-screen text-center top-full bg-neutral;
+    }
+    .mobile-menu a {
+        @apply block py-2 my-4 no-underline btn btn-accent btn-wide;
+    }
+
+    /* Blog Tags */
     .tag {
         @apply p-1 font-sans text-xs capitalize text-secondary;
     }
+
+    /* Line Decoration - works w/ main.js */
     #line-box{
         @apply relative;
     }
     .deco-lines {
         @apply absolute right-0 border-b-4;
     }
+
+    /* Page Header Overlay for Services, Events, Blog, and Contact */
     .ovlay_header-content {
         @apply absolute inset-0 flex flex-row items-center p-4 text-left bg-accent;
     }
@@ -91,17 +105,5 @@
     .mx-scrn {
         /* Max width is 1536px */
         @apply mx-auto max-w-screen-2xl;
-    }
-
-    .bg-image {
-        @apply bg-center bg-no-repeat bg-slate-300;
-    }
-
-    /* Main Page Mask */
-    .hero-banner {
-        position: relative;
-    }
-    .slick-track {
-        height: 50vh;
     }
 }

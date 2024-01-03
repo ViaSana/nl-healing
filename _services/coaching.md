@@ -28,7 +28,7 @@ copy_html: >-
   have to pause and reconnect with your higher self, tune in with your breath,
   to step back in your body, to feel and to ground yourself and come back to
   what really matters to you right now, in this moment.</p>
-btn_link:
+btn_link: /contact.html
 expectations:
   - "Our coaching starts with a free consultation call (20min) to feel if we’re a match and to discuss which journey will fit your needs.\_"
   - >-

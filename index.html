@@ -1,51 +1,60 @@
 ---
 layout: default
 seo:
-    title: Homepage
+    title: NL Healing | Home
     description:
     social_image:
     twitter_card:
     keywords:
     hide-from-google: false
-about-copy_html: |
-    I created NL Healing with a vision to create a safe and sacred space for women to (re)connect with themselves and each other.
-    Life's transitions — embracing motherhood, navigating divorce, or experiencing menopause — often leave women feeling adrift. These moments when inner reflection and unwavering support are crucial to making it through.
-    <br><br>
-    At NL Healing, my mission is to cultivate an environment where women discover solace, connect authentically, receive both emotional and physical support, and flourish within a community liberated from societal pressures. Using movement, meditation, energy healing, and coaching, I guide women towards their true selves, reclaiming their divine feminine power.
-    <br><br>
-    Embark on your transformative journey with me at NL Healing, rediscover your essence, form profound connections, and thrive within a supportive community celebrating your authentic self.
+about-copy_html: >-
+    <p>I created NL Healing with a vision to create a safe and sacred space for
+    women to (re)connect with themselves and each other. Life's transitions —
+    embracing motherhood, navigating divorce, or experiencing menopause — often
+    leave women feeling adrift. These moments when inner reflection and
+    unwavering support are crucial to making it through.<br /><br />At NL
+    Healing, my mission is to cultivate an environment where women discover
+    solace, connect authentically, receive both emotional and physical support,
+    and flourish within a community liberated from societal pressures. Using
+    movement, meditation, energy healing, and coaching, I guide women towards
+    their true selves, reclaiming their divine feminine power.<br /><br />Embark
+    on your transformative journey with me at NL Healing, rediscover your
+    essence, form profound connections, and thrive within a supportive community
+    celebrating your authentic self.</p>
 services:
-  - name: Coaching
-    link: services/coaching.html
-    image: /assets/images/coaching_img.jpeg
-  - name: Reiki
-    link: /services/reiki.html
-    image: assets/images/reiki_img.jpeg
-  - name: Events
-    link: /events.html
-    image: /assets/images/events_banner.png
+    -
+        name: Coaching
+        link: /offerings/coaching.html
+        image: /assets/images/coaching_img.jpeg
+    -
+        name: Reiki
+        link: /offerings/reiki.html
+        image: assets/images/reiki_img.jpeg
+    -
+        name: Events
+        link: /events.html
+        image: /assets/images/events_banner.png
 ---
-
 <!-- Section 1: Hero Banner -->
-<div class="relative text-base-100">
-    <div class="">
-      <img src="/assets/images/home_banner.svg" alt="Home Banner" class="">
-    </div>
-    <div class="absolute inset-0 flex flex-col items-center justify-center pb-4 text-center items-top">
-        <h5 class="font-sans font-extralight editable text-base-100">Welcome To Nance Leombruno Healing</h5>
-        <h1 class="max-w-3xl leading-snug editable">Journey Home To Your True Self</h1>
-        <div class="flex font-serif">
+<div class="relative mb-8 text-base-100 lg:min-h-[80vh] md:min-h-[40vh]">
+
+    <img loading="lazy" src="/assets/images/Home_Banner.png" alt="Home Banner" class="max-sm:min-h-[65vh] object-cover">
+    
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-center">
+        <h5 class="font-sans font-extralight editable text-base-100 max-md:text-xl max-md:px-5p">Welcome To Nance Leombruno Healing</h5>
+        <h1 class="max-w-3xl leading-snug editable max-md:text-5xl max-md:px-5p">Journey Home To Your True Self</h1>
+
+        <!-- Mobile Hidden Nav -->
+        <div class="flex font-serif max-md:hidden">
             {% assign hero = site.data.nav | where: 'hero', 'true' %}
             {% for item in hero %}
-              <a href="{{item.link}}" class="py-2 mx-8 my-1 uppercase rounded-none rounded-t-lg border-b-base-100 p-x4 btn btn-ghost">{{item.name}}</a>
+                <a href="{{item.link}}" class="py-2 mx-8 my-1 uppercase rounded-none rounded-t-lg border-b-base-100 p-x4 btn btn-ghost">{{item.name}}</a>
             {% endfor %}
         </div>
     </div>
-  </div>
+</div>
 
-<section> 
 {% include about-nance.html case="home-pg" %}
-</section>
 
 {% include cta.html %}
 
@@ -54,14 +63,14 @@ services:
   <h2 class="pb-6 text-center editable text-secondary">Together, We Rise</h2>
 
   <!-- Make Container Responsive-->
-  <div class="container flex items-center justify-between py-6 mx-auto">
+  <div class="container flex flex-wrap items-center justify-around pb-6 mx-auto">
     {% for service in page.services %}
       <!-- Link to Services -->
-      <a href="{{ service.link }}" class="relative flex items-center no-underline md:flex-col">
-        <div class="h-80 aspect-square">
+      <a href="{{ service.link }}" class="relative flex flex-col items-center py-4 mb-8 no-underline md:flex-row md:max-w-xs lg:max-w-sm xl:max-w-md md:mb-6">
+        <div class="w-full h-60 md:h-80 md:w-80 aspect-square">
           <img src="{{ service.image }}" alt="{{ service.name }}" class="object-cover h-full transition-shadow duration-300 shadow-lg hover:shadow-2xl">
         </div>
-        <div class="absolute text-center shadow-md bg-primary inset-x-12 -bottom-4">
+        <div class="absolute text-center shadow-md bg-primary inset-x-4 -bottom-4 md:inset-x-12">
           <h5 class="py-1">{{ service.name }}</h5>
         </div>
       </a>

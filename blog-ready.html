@@ -1,0 +1,26 @@
+---
+layout: default
+seo:
+  title: Blog
+  description:
+  social_image: /assets/uploads/d30d4e4e-2440-40cc-8839-57f488c2b818.jpeg
+  twitter_card:
+  keywords:
+  hide-from-google: true
+---
+{% include overlay_header.html case="blog" %}
+
+<!--------Blog Loop --------> 
+<section>
+  <div class="max-w-screen-xl pb-8 mx-auto md:columns-3">
+
+    {% for post in site.posts limit:12 %}
+
+      {% include post-loop.html %}
+      
+    {% endfor %}
+
+  </div>
+
+  <a href="/blog-archive.html" class="btn editable btn-secondary"> All Posts </a>
+</section> 

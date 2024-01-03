@@ -2,56 +2,42 @@
 layout: default
 ---
 <!-- update the button in the cta -->
-{% include cta.html %}
-
-<!-- Retreat Content -->
-<section class="py-6 text-center mx-scrn max-sm:px-2">
-  
-  <!-- Heading -->
-  <h4 class="pb-4 sm:px-10">{{ page.main_heading }}</h4>
-
-  <!-- Description -->
-  <div class="flex flex-wrap items-center justify-center py-5p sm:px-4">
-    <div class="w-full px-1 text-left md:px-6 md:mr-4 lg:w-[55%]">
-      {{ page.content }}
-    </div>
-    <!-- Image -->
-    <div class="w-full py-4 md:w-2/5">
-      <img src="{{ page.image }}" alt="Retreat Image" class="aspect-portrait">
-    </div>
+<div class="relative text-base-100">
+  <img src="/assets/images/retreat_banner.jpg" alt="Retreat" class="object-cover md:max-h-[50vh] max-sm:min-h-[65vh]" />
+  <div class="absolute inset-0 flex flex-col items-center justify-center p-4 text-center bg-opacity-40 bg-accent">
+    <h2 class="max-sm:text-5xl editable">Coming Home To Yourself Retreat</h2>
+    <h6 class="mt-4 font-extralight editable">Spirit Camp, CA | April 19-22, 2024</h6>
+    <a href="/contact.html" class="mt-2 btn btn-base-100 editable" rel="noopener" target="_blank">Sign Up</a>
   </div>
+</div>
 
-  <!-- Second Heading -->
-  <h4 class="p-4 sm:px-10">{{ page.closing_heading }}</h4>
-  
-  <!-- CTA Button -->
-  <a href="#" class="mt-2 btn btn-accent" role="button">Sign Me Up</a>
-</section>
+{% include retreat_content.html %}
 
 <!-- What's Included -->
-<section class="pt-5p mx-scrn ">
-  <div class="flex max-sm:flex-col items-center justify-center">
+<section class="pt-4 mx-scrn">
+  <div class="grid md:grid-cols-2">
     
-    <img src="/assets/images/retreat_2.jpg" class="mb-4 aspect-square md:w-[40%]">
+    <img src="/assets/images/retreat_2.jpg" class="editable aspect-portrait w-[50vh] justify-self-center lg:justify-self-end">
     
     <!-- FrontMatter Content -->
-    <div class="md:w-1/2 md:ml-8">
-      <h3 class="max-sm:text-center editable">What's Included</h3>
-      <hr class="border-b-4 border-primary md:w-[65%] text-primary">
-      {% for item in page.whats_included %}
-      <ul class="pt-4">
-        <li class=""><i class="mr-3 text-2xl align-top fas fa-arrow-right"></i><span class="inline-block mt-1 ml-4">{{ item }}</span></li>
-      </ul>
-      {% endfor %}
+    <div class="flex items-center justify-center md:ml-8">
+      <div class="pt-2">
+        <h3 class="max-sm:text-center editable">What's Included</h3>
+        <hr class="border-b-4 border-primary md:w-[65%] text-primary">
+        {% for item in page.whats_included %}
+        <ul class="pt-4">
+          <li class=""><i class="mr-3 text-2xl align-top fas fa-arrow-right"></i><span class="inline-block mt-1 ml-4">{{ item }}</span></li>
+        </ul>
+        {% endfor %}
+      </div>
     </div>
-    
   </div>
 </section>
 
 <!-- Gallery Section -->
 {% assign retreat_gallery = page.gallery_images %}
 <section class="bg-primary">
-  <h3 class="pb-8 -mt-1 text-center editable">Gallery</h3>
+  <h2 class="pb-8 -mt-1 text-center editable">Gallery</h2>
   <!-- Top Gallery -->
   <div class="mb-8 mx-10p">
     <div class="retreat-gallery">
@@ -68,7 +54,7 @@ layout: default
     {% endfor %}
   </div>
   <div class="pt-8 -mb-1 text-center">
-    <a role="button" class="btn btn-accent editable" href="#">Sign Me Up</a>
+    <a role="button" class="btn btn-accent editable" href="/contact.html">Sign Me Up</a>
   </div>
 </section>
 
@@ -76,24 +62,24 @@ layout: default
 <section class="text-center">
   <h2 class="editable">Pricing</h2>
   <hr class="border-b-4 border-primary md:w-[45%] text-primary mx-auto">
-  <div>
-    <p class="py-3 pt-4">
-      {{ page.pricing.early_bird }}
+  <div class="w-[60%] mx-auto pt-1">
+    <p class="py-3 pt-4 editable">
+      <strong>Early Bird Price:</strong> $1850 per person (Available until January 1, 2024)
       <br>
-      {{ page.pricing.reg_price}}
+      <strong>Regular Price:</strong> $1995 per person
     </p>
-    <p class="py-3">
-      {{ page.pricing.deposit }}
+    <p class="py-3 editable">
+      <strong>A 50% deposit secures your spot, payable via Venmo.</strong>
     </p>
-    <p class="py-3">
-      {{ page.pricing.not_included }}
+    <p class="py-3 editable">
+      <strong>What's Not Included:</strong> Travel expenses, insurance, massages, and personal astrology readings are not included but can be arranged on-site.
     </p>
-    <p class="pt-3 pb-2">
-      {{ page.inquiries }}
+    <p class="pt-3 pb-2 editable">
+      To secure your spot or for inquiries, please email <a href="mailto:nance.sf@gmail.com">nance.sf@gmail.com</a>
     </p>
   </div>
   <div class="flex justify-center py-4 mx-auto">
-    <a class="mx-4 btn btn-accent editable" role="button" href="#">Sign Me Up</a>
+    <a class="mx-4 btn btn-accent editable" role="button" href="/contact.html">Sign Me Up</a>
     <a class="mx-4 btn btn-accent editable" role="button" href="https://account.venmo.com/u/nanceleombruno">Pay Deposit</a>
   </div>
 </section>

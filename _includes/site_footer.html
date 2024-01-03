@@ -1,39 +1,30 @@
-<div class="relative text-center p-5p text-accent bg-primary" id="footer-contact_form">
+<div class="relative p-6 text-center text-accent bg-primary" id="footer-contact_form">
   <h3 class="capitalize editable">Join The Community</h3>
-  <h6 class="editable">Sign Up to Receive retreat & event updates</h6>
-  <form class="grid max-w-2xl pt-4 mx-auto text-left" method="post" action="#" id=""> 
-    <!--------- Name -------->
-    <label for="name" class="ml-2 font-serif text-2xl capitalize"> Name </label>
-    <input type="text" id="name" name="name" class="p-2 mb-4 bg-transparent border-2 border-secondary" />
+  <h6 class="editable">
+      Sign Up to Receive Retreat &amp; Event Updates
+  </h6>
 
-    <!------- Email -------->
-    <label for="email" class="ml-2 font-serif text-2xl capitalize"> Email </label>
-    <input type="email" id="email" name="email" class="p-2 mb-4 bg-transparent border-2 border-secondary" />
-
-    <input type="hidden" name="inbox_key" value="footer-contact_form">
-    <input type="text" name="_gotcha" style="display: none;">
-
-    <div class="text-center"> <input class="btn btn-accent btn-wide" type="submit" value="Submit" id="submitBtn"/> </div>
-  </form>
+  {% include contact-MC_form.html %}
+  
   <div class="pt-6">
-      <h5 class="font-sans font-medium font-light capitalize">Looking for something else? </h5>
-      <h6> Submit an inquiry or <br>
-      <a href="mailto:nance.sf@gmail.com">Email: nance.sf@gmail.com</a></h6>
+      <h6 class="font-sans capitalize editable">Looking for something else? </h6>
+      <a class="editable hover:text-secondary" href="/contact.html">Submit an inquiry or</a><br>
+      <a href="mailto:nance.sf@gmail.com" class="editable hover:text-secondary">Email: nance.sf@gmail.com</a>
   </div>
-  <div id="thank_you" style="display: none;">
+  <!-- <div id="thank_you" style="display: none;">
       <div class="absolute bottom-4 left-4">
           <h3>Thanks for connecting!</h3> 
           <p>I’ll get back to you as soon as I can.</p>
       </div>
-  </div>
+  </div> -->
 </div>
 
 <footer class="py-2 font-serif bg-secondary text-base-100">
   <div class="mx-scrn">
-    <nav class="flex justify-center my-4">
+    <nav class="flex flex-wrap justify-center my-4">
       {% assign footer-links = site.data.nav | where: 'main_nav', true %}
-      {% for item in footer-links %}
-        <a href="{{ item.link }}" class="mx-4 text-lg">{{ item.name }}</a>
+      {% for item in footer-links limit:5 %}
+        <a href="{{ item.link }}" class="m-2 text-lg md:mx-4 hover:text-primary">{{ item.name }}</a>
       {% endfor %}
     </nav>
 
@@ -41,27 +32,31 @@
     <div class="flex flex-col items-center justify-between max-w-6xl px-4 mx-auto md:flex-row">
       <!-- Left Aligned Copy -->
       <div class="mb-4 md:mb-0 md:w-1/3">
-        <p class="max-w-lg mx-2 text-lg md:max-w-xs">NL Healing is for and by women, to create a safe and sacred space to allow women to (re)connect back with themselves and with each other.</p>
+        <p class="max-w-lg mx-2 text-lg md:max-w-xs editable">NL Healing is for and by women, to create a safe and sacred space to allow women to (re)connect back with themselves and with each other.</p>
       </div>
       <!-- Centered Logo -->
       <div class="flex justify-center mb-4 md:mb-0 md:w-1/3">
-        <a href="/"><img src="/assets/images/logo_dark-bg.png" alt="NL Healing Logo" class="max-h-44"></a>
+        <a href="/"><img src="/assets/images/logo_dark-bg.png" alt="NL Healing Logo" class="w-auto max-h-44 aspect-square" /></a>
       </div>
       <!-- Right Aligned Contact -->
       <div class="flex justify-end text-center md:text-left md:w-1/3">
         <div class="md:mr-2">
-          <h6>Contact</h6>
-          <hr class="md:w-[66%]">
+          <a href="/contact.html" class="hover:text-primary"><h6 class="pb-0">Contact</h6></a>
+          <hr class="md:w-[66%]" />
           <div class="pt-4">
             <!-- IG Logo -->
-            <a href="#">
-              <svg width="24px" height="24px" stroke-width="1.5" viewBox="0 2 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="inline stroke-base-100">
-                  <path d="M12 16a4 4 0 100-8 4 4 0 000 8z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
-                  <path d="M3 16V8a5 5 0 015-5h8a5 5 0 015 5v8a5 5 0 01-5 5H8a5 5 0 01-5-5z" stroke-width="1.5"></path>
-                  <path d="M17.5 6.51l.01-.011" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            <a href="https://www.instagram.com/nance.sf/" rel="nofollow">
+              <svg width="24px" height="24px" stroke-width="1.5" viewbox="0 2 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="inline stroke-base-100">
+                  <path d="M12 16a4 4 0 100-8 4 4 0 000 8z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M3 16V8a5 5 0 015-5h8a5 5 0 015 5v8a5 5 0 01-5 5H8a5 5 0 01-5-5z" stroke-width="1.5" />
+                  <path d="M17.5 6.51l.01-.011" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </a>      
-            <span class="text-lg">nancesf@gmail.com</span>
+            <span class="text-lg editable">nancesf@gmail.com</span>
+          </div>
+          <!-- Venmo Link -->
+          <div class="grid md:justify-end">
+            <a href="{{site.data.site-settings.payment_links.venmo }}" rel="nofollow"><img src="/assets/images/icons/logo-venmo-svgrepo-com.svg" class="h-10 my-4"></a>
           </div>
         </div>
       </div>
