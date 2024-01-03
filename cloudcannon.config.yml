@@ -3,6 +3,7 @@ paths:
   data: _data
   layouts: _layouts
   includes: _includes
+
 _inputs:
   layout:
       type: auto
