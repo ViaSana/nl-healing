@@ -43,4 +43,5 @@ investment:
   - '8-Week Journey: $950'
   - '12-Week Journey: $1290'
   - 'Single Session: $150'
+  - New intentions, New You! One time only intro session for $50 (30 min)
 ---
