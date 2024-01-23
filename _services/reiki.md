@@ -1,7 +1,7 @@
 ---
 layout: service_layout
 seo:
-  title: Reiki
+  title: NL Healing | Reiki
   description:
   social_image:
   twitter_card:
