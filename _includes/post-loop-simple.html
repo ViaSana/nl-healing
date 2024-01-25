@@ -1,12 +1,12 @@
-<a href="{{ post.url }}" class="mb-4 bg-neutral block">
+<a href="{{ post.url }}" class="block mb-4 bg-neutral">
     <div class="grid grid-cols-4">
-        <div class="col-span-1 pb-1/1 relative">
-            <img src="{{ post.featured_image }}" class="lazy absolute inset-0 h-full w-full object-cover">
+        <div class="relative col-span-1 pb-1/1">
+            <img src="{{ post.featured_image }}" class="absolute inset-0 object-cover w-full h-full lazy">
         </div>
-        <div class="col-span-3 p-4 self-center">
-            <p class="text-xs mb-2 ">
-                {% for item in post.categories %}
-                    <span class="tag mr-2 bg-base-100"> {{item}} </span>
+        <div class="self-center col-span-3 p-4">
+            <p class="mb-2 text-xs ">
+                {% for item in post.tags %}
+                    <span class="mr-2 tag bg-base-100"> {{item}} </span>
                 {% endfor %}
             </p>
             <h2 class="mt-1 mb-2 font-serif sm:text-3xl"> {{ post.title }} </h2>

@@ -1,7 +1,7 @@
 ---
 layout: service_layout
 seo:
-  title: Coaching
+  title: NL Healing | Coaching
   description:
   social_image:
   twitter_card:

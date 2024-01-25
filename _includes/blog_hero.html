@@ -1,11 +1,11 @@
 <div class="flex items-center justify-center mx-scrn">
     <div class="w-3/5 p-8 text-secondary">
-      <p class="text-xs mb-2">
-        {% for item in page.categories %}
-            <span class="tag mr-2 bg-neutral"> {{item}} </span>
+      <p class="mb-2 text-xs">
+        {% for item in page.tags %}
+            <span class="mr-2 tag bg-neutral"> {{item}} </span>
         {% endfor %}
       </p>
-      <p class="text-small normal-case mb-2"> {{page.date | date: "%B %-d, %Y" }} </p>
+      <p class="mb-2 normal-case text-small"> {{page.date | date: "%B %-d, %Y" }} </p>
       <h4 class="inline-block pb-4 pr-16 border-b border-primary">{{ page.title }}</h4>
       <p class="py-4">{{ page.description }}</p>
     </div>

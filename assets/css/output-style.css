@@ -2599,8 +2599,8 @@ img {
 .min-h-\[50vh\] {
   min-height: 50vh;
 }
-.\!w-\[20vw\] {
-  width: 20vw !important;
+.\!w-\[33vw\] {
+  width: 33vw !important;
 }
 .w-2\/5 {
   width: 40%;
@@ -2637,12 +2637,6 @@ img {
 }
 .w-full {
   width: 100%;
-}
-.\!w-\[30vw\] {
-  width: 30vw !important;
-}
-.\!w-\[33vw\] {
-  width: 33vw !important;
 }
 .max-w-2xl {
   max-width: 42rem;

@@ -1,6 +1,6 @@
-<a class="block p-2 mb-4 post-item break-inside-avoid transition-shadow duration-300 shadow-lg hover:shadow-2xl" href="{{ post.url }}">
+<a class="block p-2 mb-4 transition-shadow duration-300 shadow-lg post-item break-inside-avoid hover:shadow-2xl" href="{{ post.url }}">
     <p class="mb-2 text-xs">
-        {% for item in post.categories %}
+        {% for item in post.tags %}
             <span class="mr-2 tag bg-neutral"> {{item}} </span>
         {% endfor %}
     </p>
