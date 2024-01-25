@@ -8,6 +8,10 @@ _inputs:
     type: auto
     hidden: true
     cascade: true
+  slug:
+    type: auto
+    hidden: true
+    cascade: true
 collections_config:
   data:
     path: _data
