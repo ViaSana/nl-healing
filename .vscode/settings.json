@@ -63,6 +63,10 @@
     {
       "filePath": "offerings.html",
       "group": "Default"
+    },
+    {
+      "filePath": "blog-ready.html",
+      "group": "Default"
     }
   ],
   "favorites.sortOrder": "MANUAL"

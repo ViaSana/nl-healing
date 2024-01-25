@@ -1,0 +1,37 @@
+<!-- include tag-filter -->
+<!-- Purpose: Create an interactive tag filter for blog posts using JavaScript and DaisyUI components -->
+
+<!-- Dropdown for tag selection -->
+<div class="dropdown dropdown-hover">
+  <label tabindex="0" class="m-1 btn">Filter by Tag</label>
+  <ul tabindex="0" class="p-2 shadow dropdown-content menu bg-base-100 rounded-box w-52">
+    {% assign all_tags = site.posts | map: 'tags' | flatten | uniq %}
+    {% for tag in all_tags %}
+      <li><a href="#" class="tag-option" data-tag="{{ tag }}">{{ tag }}</a></li>
+    {% endfor %}
+  </ul>
+</div>
+
+<script>
+  // Function to filter posts by tag
+  function filterPostsByTag(selectedTag) {
+    const allPosts = document.querySelectorAll('.post-item');
+    allPosts.forEach(post => {
+      const postTags = post.getAttribute('data-tags').split(',');
+      if (selectedTag === 'All' || postTags.includes(selectedTag)) {
+        post.style.display = '';
+      } else {
+        post.style.display = 'none';
+      }
+    });
+  }
+
+  // Event listeners for tag options
+  document.querySelectorAll('.tag-option').forEach(tagOption => {
+    tagOption.addEventListener('click', function(event) {
+      event.preventDefault();
+      const selectedTag = this.getAttribute('data-tag');
+      filterPostsByTag(selectedTag);
+    });
+  });
+</script>
