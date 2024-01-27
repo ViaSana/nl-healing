@@ -1,10 +1,12 @@
 <!-- include post-loop -->
-<a class="block mb-4 transition-shadow duration-300 shadow-lg post-item break-inside-avoid hover:shadow-2xl" href="{{ post.url }}">
+<a class="block mb-4 transition-shadow duration-300 shadow-lg post-item break-inside-avoid hover:shadow-2xl" href="{{ post.url }}" data-tags="{{ post.tags | join: ',' }}">
+    <!-- post tags -->
     <p class="mb-2 text-xs">
         {% for item in post.tags %}
             <span class="mr-2 tag bg-neutral"> {{item}} </span>
         {% endfor %}
     </p>
+    <!-- post card -->
     <div class="border-2 border-accent bg-neutral">
         <div class="bg-cover aspect-square" style="background-image:url( '{{ post.featured_image }}');"></div>
         <div class="relative p-4 text-center bg-neutral">
@@ -14,10 +16,3 @@
         </div>
     </div>
 </a>
-
-{% for post in site.posts limit:12 %}
-<a class="block p-2 mb-4 transition-shadow duration-300 shadow-lg post-item break-inside-avoid hover:shadow-2xl" 
-     href="{{ post.url }}" data-tags="{{ post.tags | join: ',' }}">
-    <!-- Post content here -->
-  </a>
-{% endfor %}

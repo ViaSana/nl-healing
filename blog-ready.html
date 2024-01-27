@@ -8,17 +8,6 @@ seo:
   keywords:
   hide-from-google: true
 ---
-<!-- Liquid to gather the tags -->
-{% assign all_tags = '' %}
-{% for post in site.posts %}
-  {% for tag in post.tags %}
-    {% unless all_tags contains tag %}
-      {% assign all_tags = all_tags | append: tag | append: ',' %}
-    {% endunless %}
-  {% endfor %}
-{% endfor %}
-{% assign unique_tags = all_tags | split: ',' | uniq %}
-
 
 {% include overlay_header.html case="blog" %}
 
@@ -34,16 +23,10 @@ seo:
         {% include post-loop.html %}
       {% endif %}
     {% endfor %}
-
-    {% for post in site.posts limit:12 %}
-      <a class="block p-2 mb-4 transition-shadow duration-300 shadow-lg post-item break-inside-avoid hover:shadow-2xl" 
-        href="{{ post.url }}" data-tags="{{ post.tags | join: ',' }}">
-        <!-- Post content here -->
-      </a>
-    {% endfor %}
     
   </div>
 
+  <!-- Creates a Daisy UI dropdown and calls tagFilter.js  -->
   {% include tag-filter.html %}
 
   <a href="/blog-archive.html" class="btn editable btn-secondary"> All Posts </a>
