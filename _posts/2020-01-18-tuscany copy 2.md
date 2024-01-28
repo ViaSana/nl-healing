@@ -1,6 +1,6 @@
 ---
 layout: post
-title: And now……
+title: Birth
 subtitle:
 featured_image: /assets/uploads/b9fe75b7-c9b5-45ed-8520-e13f59bc3df2.jpeg
 description: >-
@@ -8,9 +8,9 @@ description: >-
   have it all figured out right?! Two of my three kids left “the nest” and our
   baby has two more years in high school before 
 tags:
-  - Meno pause
+  - wonder
   - midlife women
-  - 50and fabulous
+  - babys
 seo:
   title: A journey through Tuscany
   description: >-
