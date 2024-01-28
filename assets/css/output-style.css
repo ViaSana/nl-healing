@@ -3130,6 +3130,9 @@ img {
 .justify-self-center {
   justify-self: center;
 }
+.whitespace-nowrap {
+  white-space: nowrap;
+}
 .rounded-none {
   border-radius: 0px;
 }
@@ -3390,10 +3393,6 @@ img {
   --tw-text-opacity: 1;
   color: hsl(var(--b1) / var(--tw-text-opacity));
 }
-.text-neutral {
-  --tw-text-opacity: 1;
-  color: hsl(var(--n) / var(--tw-text-opacity));
-}
 .text-primary {
   --tw-text-opacity: 1;
   color: hsl(var(--p) / var(--tw-text-opacity));
@@ -3429,6 +3428,11 @@ img {
 }
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 .transition-shadow {
   transition-property: box-shadow;

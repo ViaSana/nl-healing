@@ -13,7 +13,11 @@ seo:
 
 <!--------Blog Loop --------> 
 <section class="pb-40">
-  
+  <div class="flex justify-end p-4">
+    <a href="/blog-archive.html" class="btn editable btn-secondary"> All Posts </a>
+    <!-- Creates a Daisy UI dropdown and calls tagFilter.js  -->
+    {% include tag-filter.html %}
+  </div>
   <div class="max-w-screen-xl pb-8 mx-auto md:columns-3">
 
     {% assign selected_tag = page.selected_tag %}
@@ -25,9 +29,4 @@ seo:
     {% endfor %}
     
   </div>
-
-  <!-- Creates a Daisy UI dropdown and calls tagFilter.js  -->
-  {% include tag-filter.html %}
-
-  <a href="/blog-archive.html" class="btn editable btn-secondary"> All Posts </a>
 </section> 

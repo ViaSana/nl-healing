@@ -1,7 +1,7 @@
 <!-- include post-loop -->
-<a class="block mb-4 transition-shadow duration-300 shadow-lg post-item break-inside-avoid hover:shadow-2xl" href="{{ post.url }}" data-tags="{{ post.tags | join: ',' }}">
+<a class="block mb-6 transition-all duration-300 shadow-lg post-item break-inside-avoid hover:shadow-2xl hover:scale-105" href="{{ post.url }}" data-tags="{{ post.tags | join: ',' }}">
     <!-- post tags -->
-    <p class="mb-2 text-xs">
+    <p class="mb-2 text-xs whitespace-nowrap">
         {% for item in post.tags %}
             <span class="mr-2 tag bg-neutral"> {{item}} </span>
         {% endfor %}
