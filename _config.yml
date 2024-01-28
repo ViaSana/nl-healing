@@ -1,5 +1,5 @@
+url: "https://www.nlhealing.com"
 future: true
-
 collections:
   services:
     output: true

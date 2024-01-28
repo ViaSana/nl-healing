@@ -63,6 +63,14 @@
     {
       "filePath": "offerings.html",
       "group": "Default"
+    },
+    {
+      "filePath": "blog-ready.html",
+      "group": "Default"
+    },
+    {
+      "filePath": "_includes/post-loop.html",
+      "group": "Default"
     }
   ],
   "favorites.sortOrder": "MANUAL"

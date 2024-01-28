@@ -1,14 +1,18 @@
-<a class="block p-2 mb-4 transition-shadow duration-300 shadow-lg post-item break-inside-avoid hover:shadow-2xl" href="{{ post.url }}">
-    <p class="mb-2 text-xs">
+<!-- include post-loop -->
+<a class="block mb-6 transition-all duration-300 shadow-lg post-item break-inside-avoid hover:shadow-2xl hover:scale-105" href="{{ post.url }}" data-tags="{{ post.tags | join: ',' }}">
+    <!-- post tags -->
+    <p class="mb-2 text-xs whitespace-nowrap">
         {% for item in post.tags %}
             <span class="mr-2 tag bg-neutral"> {{item}} </span>
         {% endfor %}
     </p>
-    <div class="bg-cover aspect-square"
-    style="background-image:url( '{{ post.featured_image }}');"></div>
-    <div class="relative p-4 text-center border-b-2 border-l-2 border-r-2 border-accent bg-neutral">
-        <p class="text-xs">{{post.date | date: "%B %-d, %Y" }} </p>
-        <h5 class="text-2xl font-medium"> {{ post.title }} </h5>
-        <p class="text-sm">{{post.description}} </p>
+    <!-- post card -->
+    <div class="border-2 border-accent bg-neutral">
+        <div class="bg-cover aspect-square" style="background-image:url( '{{ post.featured_image }}');"></div>
+        <div class="relative p-4 text-center bg-neutral">
+            <p class="text-xs">{{post.date | date: "%B %-d, %Y" }} </p>
+            <h5 class="text-2xl font-medium"> {{ post.title }} </h5>
+            <p class="text-sm">{{post.description}} </p>
+        </div>
     </div>
 </a>
