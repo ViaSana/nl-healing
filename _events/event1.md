@@ -1,12 +1,11 @@
 ---
 layout: event_layout
 slug: Yin Yoga
-title: 'Yin Yoga.  '
+title: 'Yin Yoga '
 image: /assets/uploads/104eceb0-4871-48d6-999d-0dc6b8d98964.jpeg
-date: 2024-02-18 16:30:00 -0800
-location: |
-  Evergreen Wellness Studio, 1414 4th Street in San-Rafael, Suite 201 
-location_details: >
+date: 2024-02-17 16:30:00 -0800
+location: 'Evergreen Wellness Studio, 1414 4th Street in San-Rafael, Suite 201 '
+location_details: >-
   Located between Cafe del Soul and Burns Florist, take stairs up to the
   Evergreen Studio, street parking is available.
 cost: Investment $30 p/p
