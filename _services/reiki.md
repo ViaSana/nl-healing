@@ -14,7 +14,7 @@ seo:
   hide-from-google: false
 slug: reiki
 order: 2
-image: /assets/uploads/e1f05a8d-43fd-4bb0-973b-93f17c69dee2.jpeg
+image: /assets/uploads/7416aec5-c0bb-46ad-9d68-55c1c3cb72b4.jpeg
 description: >
   Reiki is a healing art technique from Japan where one's hands are used to
   channel life-force energy for healing. Reiki helps with reducing stress and
