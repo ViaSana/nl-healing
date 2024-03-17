@@ -6,7 +6,7 @@ image: /assets/uploads/d518a120-1c6a-454a-8002-568216d24994.jpeg
 date: 2024-03-23 12:30:00 -0700
 location: Hot Yoga Republic
 location_details: 4050 redwood Highway, San Rafael.
-cost: Investment $95 per guest
+cost: $95 per guest
 summary: >-
   This Workshop is for people who want to experience Power Yoga but do not know
   what it’s all about or for people who like to dive deeper in the alignment of
