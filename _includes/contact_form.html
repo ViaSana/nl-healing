@@ -2,19 +2,17 @@
 <div class="relative p-6 text-center text-accent" id="contact_form">
     <form class="grid mx-auto max-w-2xl text-left" id="contactForm" action="https://api.web3forms.com/submit" method="POST">
         <!-- Required: Your Access Key for Web3Forms -->
-        <!-- <input type="hidden" name="access_key" value="0af03d57-4619-4379-ad1d-c8d893d0f938"> -->
-        <input type="hidden" name="access_key" value="8014013b-5ac6-4c0c-b1a7-b05ab408f9c4">
-
+        <input type="hidden" name="access_key" value="0af03d57-4619-4379-ad1d-c8d893d0f938">
         
-        <!-- Optional Subject -->
+        <!-- Set the fixed email subject -->
         <input type="hidden" name="subject" value="New Submission from NLHealing.com">
     
         <!-- Hidden botcheck field -->
         <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
         
-        <!------- Subject -------->
-        <label for="subject" class="ml-2 font-serif capitalize editable">Reason for your Inquiry</label>
-        <input list="topic-list" id="subject" name="subject" placeholder="click to select subject" class="p-2 pl-4 mb-4 bg-transparent border-2 border-secondary"/>
+        <!------- Reason for Inquiry -------->
+        <label for="inquiry-reason" class="ml-2 font-serif capitalize editable">Reason for your Inquiry</label>
+        <input list="topic-list" id="inquiry-reason" name="inquiry-reason" placeholder="click to select subject" class="p-2 pl-4 mb-4 bg-transparent border-2 border-secondary"/>
             <datalist class="font-serif" id="topic-list">
                 <option value="Coaching"></option>
                 <option value="Reiki"></option>
@@ -41,7 +39,13 @@
             <label for="newsletter" class="pb-8 ml-2 font-serif capitalize"><span class="editable">Sign Up to Receive retreat & event updates </span> </label>
         </div>
 
-        <div class="text-center"> <input class="btn btn-accent" type="submit" value="Submit" id="submitBtn"/> </div>
+        <div class="text-center"> 
+            <input class="btn btn-accent" type="submit" value="Submit" id="submitBtn"/>
+            <!-- Add loading state indicator -->
+            <div id="submitLoading" class="hidden">
+                <span class="animate-pulse">Sending...</span>
+            </div>
+        </div>
 
     </form>
     
@@ -52,4 +56,58 @@
         </div>
     </div>
 </div>
+
+<script>
+const form = document.getElementById('contactForm');
+const thanks = document.getElementById('thanks');
+const submitBtn = document.getElementById('submitBtn');
+const submitLoading = document.getElementById('submitLoading');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Immediately disable button and show loading state
+    submitBtn.disabled = true;
+    submitBtn.classList.add('opacity-50');
+    submitLoading.classList.remove('hidden');
+    
+    const formData = new FormData(form);
+    
+    fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify(Object.fromEntries(formData))
+    })
+    .then(async (response) => {
+        if(response.status === 200) {
+            form.classList.add('hidden');
+            thanks.classList.remove('hidden');
+        } else {
+            console.error('Submission error:', await response.text());
+            alert("There was a problem with your submission. Please try again.");
+            // Re-enable button on error
+            submitBtn.disabled = false;
+            submitBtn.classList.remove('opacity-50');
+            submitLoading.classList.add('hidden');
+        }
+    })
+    .catch(error => {
+        console.error('Fetch error:', error);
+        alert("There was a problem with your submission. Please try again.");
+    })
+    .then(function() {
+        form.reset();
+        setTimeout(() => {
+            thanks.classList.add('hidden');
+            form.classList.remove('hidden');
+            submitLoading.classList.add('hidden');
+            submitBtn.disabled = false;
+            submitBtn.classList.remove('opacity-50');
+        }, 5000); // Hide thanks message after 5 seconds
+    });
+});
+</script>
 
