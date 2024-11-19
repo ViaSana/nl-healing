@@ -2,10 +2,14 @@
 layout: service_layout
 seo:
   title: NL Healing | Coaching
-  description:
+  description: >-
+    Finding your way back home to yourself and tap into what really matters to
+    you.
   social_image:
   twitter_card:
-  keywords:
+  keywords: >-
+    Life Coach, coaching, women’s coaching, finding your way back home to
+    yourself.
   hide-from-google: false
 slug: coaching
 order: 1

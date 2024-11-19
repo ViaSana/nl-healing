@@ -20,14 +20,5 @@ gallery_images:
   - /assets/images/retreat_13.png
   - /assets/images/retreat_14.png
 whats_included:
-  - Vinyasa/Power Yoga
-  - Yin Yoga
-  - Meditation
-  - Sound Bath
-  - Breathwork
-  - Astrology
-  - Aroma Therapy
-  - Rise Together Circle
-  - All (vegetarian)meals, breakfast, lunch and dinner, coffee and tea.
-  - 'Three night stay '
+  -
 ---
