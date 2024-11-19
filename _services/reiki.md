@@ -38,7 +38,7 @@ btn_link: /contact.html
 expectations:
   - "We start with\_ a free consultation call (15min) and from there we make an appointment for our first session."
   - Sessions are 90 min, including meditation/visualization and Reiki treatment.
-  - Sessions take place at Evergreen Wellness Studio in San Rafael, CA.
+  - Sessions take place at client’s home.
   - >-
     Wear comfortable clothes for your Reiki treatment. You lie on a treatment
     table with your clothes on and my hands are floating above your body to
@@ -49,9 +49,7 @@ expectations:
     the energy flow through your body and to give the person receiving the Reiki
     a final rest before we close our session.
 investment:
-  - 'Single Session: $195'
-  - '2-Session Package: $380'
-  - '3-Session Package: $555'
-  - '4-Session Package: $720'
-  - '5-Session Package: $875'
+  - 'Single Session: $150'
+  - '2-Session Package: $285'
+  - '3-Session Package: &425'
 ---
