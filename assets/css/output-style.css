@@ -3018,14 +3018,11 @@ img {
 .mt-5 {
   margin-top: 1.25rem;
 }
-.mt-8 {
-  margin-top: 2rem;
-}
-.mt-10 {
-  margin-top: 2.5rem;
-}
 .mt-6 {
   margin-top: 1.5rem;
+}
+.mt-8 {
+  margin-top: 2rem;
 }
 .line-clamp-2 {
   overflow: hidden;
@@ -3087,9 +3084,6 @@ img {
 .h-full {
   height: 100%;
 }
-.h-\[90\%\] {
-  height: 90%;
-}
 .max-h-44 {
   max-height: 11rem;
 }
@@ -3099,11 +3093,11 @@ img {
 .max-h-\[55vh\] {
   max-height: 55vh;
 }
-.min-h-\[50vh\] {
-  min-height: 50vh;
-}
 .min-h-\[400px\] {
   min-height: 400px;
+}
+.min-h-\[50vh\] {
+  min-height: 50vh;
 }
 .\!w-\[33vw\] {
   width: 33vw !important;
@@ -3228,9 +3222,6 @@ img {
 .gap-16 {
   gap: 4rem;
 }
-.gap-4 {
-  gap: 1rem;
-}
 .space-x-12 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(3rem * var(--tw-space-x-reverse));
@@ -3240,11 +3231,6 @@ img {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
-}
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 .self-start {
   align-self: flex-start;
@@ -3267,21 +3253,12 @@ img {
 .rounded-none {
   border-radius: 0px;
 }
-.rounded-2xl {
-  border-radius: 1rem;
-}
-.rounded-full {
-  border-radius: 9999px;
-}
 .rounded-t-lg {
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
 }
 .border-2 {
   border-width: 2px;
-}
-.border {
-  border-width: 1px;
 }
 .border-b {
   border-bottom-width: 1px;
@@ -3310,10 +3287,6 @@ img {
 .border-secondary {
   --tw-border-opacity: 1;
   border-color: hsl(var(--s) / var(--tw-border-opacity));
-}
-.border-neutral {
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--n) / var(--tw-border-opacity));
 }
 .border-b-base-100 {
   --tw-border-opacity: 1;
@@ -3345,10 +3318,6 @@ img {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-.bg-base-200 {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--b2) / var(--tw-bg-opacity));
 }
 .bg-opacity-40 {
   --tw-bg-opacity: 0.4;
@@ -3520,9 +3489,6 @@ img {
 }
 .font-medium {
   font-weight: 500;
-}
-.font-bold {
-  font-weight: 700;
 }
 .uppercase {
   text-transform: uppercase;
@@ -3854,9 +3820,6 @@ img {
   }
   .md\:pt-8 {
     padding-top: 2rem;
-  }
-  .md\:pt-32 {
-    padding-top: 8rem;
   }
   .md\:text-left {
     text-align: left;
